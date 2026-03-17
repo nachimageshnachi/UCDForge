@@ -1,0 +1,41 @@
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Virtual environments
+myVirtualEnvironment/
+venv/
+.venv/
+env/
+
+# Streamlit secrets (keep config.toml but not secrets)
+.streamlit/secrets.toml
+
+# Debug / test scratch files
+debug_llm.py
+debug_out.txt
+debug_test_mistral.txt
+test_extraction.py
+test_custom_extraction.py
+test_tier2.py
+test_tier3.py
+test_out.txt
+a.txt
+db_usecase_validation.py
+result.json
+result_tier2.json
+result_tier3.json
+ucd_generation_old2.py
+
+# IDE
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
