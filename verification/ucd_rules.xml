@@ -1,0 +1,2495 @@
+<RULES_FRAGMENT>
+  <Modeling type="Avatar Requirement" nameTab="Actor_Rules_AR">
+    <AvatarRDPanel name="AVATARRD" minX="10" maxX="2500" minY="10" maxY="1500" zoom="1.0">
+      <COMPONENT type="5200" id="412" index="16" uid="2e0d3d5f-81ac-47cb-821a-eac57e1f6f89">
+        <cdparam x="473" y="57" />
+        <sizeparam width="325" height="78" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="Actor_Rules_AR" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="369" />
+        <TGConnectingPoint num="1" id="370" />
+        <TGConnectingPoint num="2" id="371" />
+        <TGConnectingPoint num="3" id="372" />
+        <TGConnectingPoint num="4" id="373" />
+        <TGConnectingPoint num="5" id="374" />
+        <TGConnectingPoint num="6" id="375" />
+        <TGConnectingPoint num="7" id="376" />
+        <TGConnectingPoint num="8" id="377" />
+        <TGConnectingPoint num="9" id="378" />
+        <TGConnectingPoint num="10" id="379" />
+        <TGConnectingPoint num="11" id="380" />
+        <TGConnectingPoint num="12" id="381" />
+        <TGConnectingPoint num="13" id="382" />
+        <TGConnectingPoint num="14" id="383" />
+        <TGConnectingPoint num="15" id="384" />
+        <TGConnectingPoint num="16" id="385" />
+        <TGConnectingPoint num="17" id="386" />
+        <TGConnectingPoint num="18" id="387" />
+        <TGConnectingPoint num="19" id="388" />
+        <TGConnectingPoint num="20" id="389" />
+        <TGConnectingPoint num="21" id="390" />
+        <TGConnectingPoint num="22" id="391" />
+        <TGConnectingPoint num="23" id="392" />
+        <TGConnectingPoint num="24" id="393" />
+        <TGConnectingPoint num="25" id="394" />
+        <TGConnectingPoint num="26" id="395" />
+        <TGConnectingPoint num="27" id="396" />
+        <TGConnectingPoint num="28" id="397" />
+        <TGConnectingPoint num="29" id="398" />
+        <TGConnectingPoint num="30" id="399" />
+        <TGConnectingPoint num="31" id="400" />
+        <TGConnectingPoint num="32" id="401" />
+        <TGConnectingPoint num="33" id="402" />
+        <TGConnectingPoint num="34" id="403" />
+        <TGConnectingPoint num="35" id="404" />
+        <TGConnectingPoint num="36" id="405" />
+        <TGConnectingPoint num="37" id="406" />
+        <TGConnectingPoint num="38" id="407" />
+        <TGConnectingPoint num="39" id="408" />
+        <TGConnectingPoint num="40" id="409" />
+        <TGConnectingPoint num="41" id="410" />
+        <TGConnectingPoint num="42" id="411" />
+        <extraparam>
+          <textline data="The actors in the use case diagram shall be modeled " />
+          <textline data="in accordance with defined actor rules." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Actor_Modeling_Rules" color="-1773070" />
+          <id data="1" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="46" index="1" uid="5dfc2206-ee68-4bb0-ac2f-b4a2e94b97d6">
+        <cdparam x="10" y="71" />
+        <sizeparam width="314" height="75" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="AR_8_Actor_Association_Restriction_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="3" />
+        <TGConnectingPoint num="1" id="4" />
+        <TGConnectingPoint num="2" id="5" />
+        <TGConnectingPoint num="3" id="6" />
+        <TGConnectingPoint num="4" id="7" />
+        <TGConnectingPoint num="5" id="8" />
+        <TGConnectingPoint num="6" id="9" />
+        <TGConnectingPoint num="7" id="10" />
+        <TGConnectingPoint num="8" id="11" />
+        <TGConnectingPoint num="9" id="12" />
+        <TGConnectingPoint num="10" id="13" />
+        <TGConnectingPoint num="11" id="14" />
+        <TGConnectingPoint num="12" id="15" />
+        <TGConnectingPoint num="13" id="16" />
+        <TGConnectingPoint num="14" id="17" />
+        <TGConnectingPoint num="15" id="18" />
+        <TGConnectingPoint num="16" id="19" />
+        <TGConnectingPoint num="17" id="20" />
+        <TGConnectingPoint num="18" id="21" />
+        <TGConnectingPoint num="19" id="22" />
+        <TGConnectingPoint num="20" id="23" />
+        <TGConnectingPoint num="21" id="24" />
+        <TGConnectingPoint num="22" id="25" />
+        <TGConnectingPoint num="23" id="26" />
+        <TGConnectingPoint num="24" id="27" />
+        <TGConnectingPoint num="25" id="28" />
+        <TGConnectingPoint num="26" id="29" />
+        <TGConnectingPoint num="27" id="30" />
+        <TGConnectingPoint num="28" id="31" />
+        <TGConnectingPoint num="29" id="32" />
+        <TGConnectingPoint num="30" id="33" />
+        <TGConnectingPoint num="31" id="34" />
+        <TGConnectingPoint num="32" id="35" />
+        <TGConnectingPoint num="33" id="36" />
+        <TGConnectingPoint num="34" id="37" />
+        <TGConnectingPoint num="35" id="38" />
+        <TGConnectingPoint num="36" id="39" />
+        <TGConnectingPoint num="37" id="40" />
+        <TGConnectingPoint num="38" id="41" />
+        <TGConnectingPoint num="39" id="42" />
+        <TGConnectingPoint num="40" id="43" />
+        <TGConnectingPoint num="41" id="44" />
+        <TGConnectingPoint num="42" id="45" />
+        <extraparam>
+          <textline data="Direct associations between actors " />
+          <textline data="shall not be permitted." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Actor_Modeling_Rules" color="-1773070" />
+          <id data="0" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="92" index="3" uid="7ef1453e-1753-4594-956e-939eb7af6296">
+        <cdparam x="928" y="69" />
+        <sizeparam width="301" height="76" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="AR_7_Non_Human_Actor_Notation_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="49" />
+        <TGConnectingPoint num="1" id="50" />
+        <TGConnectingPoint num="2" id="51" />
+        <TGConnectingPoint num="3" id="52" />
+        <TGConnectingPoint num="4" id="53" />
+        <TGConnectingPoint num="5" id="54" />
+        <TGConnectingPoint num="6" id="55" />
+        <TGConnectingPoint num="7" id="56" />
+        <TGConnectingPoint num="8" id="57" />
+        <TGConnectingPoint num="9" id="58" />
+        <TGConnectingPoint num="10" id="59" />
+        <TGConnectingPoint num="11" id="60" />
+        <TGConnectingPoint num="12" id="61" />
+        <TGConnectingPoint num="13" id="62" />
+        <TGConnectingPoint num="14" id="63" />
+        <TGConnectingPoint num="15" id="64" />
+        <TGConnectingPoint num="16" id="65" />
+        <TGConnectingPoint num="17" id="66" />
+        <TGConnectingPoint num="18" id="67" />
+        <TGConnectingPoint num="19" id="68" />
+        <TGConnectingPoint num="20" id="69" />
+        <TGConnectingPoint num="21" id="70" />
+        <TGConnectingPoint num="22" id="71" />
+        <TGConnectingPoint num="23" id="72" />
+        <TGConnectingPoint num="24" id="73" />
+        <TGConnectingPoint num="25" id="74" />
+        <TGConnectingPoint num="26" id="75" />
+        <TGConnectingPoint num="27" id="76" />
+        <TGConnectingPoint num="28" id="77" />
+        <TGConnectingPoint num="29" id="78" />
+        <TGConnectingPoint num="30" id="79" />
+        <TGConnectingPoint num="31" id="80" />
+        <TGConnectingPoint num="32" id="81" />
+        <TGConnectingPoint num="33" id="82" />
+        <TGConnectingPoint num="34" id="83" />
+        <TGConnectingPoint num="35" id="84" />
+        <TGConnectingPoint num="36" id="85" />
+        <TGConnectingPoint num="37" id="86" />
+        <TGConnectingPoint num="38" id="87" />
+        <TGConnectingPoint num="39" id="88" />
+        <TGConnectingPoint num="40" id="89" />
+        <TGConnectingPoint num="41" id="90" />
+        <TGConnectingPoint num="42" id="91" />
+        <extraparam>
+          <textline data="Non-human actors shall be represented using the " />
+          <textline data="rectangular Actor stereotype notation." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Actor_Modeling_Rules" color="-1773070" />
+          <id data="1.7" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="138" index="5" uid="cbbc6ea9-766c-451c-81bb-5dca77153c97">
+        <cdparam x="967" y="272" />
+        <sizeparam width="242" height="80" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="AR_6_Actor_Notation_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="95" />
+        <TGConnectingPoint num="1" id="96" />
+        <TGConnectingPoint num="2" id="97" />
+        <TGConnectingPoint num="3" id="98" />
+        <TGConnectingPoint num="4" id="99" />
+        <TGConnectingPoint num="5" id="100" />
+        <TGConnectingPoint num="6" id="101" />
+        <TGConnectingPoint num="7" id="102" />
+        <TGConnectingPoint num="8" id="103" />
+        <TGConnectingPoint num="9" id="104" />
+        <TGConnectingPoint num="10" id="105" />
+        <TGConnectingPoint num="11" id="106" />
+        <TGConnectingPoint num="12" id="107" />
+        <TGConnectingPoint num="13" id="108" />
+        <TGConnectingPoint num="14" id="109" />
+        <TGConnectingPoint num="15" id="110" />
+        <TGConnectingPoint num="16" id="111" />
+        <TGConnectingPoint num="17" id="112" />
+        <TGConnectingPoint num="18" id="113" />
+        <TGConnectingPoint num="19" id="114" />
+        <TGConnectingPoint num="20" id="115" />
+        <TGConnectingPoint num="21" id="116" />
+        <TGConnectingPoint num="22" id="117" />
+        <TGConnectingPoint num="23" id="118" />
+        <TGConnectingPoint num="24" id="119" />
+        <TGConnectingPoint num="25" id="120" />
+        <TGConnectingPoint num="26" id="121" />
+        <TGConnectingPoint num="27" id="122" />
+        <TGConnectingPoint num="28" id="123" />
+        <TGConnectingPoint num="29" id="124" />
+        <TGConnectingPoint num="30" id="125" />
+        <TGConnectingPoint num="31" id="126" />
+        <TGConnectingPoint num="32" id="127" />
+        <TGConnectingPoint num="33" id="128" />
+        <TGConnectingPoint num="34" id="129" />
+        <TGConnectingPoint num="35" id="130" />
+        <TGConnectingPoint num="36" id="131" />
+        <TGConnectingPoint num="37" id="132" />
+        <TGConnectingPoint num="38" id="133" />
+        <TGConnectingPoint num="39" id="134" />
+        <TGConnectingPoint num="40" id="135" />
+        <TGConnectingPoint num="41" id="136" />
+        <TGConnectingPoint num="42" id="137" />
+        <extraparam>
+          <textline data="Human actors shall be represented " />
+          <textline data="using UML stickman notation." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Actor_Modeling_Rules" color="-1773070" />
+          <id data="1.6" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="184" index="7" uid="6389a27a-f46f-403b-ab2b-7dbea070e792">
+        <cdparam x="10" y="259" />
+        <sizeparam width="344" height="87" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="AR_5_Actor_Redundancy_Prevention_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="141" />
+        <TGConnectingPoint num="1" id="142" />
+        <TGConnectingPoint num="2" id="143" />
+        <TGConnectingPoint num="3" id="144" />
+        <TGConnectingPoint num="4" id="145" />
+        <TGConnectingPoint num="5" id="146" />
+        <TGConnectingPoint num="6" id="147" />
+        <TGConnectingPoint num="7" id="148" />
+        <TGConnectingPoint num="8" id="149" />
+        <TGConnectingPoint num="9" id="150" />
+        <TGConnectingPoint num="10" id="151" />
+        <TGConnectingPoint num="11" id="152" />
+        <TGConnectingPoint num="12" id="153" />
+        <TGConnectingPoint num="13" id="154" />
+        <TGConnectingPoint num="14" id="155" />
+        <TGConnectingPoint num="15" id="156" />
+        <TGConnectingPoint num="16" id="157" />
+        <TGConnectingPoint num="17" id="158" />
+        <TGConnectingPoint num="18" id="159" />
+        <TGConnectingPoint num="19" id="160" />
+        <TGConnectingPoint num="20" id="161" />
+        <TGConnectingPoint num="21" id="162" />
+        <TGConnectingPoint num="22" id="163" />
+        <TGConnectingPoint num="23" id="164" />
+        <TGConnectingPoint num="24" id="165" />
+        <TGConnectingPoint num="25" id="166" />
+        <TGConnectingPoint num="26" id="167" />
+        <TGConnectingPoint num="27" id="168" />
+        <TGConnectingPoint num="28" id="169" />
+        <TGConnectingPoint num="29" id="170" />
+        <TGConnectingPoint num="30" id="171" />
+        <TGConnectingPoint num="31" id="172" />
+        <TGConnectingPoint num="32" id="173" />
+        <TGConnectingPoint num="33" id="174" />
+        <TGConnectingPoint num="34" id="175" />
+        <TGConnectingPoint num="35" id="176" />
+        <TGConnectingPoint num="36" id="177" />
+        <TGConnectingPoint num="37" id="178" />
+        <TGConnectingPoint num="38" id="179" />
+        <TGConnectingPoint num="39" id="180" />
+        <TGConnectingPoint num="40" id="181" />
+        <TGConnectingPoint num="41" id="182" />
+        <TGConnectingPoint num="42" id="183" />
+        <extraparam>
+          <textline data="Redundant associations between an actor and included" />
+          <textline data="sub-use cases shall not be created unless the actor" />
+          <textline data=" independently initiates the included use case." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Actor_Modeling_Rules" color="-1773070" />
+          <id data="1.5" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="236" index="12" uid="e71b8870-9ad1-4bce-84fd-6c21fcffe6c9">
+        <cdparam x="942" y="460" />
+        <sizeparam width="288" height="78" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="AR_4_Actor_Association_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="193" />
+        <TGConnectingPoint num="1" id="194" />
+        <TGConnectingPoint num="2" id="195" />
+        <TGConnectingPoint num="3" id="196" />
+        <TGConnectingPoint num="4" id="197" />
+        <TGConnectingPoint num="5" id="198" />
+        <TGConnectingPoint num="6" id="199" />
+        <TGConnectingPoint num="7" id="200" />
+        <TGConnectingPoint num="8" id="201" />
+        <TGConnectingPoint num="9" id="202" />
+        <TGConnectingPoint num="10" id="203" />
+        <TGConnectingPoint num="11" id="204" />
+        <TGConnectingPoint num="12" id="205" />
+        <TGConnectingPoint num="13" id="206" />
+        <TGConnectingPoint num="14" id="207" />
+        <TGConnectingPoint num="15" id="208" />
+        <TGConnectingPoint num="16" id="209" />
+        <TGConnectingPoint num="17" id="210" />
+        <TGConnectingPoint num="18" id="211" />
+        <TGConnectingPoint num="19" id="212" />
+        <TGConnectingPoint num="20" id="213" />
+        <TGConnectingPoint num="21" id="214" />
+        <TGConnectingPoint num="22" id="215" />
+        <TGConnectingPoint num="23" id="216" />
+        <TGConnectingPoint num="24" id="217" />
+        <TGConnectingPoint num="25" id="218" />
+        <TGConnectingPoint num="26" id="219" />
+        <TGConnectingPoint num="27" id="220" />
+        <TGConnectingPoint num="28" id="221" />
+        <TGConnectingPoint num="29" id="222" />
+        <TGConnectingPoint num="30" id="223" />
+        <TGConnectingPoint num="31" id="224" />
+        <TGConnectingPoint num="32" id="225" />
+        <TGConnectingPoint num="33" id="226" />
+        <TGConnectingPoint num="34" id="227" />
+        <TGConnectingPoint num="35" id="228" />
+        <TGConnectingPoint num="36" id="229" />
+        <TGConnectingPoint num="37" id="230" />
+        <TGConnectingPoint num="38" id="231" />
+        <TGConnectingPoint num="39" id="232" />
+        <TGConnectingPoint num="40" id="233" />
+        <TGConnectingPoint num="41" id="234" />
+        <TGConnectingPoint num="42" id="235" />
+        <extraparam>
+          <textline data="Each actor shall be associated with at least one " />
+          <textline data="valid use case within the system boundary." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Actor_Modeling_Rules" color="-1773070" />
+          <id data="1.4" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="280" index="13" uid="760fb413-a79a-462b-8fe2-732fdb7ed8aa">
+        <cdparam x="646" y="460" />
+        <sizeparam width="279" height="78" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="AR_3_Actor_Naming_Restriction_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="237" />
+        <TGConnectingPoint num="1" id="238" />
+        <TGConnectingPoint num="2" id="239" />
+        <TGConnectingPoint num="3" id="240" />
+        <TGConnectingPoint num="4" id="241" />
+        <TGConnectingPoint num="5" id="242" />
+        <TGConnectingPoint num="6" id="243" />
+        <TGConnectingPoint num="7" id="244" />
+        <TGConnectingPoint num="8" id="245" />
+        <TGConnectingPoint num="9" id="246" />
+        <TGConnectingPoint num="10" id="247" />
+        <TGConnectingPoint num="11" id="248" />
+        <TGConnectingPoint num="12" id="249" />
+        <TGConnectingPoint num="13" id="250" />
+        <TGConnectingPoint num="14" id="251" />
+        <TGConnectingPoint num="15" id="252" />
+        <TGConnectingPoint num="16" id="253" />
+        <TGConnectingPoint num="17" id="254" />
+        <TGConnectingPoint num="18" id="255" />
+        <TGConnectingPoint num="19" id="256" />
+        <TGConnectingPoint num="20" id="257" />
+        <TGConnectingPoint num="21" id="258" />
+        <TGConnectingPoint num="22" id="259" />
+        <TGConnectingPoint num="23" id="260" />
+        <TGConnectingPoint num="24" id="261" />
+        <TGConnectingPoint num="25" id="262" />
+        <TGConnectingPoint num="26" id="263" />
+        <TGConnectingPoint num="27" id="264" />
+        <TGConnectingPoint num="28" id="265" />
+        <TGConnectingPoint num="29" id="266" />
+        <TGConnectingPoint num="30" id="267" />
+        <TGConnectingPoint num="31" id="268" />
+        <TGConnectingPoint num="32" id="269" />
+        <TGConnectingPoint num="33" id="270" />
+        <TGConnectingPoint num="34" id="271" />
+        <TGConnectingPoint num="35" id="272" />
+        <TGConnectingPoint num="36" id="273" />
+        <TGConnectingPoint num="37" id="274" />
+        <TGConnectingPoint num="38" id="275" />
+        <TGConnectingPoint num="39" id="276" />
+        <TGConnectingPoint num="40" id="277" />
+        <TGConnectingPoint num="41" id="278" />
+        <TGConnectingPoint num="42" id="279" />
+        <extraparam>
+          <textline data="The actor names shall not be " />
+          <textline data="proper nouns." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Actor_Modeling_Rules" color="-1773070" />
+          <id data="1.3" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="324" index="14" uid="5bb6056d-e46b-4c16-8a58-3ffd5c5695c7">
+        <cdparam x="357" y="462" />
+        <sizeparam width="267" height="77" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="AR_2_Actor_Uniqueness_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="281" />
+        <TGConnectingPoint num="1" id="282" />
+        <TGConnectingPoint num="2" id="283" />
+        <TGConnectingPoint num="3" id="284" />
+        <TGConnectingPoint num="4" id="285" />
+        <TGConnectingPoint num="5" id="286" />
+        <TGConnectingPoint num="6" id="287" />
+        <TGConnectingPoint num="7" id="288" />
+        <TGConnectingPoint num="8" id="289" />
+        <TGConnectingPoint num="9" id="290" />
+        <TGConnectingPoint num="10" id="291" />
+        <TGConnectingPoint num="11" id="292" />
+        <TGConnectingPoint num="12" id="293" />
+        <TGConnectingPoint num="13" id="294" />
+        <TGConnectingPoint num="14" id="295" />
+        <TGConnectingPoint num="15" id="296" />
+        <TGConnectingPoint num="16" id="297" />
+        <TGConnectingPoint num="17" id="298" />
+        <TGConnectingPoint num="18" id="299" />
+        <TGConnectingPoint num="19" id="300" />
+        <TGConnectingPoint num="20" id="301" />
+        <TGConnectingPoint num="21" id="302" />
+        <TGConnectingPoint num="22" id="303" />
+        <TGConnectingPoint num="23" id="304" />
+        <TGConnectingPoint num="24" id="305" />
+        <TGConnectingPoint num="25" id="306" />
+        <TGConnectingPoint num="26" id="307" />
+        <TGConnectingPoint num="27" id="308" />
+        <TGConnectingPoint num="28" id="309" />
+        <TGConnectingPoint num="29" id="310" />
+        <TGConnectingPoint num="30" id="311" />
+        <TGConnectingPoint num="31" id="312" />
+        <TGConnectingPoint num="32" id="313" />
+        <TGConnectingPoint num="33" id="314" />
+        <TGConnectingPoint num="34" id="315" />
+        <TGConnectingPoint num="35" id="316" />
+        <TGConnectingPoint num="36" id="317" />
+        <TGConnectingPoint num="37" id="318" />
+        <TGConnectingPoint num="38" id="319" />
+        <TGConnectingPoint num="39" id="320" />
+        <TGConnectingPoint num="40" id="321" />
+        <TGConnectingPoint num="41" id="322" />
+        <TGConnectingPoint num="42" id="323" />
+        <extraparam>
+          <textline data="Each actor name shall be unique " />
+          <textline data="within the use case diagram." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Actor_Modeling_Rules" color="-1773070" />
+          <id data="1.2" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="368" index="15" uid="d9454090-b042-4916-97cd-dcf77bfea0f4">
+        <cdparam x="10" y="463" />
+        <sizeparam width="328" height="79" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="AR_1_Actor_Role_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="325" />
+        <TGConnectingPoint num="1" id="326" />
+        <TGConnectingPoint num="2" id="327" />
+        <TGConnectingPoint num="3" id="328" />
+        <TGConnectingPoint num="4" id="329" />
+        <TGConnectingPoint num="5" id="330" />
+        <TGConnectingPoint num="6" id="331" />
+        <TGConnectingPoint num="7" id="332" />
+        <TGConnectingPoint num="8" id="333" />
+        <TGConnectingPoint num="9" id="334" />
+        <TGConnectingPoint num="10" id="335" />
+        <TGConnectingPoint num="11" id="336" />
+        <TGConnectingPoint num="12" id="337" />
+        <TGConnectingPoint num="13" id="338" />
+        <TGConnectingPoint num="14" id="339" />
+        <TGConnectingPoint num="15" id="340" />
+        <TGConnectingPoint num="16" id="341" />
+        <TGConnectingPoint num="17" id="342" />
+        <TGConnectingPoint num="18" id="343" />
+        <TGConnectingPoint num="19" id="344" />
+        <TGConnectingPoint num="20" id="345" />
+        <TGConnectingPoint num="21" id="346" />
+        <TGConnectingPoint num="22" id="347" />
+        <TGConnectingPoint num="23" id="348" />
+        <TGConnectingPoint num="24" id="349" />
+        <TGConnectingPoint num="25" id="350" />
+        <TGConnectingPoint num="26" id="351" />
+        <TGConnectingPoint num="27" id="352" />
+        <TGConnectingPoint num="28" id="353" />
+        <TGConnectingPoint num="29" id="354" />
+        <TGConnectingPoint num="30" id="355" />
+        <TGConnectingPoint num="31" id="356" />
+        <TGConnectingPoint num="32" id="357" />
+        <TGConnectingPoint num="33" id="358" />
+        <TGConnectingPoint num="34" id="359" />
+        <TGConnectingPoint num="35" id="360" />
+        <TGConnectingPoint num="36" id="361" />
+        <TGConnectingPoint num="37" id="362" />
+        <TGConnectingPoint num="38" id="363" />
+        <TGConnectingPoint num="39" id="364" />
+        <TGConnectingPoint num="40" id="365" />
+        <TGConnectingPoint num="41" id="366" />
+        <TGConnectingPoint num="42" id="367" />
+        <extraparam>
+          <textline data="Each actor shall be represented as a" />
+          <textline data="singular noun denoting a generic role." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Actor_Modeling_Rules" color="-1773070" />
+          <id data="1.1" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <CONNECTOR type="5205" id="2" index="0" uid="e6c816fb-961a-4e83-9275-47a621984e14">
+        <cdparam x="476" y="91" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="1" />
+        <P1 x="473" y="96" id="370" />
+        <P2 x="324" y="89" id="6" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="48" index="2" uid="2938b249-a2a4-454a-8664-cf2da6c02377">
+        <cdparam x="801" y="91" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="47" />
+        <P1 x="798" y="96" id="373" />
+        <P2 x="928" y="88" id="49" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="94" index="4" uid="46cf080d-b0ac-4726-8c3d-6049a0f8a70a">
+        <cdparam x="842" y="91" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="93" />
+        <P1 x="798" y="115" id="374" />
+        <P2 x="1088" y="272" id="102" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="140" index="6" uid="65944fcc-e977-4503-9ac2-34fb4bfed2eb">
+        <cdparam x="476" y="91" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="139" />
+        <P1 x="473" y="115" id="371" />
+        <P2 x="182" y="259" id="148" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="186" index="8" uid="b432c373-a02c-4c25-bcc2-8dc9dee57fdb">
+        <cdparam x="570" y="227" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="185" />
+        <P1 x="635" y="135" id="395" />
+        <P2 x="785" y="460" id="244" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="188" index="9" uid="0bc9dc81-e1f5-4ad8-a9a8-aa1a3c5e1e36">
+        <cdparam x="570" y="227" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="187" />
+        <P1 x="635" y="135" id="394" />
+        <P2 x="1014" y="460" id="199" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="190" index="10" uid="d1f5bf0c-69ab-4577-b185-d8254b92b9ac">
+        <cdparam x="570" y="227" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="189" />
+        <P1 x="635" y="135" id="393" />
+        <P2 x="490" y="462" id="288" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="192" index="11" uid="03d733a7-a4ce-4557-aafc-a86103b7c3c1">
+        <cdparam x="570" y="227" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="191" />
+        <P1 x="635" y="135" id="379" />
+        <P2 x="256" y="463" id="333" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+    </AvatarRDPanel>
+  </Modeling>
+  <Modeling type="Avatar Requirement" nameTab="Use_Case_Rules_UC">
+    <AvatarRDPanel name="AVATARRD" minX="10" maxX="2500" minY="10" maxY="1500" zoom="1.0">
+      <COMPONENT type="5200" id="824" index="16" uid="a34702d1-971f-4f88-93df-b3fdb7267066">
+        <cdparam x="472" y="101" />
+        <sizeparam width="322" height="77" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="Use_Case_Rules_UC" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="781" />
+        <TGConnectingPoint num="1" id="782" />
+        <TGConnectingPoint num="2" id="783" />
+        <TGConnectingPoint num="3" id="784" />
+        <TGConnectingPoint num="4" id="785" />
+        <TGConnectingPoint num="5" id="786" />
+        <TGConnectingPoint num="6" id="787" />
+        <TGConnectingPoint num="7" id="788" />
+        <TGConnectingPoint num="8" id="789" />
+        <TGConnectingPoint num="9" id="790" />
+        <TGConnectingPoint num="10" id="791" />
+        <TGConnectingPoint num="11" id="792" />
+        <TGConnectingPoint num="12" id="793" />
+        <TGConnectingPoint num="13" id="794" />
+        <TGConnectingPoint num="14" id="795" />
+        <TGConnectingPoint num="15" id="796" />
+        <TGConnectingPoint num="16" id="797" />
+        <TGConnectingPoint num="17" id="798" />
+        <TGConnectingPoint num="18" id="799" />
+        <TGConnectingPoint num="19" id="800" />
+        <TGConnectingPoint num="20" id="801" />
+        <TGConnectingPoint num="21" id="802" />
+        <TGConnectingPoint num="22" id="803" />
+        <TGConnectingPoint num="23" id="804" />
+        <TGConnectingPoint num="24" id="805" />
+        <TGConnectingPoint num="25" id="806" />
+        <TGConnectingPoint num="26" id="807" />
+        <TGConnectingPoint num="27" id="808" />
+        <TGConnectingPoint num="28" id="809" />
+        <TGConnectingPoint num="29" id="810" />
+        <TGConnectingPoint num="30" id="811" />
+        <TGConnectingPoint num="31" id="812" />
+        <TGConnectingPoint num="32" id="813" />
+        <TGConnectingPoint num="33" id="814" />
+        <TGConnectingPoint num="34" id="815" />
+        <TGConnectingPoint num="35" id="816" />
+        <TGConnectingPoint num="36" id="817" />
+        <TGConnectingPoint num="37" id="818" />
+        <TGConnectingPoint num="38" id="819" />
+        <TGConnectingPoint num="39" id="820" />
+        <TGConnectingPoint num="40" id="821" />
+        <TGConnectingPoint num="41" id="822" />
+        <TGConnectingPoint num="42" id="823" />
+        <extraparam>
+          <textline data="The Use cases in the use case diagram shall conform " />
+          <textline data="to defined use case modeling rules." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Use_Case_Modeling_Rules" color="-1773070" />
+          <id data="2" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="504" index="3" uid="ca2e3ee9-1f26-42b3-bfe6-a5c8fe34ce24">
+        <cdparam x="41" y="108" />
+        <sizeparam width="287" height="80" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="UC_7_Use_Case_Dangling_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="461" />
+        <TGConnectingPoint num="1" id="462" />
+        <TGConnectingPoint num="2" id="463" />
+        <TGConnectingPoint num="3" id="464" />
+        <TGConnectingPoint num="4" id="465" />
+        <TGConnectingPoint num="5" id="466" />
+        <TGConnectingPoint num="6" id="467" />
+        <TGConnectingPoint num="7" id="468" />
+        <TGConnectingPoint num="8" id="469" />
+        <TGConnectingPoint num="9" id="470" />
+        <TGConnectingPoint num="10" id="471" />
+        <TGConnectingPoint num="11" id="472" />
+        <TGConnectingPoint num="12" id="473" />
+        <TGConnectingPoint num="13" id="474" />
+        <TGConnectingPoint num="14" id="475" />
+        <TGConnectingPoint num="15" id="476" />
+        <TGConnectingPoint num="16" id="477" />
+        <TGConnectingPoint num="17" id="478" />
+        <TGConnectingPoint num="18" id="479" />
+        <TGConnectingPoint num="19" id="480" />
+        <TGConnectingPoint num="20" id="481" />
+        <TGConnectingPoint num="21" id="482" />
+        <TGConnectingPoint num="22" id="483" />
+        <TGConnectingPoint num="23" id="484" />
+        <TGConnectingPoint num="24" id="485" />
+        <TGConnectingPoint num="25" id="486" />
+        <TGConnectingPoint num="26" id="487" />
+        <TGConnectingPoint num="27" id="488" />
+        <TGConnectingPoint num="28" id="489" />
+        <TGConnectingPoint num="29" id="490" />
+        <TGConnectingPoint num="30" id="491" />
+        <TGConnectingPoint num="31" id="492" />
+        <TGConnectingPoint num="32" id="493" />
+        <TGConnectingPoint num="33" id="494" />
+        <TGConnectingPoint num="34" id="495" />
+        <TGConnectingPoint num="35" id="496" />
+        <TGConnectingPoint num="36" id="497" />
+        <TGConnectingPoint num="37" id="498" />
+        <TGConnectingPoint num="38" id="499" />
+        <TGConnectingPoint num="39" id="500" />
+        <TGConnectingPoint num="40" id="501" />
+        <TGConnectingPoint num="41" id="502" />
+        <TGConnectingPoint num="42" id="503" />
+        <extraparam>
+          <textline data="A use case shall not exist" />
+          <textline data=" without a valid connector." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Use_Case_Modeling_Rules" color="-1773070" />
+          <id data="2.7" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="460" index="2" uid="2953f97c-8a7b-455f-857d-f1531da7ed81">
+        <cdparam x="899" y="102" />
+        <sizeparam width="289" height="75" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="UC_8_Use_Case_Boundary_Placement_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="417" />
+        <TGConnectingPoint num="1" id="418" />
+        <TGConnectingPoint num="2" id="419" />
+        <TGConnectingPoint num="3" id="420" />
+        <TGConnectingPoint num="4" id="421" />
+        <TGConnectingPoint num="5" id="422" />
+        <TGConnectingPoint num="6" id="423" />
+        <TGConnectingPoint num="7" id="424" />
+        <TGConnectingPoint num="8" id="425" />
+        <TGConnectingPoint num="9" id="426" />
+        <TGConnectingPoint num="10" id="427" />
+        <TGConnectingPoint num="11" id="428" />
+        <TGConnectingPoint num="12" id="429" />
+        <TGConnectingPoint num="13" id="430" />
+        <TGConnectingPoint num="14" id="431" />
+        <TGConnectingPoint num="15" id="432" />
+        <TGConnectingPoint num="16" id="433" />
+        <TGConnectingPoint num="17" id="434" />
+        <TGConnectingPoint num="18" id="435" />
+        <TGConnectingPoint num="19" id="436" />
+        <TGConnectingPoint num="20" id="437" />
+        <TGConnectingPoint num="21" id="438" />
+        <TGConnectingPoint num="22" id="439" />
+        <TGConnectingPoint num="23" id="440" />
+        <TGConnectingPoint num="24" id="441" />
+        <TGConnectingPoint num="25" id="442" />
+        <TGConnectingPoint num="26" id="443" />
+        <TGConnectingPoint num="27" id="444" />
+        <TGConnectingPoint num="28" id="445" />
+        <TGConnectingPoint num="29" id="446" />
+        <TGConnectingPoint num="30" id="447" />
+        <TGConnectingPoint num="31" id="448" />
+        <TGConnectingPoint num="32" id="449" />
+        <TGConnectingPoint num="33" id="450" />
+        <TGConnectingPoint num="34" id="451" />
+        <TGConnectingPoint num="35" id="452" />
+        <TGConnectingPoint num="36" id="453" />
+        <TGConnectingPoint num="37" id="454" />
+        <TGConnectingPoint num="38" id="455" />
+        <TGConnectingPoint num="39" id="456" />
+        <TGConnectingPoint num="40" id="457" />
+        <TGConnectingPoint num="41" id="458" />
+        <TGConnectingPoint num="42" id="459" />
+        <extraparam>
+          <textline data="Each use case shall be placed " />
+          <textline data="inside the system boundary." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Use_Case_Modeling_Rules" color="-1773070" />
+          <id data="2.8" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="604" index="11" uid="fd5f7ca7-2d8e-4ee3-8cf9-5b19a2cccbc5">
+        <cdparam x="71" y="286" />
+        <sizeparam width="288" height="75" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="UC_5_Use_Case_Plurality_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="561" />
+        <TGConnectingPoint num="1" id="562" />
+        <TGConnectingPoint num="2" id="563" />
+        <TGConnectingPoint num="3" id="564" />
+        <TGConnectingPoint num="4" id="565" />
+        <TGConnectingPoint num="5" id="566" />
+        <TGConnectingPoint num="6" id="567" />
+        <TGConnectingPoint num="7" id="568" />
+        <TGConnectingPoint num="8" id="569" />
+        <TGConnectingPoint num="9" id="570" />
+        <TGConnectingPoint num="10" id="571" />
+        <TGConnectingPoint num="11" id="572" />
+        <TGConnectingPoint num="12" id="573" />
+        <TGConnectingPoint num="13" id="574" />
+        <TGConnectingPoint num="14" id="575" />
+        <TGConnectingPoint num="15" id="576" />
+        <TGConnectingPoint num="16" id="577" />
+        <TGConnectingPoint num="17" id="578" />
+        <TGConnectingPoint num="18" id="579" />
+        <TGConnectingPoint num="19" id="580" />
+        <TGConnectingPoint num="20" id="581" />
+        <TGConnectingPoint num="21" id="582" />
+        <TGConnectingPoint num="22" id="583" />
+        <TGConnectingPoint num="23" id="584" />
+        <TGConnectingPoint num="24" id="585" />
+        <TGConnectingPoint num="25" id="586" />
+        <TGConnectingPoint num="26" id="587" />
+        <TGConnectingPoint num="27" id="588" />
+        <TGConnectingPoint num="28" id="589" />
+        <TGConnectingPoint num="29" id="590" />
+        <TGConnectingPoint num="30" id="591" />
+        <TGConnectingPoint num="31" id="592" />
+        <TGConnectingPoint num="32" id="593" />
+        <TGConnectingPoint num="33" id="594" />
+        <TGConnectingPoint num="34" id="595" />
+        <TGConnectingPoint num="35" id="596" />
+        <TGConnectingPoint num="36" id="597" />
+        <TGConnectingPoint num="37" id="598" />
+        <TGConnectingPoint num="38" id="599" />
+        <TGConnectingPoint num="39" id="600" />
+        <TGConnectingPoint num="40" id="601" />
+        <TGConnectingPoint num="41" id="602" />
+        <TGConnectingPoint num="42" id="603" />
+        <extraparam>
+          <textline data="The use case name shall end with a singular or " />
+          <textline data="plural noun representing a valid object." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Use_Case_Modeling_Rules" color="-1773070" />
+          <id data="2.5" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="552" index="6" uid="12f0e01d-ef3c-4cdd-81ea-95f5f10416b5">
+        <cdparam x="933" y="264" />
+        <sizeparam width="270" height="79" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="UC_6_Use_Case_Association_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="509" />
+        <TGConnectingPoint num="1" id="510" />
+        <TGConnectingPoint num="2" id="511" />
+        <TGConnectingPoint num="3" id="512" />
+        <TGConnectingPoint num="4" id="513" />
+        <TGConnectingPoint num="5" id="514" />
+        <TGConnectingPoint num="6" id="515" />
+        <TGConnectingPoint num="7" id="516" />
+        <TGConnectingPoint num="8" id="517" />
+        <TGConnectingPoint num="9" id="518" />
+        <TGConnectingPoint num="10" id="519" />
+        <TGConnectingPoint num="11" id="520" />
+        <TGConnectingPoint num="12" id="521" />
+        <TGConnectingPoint num="13" id="522" />
+        <TGConnectingPoint num="14" id="523" />
+        <TGConnectingPoint num="15" id="524" />
+        <TGConnectingPoint num="16" id="525" />
+        <TGConnectingPoint num="17" id="526" />
+        <TGConnectingPoint num="18" id="527" />
+        <TGConnectingPoint num="19" id="528" />
+        <TGConnectingPoint num="20" id="529" />
+        <TGConnectingPoint num="21" id="530" />
+        <TGConnectingPoint num="22" id="531" />
+        <TGConnectingPoint num="23" id="532" />
+        <TGConnectingPoint num="24" id="533" />
+        <TGConnectingPoint num="25" id="534" />
+        <TGConnectingPoint num="26" id="535" />
+        <TGConnectingPoint num="27" id="536" />
+        <TGConnectingPoint num="28" id="537" />
+        <TGConnectingPoint num="29" id="538" />
+        <TGConnectingPoint num="30" id="539" />
+        <TGConnectingPoint num="31" id="540" />
+        <TGConnectingPoint num="32" id="541" />
+        <TGConnectingPoint num="33" id="542" />
+        <TGConnectingPoint num="34" id="543" />
+        <TGConnectingPoint num="35" id="544" />
+        <TGConnectingPoint num="36" id="545" />
+        <TGConnectingPoint num="37" id="546" />
+        <TGConnectingPoint num="38" id="547" />
+        <TGConnectingPoint num="39" id="548" />
+        <TGConnectingPoint num="40" id="549" />
+        <TGConnectingPoint num="41" id="550" />
+        <TGConnectingPoint num="42" id="551" />
+        <extraparam>
+          <textline data="Each use case shall be associated with " />
+          <textline data="at least one actor or another use case." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Use_Case_Modeling_Rules" color="-1773070" />
+          <id data="2.6" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="648" index="12" uid="c2151674-0c6f-4814-bfc5-c0b2ce80a854">
+        <cdparam x="959" y="494" />
+        <sizeparam width="219" height="76" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="UC_4_Use_Case_Grammar_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="605" />
+        <TGConnectingPoint num="1" id="606" />
+        <TGConnectingPoint num="2" id="607" />
+        <TGConnectingPoint num="3" id="608" />
+        <TGConnectingPoint num="4" id="609" />
+        <TGConnectingPoint num="5" id="610" />
+        <TGConnectingPoint num="6" id="611" />
+        <TGConnectingPoint num="7" id="612" />
+        <TGConnectingPoint num="8" id="613" />
+        <TGConnectingPoint num="9" id="614" />
+        <TGConnectingPoint num="10" id="615" />
+        <TGConnectingPoint num="11" id="616" />
+        <TGConnectingPoint num="12" id="617" />
+        <TGConnectingPoint num="13" id="618" />
+        <TGConnectingPoint num="14" id="619" />
+        <TGConnectingPoint num="15" id="620" />
+        <TGConnectingPoint num="16" id="621" />
+        <TGConnectingPoint num="17" id="622" />
+        <TGConnectingPoint num="18" id="623" />
+        <TGConnectingPoint num="19" id="624" />
+        <TGConnectingPoint num="20" id="625" />
+        <TGConnectingPoint num="21" id="626" />
+        <TGConnectingPoint num="22" id="627" />
+        <TGConnectingPoint num="23" id="628" />
+        <TGConnectingPoint num="24" id="629" />
+        <TGConnectingPoint num="25" id="630" />
+        <TGConnectingPoint num="26" id="631" />
+        <TGConnectingPoint num="27" id="632" />
+        <TGConnectingPoint num="28" id="633" />
+        <TGConnectingPoint num="29" id="634" />
+        <TGConnectingPoint num="30" id="635" />
+        <TGConnectingPoint num="31" id="636" />
+        <TGConnectingPoint num="32" id="637" />
+        <TGConnectingPoint num="33" id="638" />
+        <TGConnectingPoint num="34" id="639" />
+        <TGConnectingPoint num="35" id="640" />
+        <TGConnectingPoint num="36" id="641" />
+        <TGConnectingPoint num="37" id="642" />
+        <TGConnectingPoint num="38" id="643" />
+        <TGConnectingPoint num="39" id="644" />
+        <TGConnectingPoint num="40" id="645" />
+        <TGConnectingPoint num="41" id="646" />
+        <TGConnectingPoint num="42" id="647" />
+        <extraparam>
+          <textline data="Each use case name shall be " />
+          <textline data="grammatically correct." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Use_Case_Modeling_Rules" color="-1773070" />
+          <id data="2.4" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="692" index="13" uid="bcc71185-fa63-4cbe-82b7-81e0e0ada17e">
+        <cdparam x="685" y="492" />
+        <sizeparam width="241" height="78" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="UC_3_Use_Case_Uniqueness_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="649" />
+        <TGConnectingPoint num="1" id="650" />
+        <TGConnectingPoint num="2" id="651" />
+        <TGConnectingPoint num="3" id="652" />
+        <TGConnectingPoint num="4" id="653" />
+        <TGConnectingPoint num="5" id="654" />
+        <TGConnectingPoint num="6" id="655" />
+        <TGConnectingPoint num="7" id="656" />
+        <TGConnectingPoint num="8" id="657" />
+        <TGConnectingPoint num="9" id="658" />
+        <TGConnectingPoint num="10" id="659" />
+        <TGConnectingPoint num="11" id="660" />
+        <TGConnectingPoint num="12" id="661" />
+        <TGConnectingPoint num="13" id="662" />
+        <TGConnectingPoint num="14" id="663" />
+        <TGConnectingPoint num="15" id="664" />
+        <TGConnectingPoint num="16" id="665" />
+        <TGConnectingPoint num="17" id="666" />
+        <TGConnectingPoint num="18" id="667" />
+        <TGConnectingPoint num="19" id="668" />
+        <TGConnectingPoint num="20" id="669" />
+        <TGConnectingPoint num="21" id="670" />
+        <TGConnectingPoint num="22" id="671" />
+        <TGConnectingPoint num="23" id="672" />
+        <TGConnectingPoint num="24" id="673" />
+        <TGConnectingPoint num="25" id="674" />
+        <TGConnectingPoint num="26" id="675" />
+        <TGConnectingPoint num="27" id="676" />
+        <TGConnectingPoint num="28" id="677" />
+        <TGConnectingPoint num="29" id="678" />
+        <TGConnectingPoint num="30" id="679" />
+        <TGConnectingPoint num="31" id="680" />
+        <TGConnectingPoint num="32" id="681" />
+        <TGConnectingPoint num="33" id="682" />
+        <TGConnectingPoint num="34" id="683" />
+        <TGConnectingPoint num="35" id="684" />
+        <TGConnectingPoint num="36" id="685" />
+        <TGConnectingPoint num="37" id="686" />
+        <TGConnectingPoint num="38" id="687" />
+        <TGConnectingPoint num="39" id="688" />
+        <TGConnectingPoint num="40" id="689" />
+        <TGConnectingPoint num="41" id="690" />
+        <TGConnectingPoint num="42" id="691" />
+        <extraparam>
+          <textline data="Each use case name shall be unique " />
+          <textline data="within the use case diagram." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Use_Case_Modeling_Rules" color="-1773070" />
+          <id data="2.3" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="736" index="14" uid="0da9082a-4058-4849-842c-f1f7ad8b169e">
+        <cdparam x="397" y="493" />
+        <sizeparam width="260" height="78" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="UC_2_Use_Case_Meaningfulness_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="693" />
+        <TGConnectingPoint num="1" id="694" />
+        <TGConnectingPoint num="2" id="695" />
+        <TGConnectingPoint num="3" id="696" />
+        <TGConnectingPoint num="4" id="697" />
+        <TGConnectingPoint num="5" id="698" />
+        <TGConnectingPoint num="6" id="699" />
+        <TGConnectingPoint num="7" id="700" />
+        <TGConnectingPoint num="8" id="701" />
+        <TGConnectingPoint num="9" id="702" />
+        <TGConnectingPoint num="10" id="703" />
+        <TGConnectingPoint num="11" id="704" />
+        <TGConnectingPoint num="12" id="705" />
+        <TGConnectingPoint num="13" id="706" />
+        <TGConnectingPoint num="14" id="707" />
+        <TGConnectingPoint num="15" id="708" />
+        <TGConnectingPoint num="16" id="709" />
+        <TGConnectingPoint num="17" id="710" />
+        <TGConnectingPoint num="18" id="711" />
+        <TGConnectingPoint num="19" id="712" />
+        <TGConnectingPoint num="20" id="713" />
+        <TGConnectingPoint num="21" id="714" />
+        <TGConnectingPoint num="22" id="715" />
+        <TGConnectingPoint num="23" id="716" />
+        <TGConnectingPoint num="24" id="717" />
+        <TGConnectingPoint num="25" id="718" />
+        <TGConnectingPoint num="26" id="719" />
+        <TGConnectingPoint num="27" id="720" />
+        <TGConnectingPoint num="28" id="721" />
+        <TGConnectingPoint num="29" id="722" />
+        <TGConnectingPoint num="30" id="723" />
+        <TGConnectingPoint num="31" id="724" />
+        <TGConnectingPoint num="32" id="725" />
+        <TGConnectingPoint num="33" id="726" />
+        <TGConnectingPoint num="34" id="727" />
+        <TGConnectingPoint num="35" id="728" />
+        <TGConnectingPoint num="36" id="729" />
+        <TGConnectingPoint num="37" id="730" />
+        <TGConnectingPoint num="38" id="731" />
+        <TGConnectingPoint num="39" id="732" />
+        <TGConnectingPoint num="40" id="733" />
+        <TGConnectingPoint num="41" id="734" />
+        <TGConnectingPoint num="42" id="735" />
+        <extraparam>
+          <textline data="Each use case name shall be meaningful " />
+          <textline data="and non-empty." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Use_Case_Modeling_Rules" color="-1773070" />
+          <id data="2.2" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="780" index="15" uid="b00807be-ed7c-408a-8906-63a855cc5d09">
+        <cdparam x="97" y="493" />
+        <sizeparam width="271" height="80" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="UC_1_Use_Case_Structure_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="737" />
+        <TGConnectingPoint num="1" id="738" />
+        <TGConnectingPoint num="2" id="739" />
+        <TGConnectingPoint num="3" id="740" />
+        <TGConnectingPoint num="4" id="741" />
+        <TGConnectingPoint num="5" id="742" />
+        <TGConnectingPoint num="6" id="743" />
+        <TGConnectingPoint num="7" id="744" />
+        <TGConnectingPoint num="8" id="745" />
+        <TGConnectingPoint num="9" id="746" />
+        <TGConnectingPoint num="10" id="747" />
+        <TGConnectingPoint num="11" id="748" />
+        <TGConnectingPoint num="12" id="749" />
+        <TGConnectingPoint num="13" id="750" />
+        <TGConnectingPoint num="14" id="751" />
+        <TGConnectingPoint num="15" id="752" />
+        <TGConnectingPoint num="16" id="753" />
+        <TGConnectingPoint num="17" id="754" />
+        <TGConnectingPoint num="18" id="755" />
+        <TGConnectingPoint num="19" id="756" />
+        <TGConnectingPoint num="20" id="757" />
+        <TGConnectingPoint num="21" id="758" />
+        <TGConnectingPoint num="22" id="759" />
+        <TGConnectingPoint num="23" id="760" />
+        <TGConnectingPoint num="24" id="761" />
+        <TGConnectingPoint num="25" id="762" />
+        <TGConnectingPoint num="26" id="763" />
+        <TGConnectingPoint num="27" id="764" />
+        <TGConnectingPoint num="28" id="765" />
+        <TGConnectingPoint num="29" id="766" />
+        <TGConnectingPoint num="30" id="767" />
+        <TGConnectingPoint num="31" id="768" />
+        <TGConnectingPoint num="32" id="769" />
+        <TGConnectingPoint num="33" id="770" />
+        <TGConnectingPoint num="34" id="771" />
+        <TGConnectingPoint num="35" id="772" />
+        <TGConnectingPoint num="36" id="773" />
+        <TGConnectingPoint num="37" id="774" />
+        <TGConnectingPoint num="38" id="775" />
+        <TGConnectingPoint num="39" id="776" />
+        <TGConnectingPoint num="40" id="777" />
+        <TGConnectingPoint num="41" id="778" />
+        <TGConnectingPoint num="42" id="779" />
+        <extraparam>
+          <textline data="Each use case shall be named using " />
+          <textline data="a Verb + Noun structure." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Use_Case_Modeling_Rules" color="-1773070" />
+          <id data="2.1" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <CONNECTOR type="5205" id="414" index="0" uid="a2912751-f34f-4003-bf51-08ff05e9009a">
+        <cdparam x="480" y="122" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="413" />
+        <P1 x="472" y="120" id="781" />
+        <P2 x="328" y="128" id="464" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="416" index="1" uid="f372f9cb-f3a5-470f-bf64-2d0483582f8a">
+        <cdparam x="779" y="122" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="415" />
+        <P1 x="794" y="120" id="784" />
+        <P2 x="899" y="120" id="417" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="506" index="4" uid="13c543b7-231b-48cf-800f-63963c3b9172">
+        <cdparam x="779" y="143" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="505" />
+        <P1 x="794" y="139" id="785" />
+        <P2 x="1000" y="264" id="515" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="508" index="5" uid="2c1197b9-bc1b-4772-8ca5-696999851b93">
+        <cdparam x="480" y="143" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="507" />
+        <P1 x="472" y="139" id="782" />
+        <P2 x="287" y="286" id="569" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="554" index="7" uid="d3c473f5-c713-4159-ad87-b37325b9aa3c">
+        <cdparam x="629" y="185" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="553" />
+        <P1 x="633" y="178" id="807" />
+        <P2 x="1068" y="494" id="612" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="556" index="8" uid="3d218f12-c473-44d5-92d1-40f7e963ce05">
+        <cdparam x="629" y="185" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="555" />
+        <P1 x="633" y="178" id="806" />
+        <P2 x="805" y="492" id="656" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="558" index="9" uid="dc87fcbd-21b4-4df0-9021-8c7ce99e4684">
+        <cdparam x="629" y="185" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="557" />
+        <P1 x="633" y="178" id="805" />
+        <P2 x="527" y="493" id="700" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="560" index="10" uid="d2fa8e80-e891-4646-9a77-bfd44fd81064">
+        <cdparam x="629" y="185" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="559" />
+        <P1 x="633" y="178" id="791" />
+        <P2 x="232" y="493" id="744" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+    </AvatarRDPanel>
+  </Modeling>
+  <Modeling type="Avatar Requirement" nameTab="Relationship_Rules_RL">
+    <AvatarRDPanel name="AVATARRD" minX="10" maxX="2500" minY="10" maxY="1500" zoom="1.0">
+      <COMPONENT type="5200" id="1236" index="16" uid="3e51d483-1629-4538-a41b-2259c5db3647">
+        <cdparam x="482" y="60" />
+        <sizeparam width="279" height="76" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="Relationship_Rules_RL" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="1193" />
+        <TGConnectingPoint num="1" id="1194" />
+        <TGConnectingPoint num="2" id="1195" />
+        <TGConnectingPoint num="3" id="1196" />
+        <TGConnectingPoint num="4" id="1197" />
+        <TGConnectingPoint num="5" id="1198" />
+        <TGConnectingPoint num="6" id="1199" />
+        <TGConnectingPoint num="7" id="1200" />
+        <TGConnectingPoint num="8" id="1201" />
+        <TGConnectingPoint num="9" id="1202" />
+        <TGConnectingPoint num="10" id="1203" />
+        <TGConnectingPoint num="11" id="1204" />
+        <TGConnectingPoint num="12" id="1205" />
+        <TGConnectingPoint num="13" id="1206" />
+        <TGConnectingPoint num="14" id="1207" />
+        <TGConnectingPoint num="15" id="1208" />
+        <TGConnectingPoint num="16" id="1209" />
+        <TGConnectingPoint num="17" id="1210" />
+        <TGConnectingPoint num="18" id="1211" />
+        <TGConnectingPoint num="19" id="1212" />
+        <TGConnectingPoint num="20" id="1213" />
+        <TGConnectingPoint num="21" id="1214" />
+        <TGConnectingPoint num="22" id="1215" />
+        <TGConnectingPoint num="23" id="1216" />
+        <TGConnectingPoint num="24" id="1217" />
+        <TGConnectingPoint num="25" id="1218" />
+        <TGConnectingPoint num="26" id="1219" />
+        <TGConnectingPoint num="27" id="1220" />
+        <TGConnectingPoint num="28" id="1221" />
+        <TGConnectingPoint num="29" id="1222" />
+        <TGConnectingPoint num="30" id="1223" />
+        <TGConnectingPoint num="31" id="1224" />
+        <TGConnectingPoint num="32" id="1225" />
+        <TGConnectingPoint num="33" id="1226" />
+        <TGConnectingPoint num="34" id="1227" />
+        <TGConnectingPoint num="35" id="1228" />
+        <TGConnectingPoint num="36" id="1229" />
+        <TGConnectingPoint num="37" id="1230" />
+        <TGConnectingPoint num="38" id="1231" />
+        <TGConnectingPoint num="39" id="1232" />
+        <TGConnectingPoint num="40" id="1233" />
+        <TGConnectingPoint num="41" id="1234" />
+        <TGConnectingPoint num="42" id="1235" />
+        <extraparam>
+          <textline data="Relationships in the use case diagram shall " />
+          <textline data="conform to defined UML relationship rules." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Relationship_Modeling_Rules" color="-1773070" />
+          <id data="3" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="872" index="2" uid="90ebee02-bab0-4d3d-8cc1-5b35e9868c80">
+        <cdparam x="895" y="73" />
+        <sizeparam width="316" height="74" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="RL_8_Invalid_Source_Target_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="829" />
+        <TGConnectingPoint num="1" id="830" />
+        <TGConnectingPoint num="2" id="831" />
+        <TGConnectingPoint num="3" id="832" />
+        <TGConnectingPoint num="4" id="833" />
+        <TGConnectingPoint num="5" id="834" />
+        <TGConnectingPoint num="6" id="835" />
+        <TGConnectingPoint num="7" id="836" />
+        <TGConnectingPoint num="8" id="837" />
+        <TGConnectingPoint num="9" id="838" />
+        <TGConnectingPoint num="10" id="839" />
+        <TGConnectingPoint num="11" id="840" />
+        <TGConnectingPoint num="12" id="841" />
+        <TGConnectingPoint num="13" id="842" />
+        <TGConnectingPoint num="14" id="843" />
+        <TGConnectingPoint num="15" id="844" />
+        <TGConnectingPoint num="16" id="845" />
+        <TGConnectingPoint num="17" id="846" />
+        <TGConnectingPoint num="18" id="847" />
+        <TGConnectingPoint num="19" id="848" />
+        <TGConnectingPoint num="20" id="849" />
+        <TGConnectingPoint num="21" id="850" />
+        <TGConnectingPoint num="22" id="851" />
+        <TGConnectingPoint num="23" id="852" />
+        <TGConnectingPoint num="24" id="853" />
+        <TGConnectingPoint num="25" id="854" />
+        <TGConnectingPoint num="26" id="855" />
+        <TGConnectingPoint num="27" id="856" />
+        <TGConnectingPoint num="28" id="857" />
+        <TGConnectingPoint num="29" id="858" />
+        <TGConnectingPoint num="30" id="859" />
+        <TGConnectingPoint num="31" id="860" />
+        <TGConnectingPoint num="32" id="861" />
+        <TGConnectingPoint num="33" id="862" />
+        <TGConnectingPoint num="34" id="863" />
+        <TGConnectingPoint num="35" id="864" />
+        <TGConnectingPoint num="36" id="865" />
+        <TGConnectingPoint num="37" id="866" />
+        <TGConnectingPoint num="38" id="867" />
+        <TGConnectingPoint num="39" id="868" />
+        <TGConnectingPoint num="40" id="869" />
+        <TGConnectingPoint num="41" id="870" />
+        <TGConnectingPoint num="42" id="871" />
+        <extraparam>
+          <textline data="The Invalid source-target combinations between " />
+          <textline data="model elements shall not be permitted." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Relationship_Modeling_Rules" color="-1773070" />
+          <id data="3.8" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="916" index="3" uid="7011fc58-2131-4b18-b7ff-6cd225d34ccf">
+        <cdparam x="14" y="72" />
+        <sizeparam width="319" height="78" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="RL_7_Generalization_Direction_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="873" />
+        <TGConnectingPoint num="1" id="874" />
+        <TGConnectingPoint num="2" id="875" />
+        <TGConnectingPoint num="3" id="876" />
+        <TGConnectingPoint num="4" id="877" />
+        <TGConnectingPoint num="5" id="878" />
+        <TGConnectingPoint num="6" id="879" />
+        <TGConnectingPoint num="7" id="880" />
+        <TGConnectingPoint num="8" id="881" />
+        <TGConnectingPoint num="9" id="882" />
+        <TGConnectingPoint num="10" id="883" />
+        <TGConnectingPoint num="11" id="884" />
+        <TGConnectingPoint num="12" id="885" />
+        <TGConnectingPoint num="13" id="886" />
+        <TGConnectingPoint num="14" id="887" />
+        <TGConnectingPoint num="15" id="888" />
+        <TGConnectingPoint num="16" id="889" />
+        <TGConnectingPoint num="17" id="890" />
+        <TGConnectingPoint num="18" id="891" />
+        <TGConnectingPoint num="19" id="892" />
+        <TGConnectingPoint num="20" id="893" />
+        <TGConnectingPoint num="21" id="894" />
+        <TGConnectingPoint num="22" id="895" />
+        <TGConnectingPoint num="23" id="896" />
+        <TGConnectingPoint num="24" id="897" />
+        <TGConnectingPoint num="25" id="898" />
+        <TGConnectingPoint num="26" id="899" />
+        <TGConnectingPoint num="27" id="900" />
+        <TGConnectingPoint num="28" id="901" />
+        <TGConnectingPoint num="29" id="902" />
+        <TGConnectingPoint num="30" id="903" />
+        <TGConnectingPoint num="31" id="904" />
+        <TGConnectingPoint num="32" id="905" />
+        <TGConnectingPoint num="33" id="906" />
+        <TGConnectingPoint num="34" id="907" />
+        <TGConnectingPoint num="35" id="908" />
+        <TGConnectingPoint num="36" id="909" />
+        <TGConnectingPoint num="37" id="910" />
+        <TGConnectingPoint num="38" id="911" />
+        <TGConnectingPoint num="39" id="912" />
+        <TGConnectingPoint num="40" id="913" />
+        <TGConnectingPoint num="41" id="914" />
+        <TGConnectingPoint num="42" id="915" />
+        <extraparam>
+          <textline data="The generalization relationship shall originate from " />
+          <textline data="the child element and target the parent element." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Relationship_Modeling_Rules" color="-1773070" />
+          <id data="3.7" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="962" index="5" uid="81c700da-9628-4b00-88f5-58d1565647aa">
+        <cdparam x="898" y="237" />
+        <sizeparam width="331" height="78" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="RL_6_Generalization_Type_Compatibility_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="919" />
+        <TGConnectingPoint num="1" id="920" />
+        <TGConnectingPoint num="2" id="921" />
+        <TGConnectingPoint num="3" id="922" />
+        <TGConnectingPoint num="4" id="923" />
+        <TGConnectingPoint num="5" id="924" />
+        <TGConnectingPoint num="6" id="925" />
+        <TGConnectingPoint num="7" id="926" />
+        <TGConnectingPoint num="8" id="927" />
+        <TGConnectingPoint num="9" id="928" />
+        <TGConnectingPoint num="10" id="929" />
+        <TGConnectingPoint num="11" id="930" />
+        <TGConnectingPoint num="12" id="931" />
+        <TGConnectingPoint num="13" id="932" />
+        <TGConnectingPoint num="14" id="933" />
+        <TGConnectingPoint num="15" id="934" />
+        <TGConnectingPoint num="16" id="935" />
+        <TGConnectingPoint num="17" id="936" />
+        <TGConnectingPoint num="18" id="937" />
+        <TGConnectingPoint num="19" id="938" />
+        <TGConnectingPoint num="20" id="939" />
+        <TGConnectingPoint num="21" id="940" />
+        <TGConnectingPoint num="22" id="941" />
+        <TGConnectingPoint num="23" id="942" />
+        <TGConnectingPoint num="24" id="943" />
+        <TGConnectingPoint num="25" id="944" />
+        <TGConnectingPoint num="26" id="945" />
+        <TGConnectingPoint num="27" id="946" />
+        <TGConnectingPoint num="28" id="947" />
+        <TGConnectingPoint num="29" id="948" />
+        <TGConnectingPoint num="30" id="949" />
+        <TGConnectingPoint num="31" id="950" />
+        <TGConnectingPoint num="32" id="951" />
+        <TGConnectingPoint num="33" id="952" />
+        <TGConnectingPoint num="34" id="953" />
+        <TGConnectingPoint num="35" id="954" />
+        <TGConnectingPoint num="36" id="955" />
+        <TGConnectingPoint num="37" id="956" />
+        <TGConnectingPoint num="38" id="957" />
+        <TGConnectingPoint num="39" id="958" />
+        <TGConnectingPoint num="40" id="959" />
+        <TGConnectingPoint num="41" id="960" />
+        <TGConnectingPoint num="42" id="961" />
+        <extraparam>
+          <textline data="The generalization relationship shall occur only " />
+          <textline data="between compatible element types." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Relationship_Modeling_Rules" color="-1773070" />
+          <id data="3.6" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="1016" index="11" uid="1f9e14e6-0adf-4edb-995f-c12b10f407b6">
+        <cdparam x="12" y="242" />
+        <sizeparam width="330" height="77" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="RL_5_Extension_Point_Existence_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="973" />
+        <TGConnectingPoint num="1" id="974" />
+        <TGConnectingPoint num="2" id="975" />
+        <TGConnectingPoint num="3" id="976" />
+        <TGConnectingPoint num="4" id="977" />
+        <TGConnectingPoint num="5" id="978" />
+        <TGConnectingPoint num="6" id="979" />
+        <TGConnectingPoint num="7" id="980" />
+        <TGConnectingPoint num="8" id="981" />
+        <TGConnectingPoint num="9" id="982" />
+        <TGConnectingPoint num="10" id="983" />
+        <TGConnectingPoint num="11" id="984" />
+        <TGConnectingPoint num="12" id="985" />
+        <TGConnectingPoint num="13" id="986" />
+        <TGConnectingPoint num="14" id="987" />
+        <TGConnectingPoint num="15" id="988" />
+        <TGConnectingPoint num="16" id="989" />
+        <TGConnectingPoint num="17" id="990" />
+        <TGConnectingPoint num="18" id="991" />
+        <TGConnectingPoint num="19" id="992" />
+        <TGConnectingPoint num="20" id="993" />
+        <TGConnectingPoint num="21" id="994" />
+        <TGConnectingPoint num="22" id="995" />
+        <TGConnectingPoint num="23" id="996" />
+        <TGConnectingPoint num="24" id="997" />
+        <TGConnectingPoint num="25" id="998" />
+        <TGConnectingPoint num="26" id="999" />
+        <TGConnectingPoint num="27" id="1000" />
+        <TGConnectingPoint num="28" id="1001" />
+        <TGConnectingPoint num="29" id="1002" />
+        <TGConnectingPoint num="30" id="1003" />
+        <TGConnectingPoint num="31" id="1004" />
+        <TGConnectingPoint num="32" id="1005" />
+        <TGConnectingPoint num="33" id="1006" />
+        <TGConnectingPoint num="34" id="1007" />
+        <TGConnectingPoint num="35" id="1008" />
+        <TGConnectingPoint num="36" id="1009" />
+        <TGConnectingPoint num="37" id="1010" />
+        <TGConnectingPoint num="38" id="1011" />
+        <TGConnectingPoint num="39" id="1012" />
+        <TGConnectingPoint num="40" id="1013" />
+        <TGConnectingPoint num="41" id="1014" />
+        <TGConnectingPoint num="42" id="1015" />
+        <extraparam>
+          <textline data="The extend relationship shall reference a valid " />
+          <textline data="extension point defined in the base use case." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Relationship_Modeling_Rules" color="-1773070" />
+          <id data="3.5" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="1060" index="12" uid="ae2f53b2-81a8-4ed9-b79e-466dbf9f5ad0">
+        <cdparam x="973" y="465" />
+        <sizeparam width="266" height="80" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="RL_4_Extend_Optional_Behavior_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="1017" />
+        <TGConnectingPoint num="1" id="1018" />
+        <TGConnectingPoint num="2" id="1019" />
+        <TGConnectingPoint num="3" id="1020" />
+        <TGConnectingPoint num="4" id="1021" />
+        <TGConnectingPoint num="5" id="1022" />
+        <TGConnectingPoint num="6" id="1023" />
+        <TGConnectingPoint num="7" id="1024" />
+        <TGConnectingPoint num="8" id="1025" />
+        <TGConnectingPoint num="9" id="1026" />
+        <TGConnectingPoint num="10" id="1027" />
+        <TGConnectingPoint num="11" id="1028" />
+        <TGConnectingPoint num="12" id="1029" />
+        <TGConnectingPoint num="13" id="1030" />
+        <TGConnectingPoint num="14" id="1031" />
+        <TGConnectingPoint num="15" id="1032" />
+        <TGConnectingPoint num="16" id="1033" />
+        <TGConnectingPoint num="17" id="1034" />
+        <TGConnectingPoint num="18" id="1035" />
+        <TGConnectingPoint num="19" id="1036" />
+        <TGConnectingPoint num="20" id="1037" />
+        <TGConnectingPoint num="21" id="1038" />
+        <TGConnectingPoint num="22" id="1039" />
+        <TGConnectingPoint num="23" id="1040" />
+        <TGConnectingPoint num="24" id="1041" />
+        <TGConnectingPoint num="25" id="1042" />
+        <TGConnectingPoint num="26" id="1043" />
+        <TGConnectingPoint num="27" id="1044" />
+        <TGConnectingPoint num="28" id="1045" />
+        <TGConnectingPoint num="29" id="1046" />
+        <TGConnectingPoint num="30" id="1047" />
+        <TGConnectingPoint num="31" id="1048" />
+        <TGConnectingPoint num="32" id="1049" />
+        <TGConnectingPoint num="33" id="1050" />
+        <TGConnectingPoint num="34" id="1051" />
+        <TGConnectingPoint num="35" id="1052" />
+        <TGConnectingPoint num="36" id="1053" />
+        <TGConnectingPoint num="37" id="1054" />
+        <TGConnectingPoint num="38" id="1055" />
+        <TGConnectingPoint num="39" id="1056" />
+        <TGConnectingPoint num="40" id="1057" />
+        <TGConnectingPoint num="41" id="1058" />
+        <TGConnectingPoint num="42" id="1059" />
+        <extraparam>
+          <textline data="The extend relationship shall represent " />
+          <textline data="optional or conditional behavior." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Relationship_Modeling_Rules" color="-1773070" />
+          <id data="3.4" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="1104" index="13" uid="9c2d7e77-47a5-4795-a5b5-e65fbf79002e">
+        <cdparam x="663" y="468" />
+        <sizeparam width="296" height="79" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="RL_3_Extend_Direction_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="1061" />
+        <TGConnectingPoint num="1" id="1062" />
+        <TGConnectingPoint num="2" id="1063" />
+        <TGConnectingPoint num="3" id="1064" />
+        <TGConnectingPoint num="4" id="1065" />
+        <TGConnectingPoint num="5" id="1066" />
+        <TGConnectingPoint num="6" id="1067" />
+        <TGConnectingPoint num="7" id="1068" />
+        <TGConnectingPoint num="8" id="1069" />
+        <TGConnectingPoint num="9" id="1070" />
+        <TGConnectingPoint num="10" id="1071" />
+        <TGConnectingPoint num="11" id="1072" />
+        <TGConnectingPoint num="12" id="1073" />
+        <TGConnectingPoint num="13" id="1074" />
+        <TGConnectingPoint num="14" id="1075" />
+        <TGConnectingPoint num="15" id="1076" />
+        <TGConnectingPoint num="16" id="1077" />
+        <TGConnectingPoint num="17" id="1078" />
+        <TGConnectingPoint num="18" id="1079" />
+        <TGConnectingPoint num="19" id="1080" />
+        <TGConnectingPoint num="20" id="1081" />
+        <TGConnectingPoint num="21" id="1082" />
+        <TGConnectingPoint num="22" id="1083" />
+        <TGConnectingPoint num="23" id="1084" />
+        <TGConnectingPoint num="24" id="1085" />
+        <TGConnectingPoint num="25" id="1086" />
+        <TGConnectingPoint num="26" id="1087" />
+        <TGConnectingPoint num="27" id="1088" />
+        <TGConnectingPoint num="28" id="1089" />
+        <TGConnectingPoint num="29" id="1090" />
+        <TGConnectingPoint num="30" id="1091" />
+        <TGConnectingPoint num="31" id="1092" />
+        <TGConnectingPoint num="32" id="1093" />
+        <TGConnectingPoint num="33" id="1094" />
+        <TGConnectingPoint num="34" id="1095" />
+        <TGConnectingPoint num="35" id="1096" />
+        <TGConnectingPoint num="36" id="1097" />
+        <TGConnectingPoint num="37" id="1098" />
+        <TGConnectingPoint num="38" id="1099" />
+        <TGConnectingPoint num="39" id="1100" />
+        <TGConnectingPoint num="40" id="1101" />
+        <TGConnectingPoint num="41" id="1102" />
+        <TGConnectingPoint num="42" id="1103" />
+        <extraparam>
+          <textline data="The extend relationship shall originate from the " />
+          <textline data="extending use case and target the base use case." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Relationship_Modeling_Rules" color="-1773070" />
+          <id data="3.3" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="1148" index="14" uid="6bdde511-66a5-4e10-a2b8-a2acbba45773">
+        <cdparam x="327" y="467" />
+        <sizeparam width="322" height="76" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="RL_2_Include_Mandatory_Behavior_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="1105" />
+        <TGConnectingPoint num="1" id="1106" />
+        <TGConnectingPoint num="2" id="1107" />
+        <TGConnectingPoint num="3" id="1108" />
+        <TGConnectingPoint num="4" id="1109" />
+        <TGConnectingPoint num="5" id="1110" />
+        <TGConnectingPoint num="6" id="1111" />
+        <TGConnectingPoint num="7" id="1112" />
+        <TGConnectingPoint num="8" id="1113" />
+        <TGConnectingPoint num="9" id="1114" />
+        <TGConnectingPoint num="10" id="1115" />
+        <TGConnectingPoint num="11" id="1116" />
+        <TGConnectingPoint num="12" id="1117" />
+        <TGConnectingPoint num="13" id="1118" />
+        <TGConnectingPoint num="14" id="1119" />
+        <TGConnectingPoint num="15" id="1120" />
+        <TGConnectingPoint num="16" id="1121" />
+        <TGConnectingPoint num="17" id="1122" />
+        <TGConnectingPoint num="18" id="1123" />
+        <TGConnectingPoint num="19" id="1124" />
+        <TGConnectingPoint num="20" id="1125" />
+        <TGConnectingPoint num="21" id="1126" />
+        <TGConnectingPoint num="22" id="1127" />
+        <TGConnectingPoint num="23" id="1128" />
+        <TGConnectingPoint num="24" id="1129" />
+        <TGConnectingPoint num="25" id="1130" />
+        <TGConnectingPoint num="26" id="1131" />
+        <TGConnectingPoint num="27" id="1132" />
+        <TGConnectingPoint num="28" id="1133" />
+        <TGConnectingPoint num="29" id="1134" />
+        <TGConnectingPoint num="30" id="1135" />
+        <TGConnectingPoint num="31" id="1136" />
+        <TGConnectingPoint num="32" id="1137" />
+        <TGConnectingPoint num="33" id="1138" />
+        <TGConnectingPoint num="34" id="1139" />
+        <TGConnectingPoint num="35" id="1140" />
+        <TGConnectingPoint num="36" id="1141" />
+        <TGConnectingPoint num="37" id="1142" />
+        <TGConnectingPoint num="38" id="1143" />
+        <TGConnectingPoint num="39" id="1144" />
+        <TGConnectingPoint num="40" id="1145" />
+        <TGConnectingPoint num="41" id="1146" />
+        <TGConnectingPoint num="42" id="1147" />
+        <extraparam>
+          <textline data="The include relationship shall represent mandatory" />
+          <textline data=" behavior executed as part of the base use case." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Relationship_Modeling_Rules" color="-1773070" />
+          <id data="3.2" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="1192" index="15" uid="78876cb6-db8a-4256-b9bb-eebeb26c5558">
+        <cdparam x="10" y="467" />
+        <sizeparam width="305" height="78" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="RL_1_Include_Direction_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="1149" />
+        <TGConnectingPoint num="1" id="1150" />
+        <TGConnectingPoint num="2" id="1151" />
+        <TGConnectingPoint num="3" id="1152" />
+        <TGConnectingPoint num="4" id="1153" />
+        <TGConnectingPoint num="5" id="1154" />
+        <TGConnectingPoint num="6" id="1155" />
+        <TGConnectingPoint num="7" id="1156" />
+        <TGConnectingPoint num="8" id="1157" />
+        <TGConnectingPoint num="9" id="1158" />
+        <TGConnectingPoint num="10" id="1159" />
+        <TGConnectingPoint num="11" id="1160" />
+        <TGConnectingPoint num="12" id="1161" />
+        <TGConnectingPoint num="13" id="1162" />
+        <TGConnectingPoint num="14" id="1163" />
+        <TGConnectingPoint num="15" id="1164" />
+        <TGConnectingPoint num="16" id="1165" />
+        <TGConnectingPoint num="17" id="1166" />
+        <TGConnectingPoint num="18" id="1167" />
+        <TGConnectingPoint num="19" id="1168" />
+        <TGConnectingPoint num="20" id="1169" />
+        <TGConnectingPoint num="21" id="1170" />
+        <TGConnectingPoint num="22" id="1171" />
+        <TGConnectingPoint num="23" id="1172" />
+        <TGConnectingPoint num="24" id="1173" />
+        <TGConnectingPoint num="25" id="1174" />
+        <TGConnectingPoint num="26" id="1175" />
+        <TGConnectingPoint num="27" id="1176" />
+        <TGConnectingPoint num="28" id="1177" />
+        <TGConnectingPoint num="29" id="1178" />
+        <TGConnectingPoint num="30" id="1179" />
+        <TGConnectingPoint num="31" id="1180" />
+        <TGConnectingPoint num="32" id="1181" />
+        <TGConnectingPoint num="33" id="1182" />
+        <TGConnectingPoint num="34" id="1183" />
+        <TGConnectingPoint num="35" id="1184" />
+        <TGConnectingPoint num="36" id="1185" />
+        <TGConnectingPoint num="37" id="1186" />
+        <TGConnectingPoint num="38" id="1187" />
+        <TGConnectingPoint num="39" id="1188" />
+        <TGConnectingPoint num="40" id="1189" />
+        <TGConnectingPoint num="41" id="1190" />
+        <TGConnectingPoint num="42" id="1191" />
+        <extraparam>
+          <textline data="The include relationship shall originate from the " />
+          <textline data="base use case and target the included use case." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Relationship_Modeling_Rules" color="-1773070" />
+          <id data="3.1" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <CONNECTOR type="5205" id="826" index="0" uid="5b2909bb-81fb-483b-8a4a-e750b25e8414">
+        <cdparam x="761" y="79" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="825" />
+        <P1 x="761" y="79" id="1196" />
+        <P2 x="895" y="91" id="829" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="828" index="1" uid="c323f5b0-338e-473f-ad5f-9c2f12a98394">
+        <cdparam x="482" y="79" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="827" />
+        <P1 x="482" y="79" id="1193" />
+        <P2 x="333" y="91" id="876" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="918" index="4" uid="e8988858-22e8-4f8a-94e6-f7bb7d4c47a9">
+        <cdparam x="761" y="117" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="917" />
+        <P1 x="761" y="117" id="1198" />
+        <P2 x="980" y="237" id="925" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="964" index="6" uid="e974d1d2-08aa-4b13-9f9c-ec253718538b">
+        <cdparam x="482" y="117" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="963" />
+        <P1 x="482" y="117" id="1195" />
+        <P2 x="259" y="242" id="981" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="966" index="7" uid="17594222-55ee-4450-8880-44e8d16b2209">
+        <cdparam x="621" y="136" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="965" />
+        <P1 x="621" y="136" id="1219" />
+        <P2 x="811" y="468" id="1068" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="968" index="8" uid="44ff9d82-b6e1-4f08-82f8-9fa7f363b137">
+        <cdparam x="621" y="136" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="967" />
+        <P1 x="621" y="136" id="1218" />
+        <P2 x="1106" y="465" id="1024" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="970" index="9" uid="52bfeecb-615d-48dd-851a-4267f6c3fef0">
+        <cdparam x="621" y="136" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="969" />
+        <P1 x="621" y="136" id="1217" />
+        <P2 x="488" y="467" id="1112" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="972" index="10" uid="6874e18c-6c43-47f7-bb16-37e8cf71fc61">
+        <cdparam x="621" y="136" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="971" />
+        <P1 x="621" y="136" id="1203" />
+        <P2 x="162" y="467" id="1156" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+    </AvatarRDPanel>
+  </Modeling>
+  <Modeling type="Avatar Requirement" nameTab="Modeling_And_Representation_Rules_MR">
+    <AvatarRDPanel name="AVATARRD" minX="10" maxX="2500" minY="10" maxY="1500" zoom="1.0">
+      <COMPONENT type="5200" id="1556" index="12" uid="b8126eb6-3d9b-4c61-a581-fafae02d5c22">
+        <cdparam x="398" y="79" />
+        <sizeparam width="386" height="71" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="Modeling_And_Representation_Rules_MR" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="1513" />
+        <TGConnectingPoint num="1" id="1514" />
+        <TGConnectingPoint num="2" id="1515" />
+        <TGConnectingPoint num="3" id="1516" />
+        <TGConnectingPoint num="4" id="1517" />
+        <TGConnectingPoint num="5" id="1518" />
+        <TGConnectingPoint num="6" id="1519" />
+        <TGConnectingPoint num="7" id="1520" />
+        <TGConnectingPoint num="8" id="1521" />
+        <TGConnectingPoint num="9" id="1522" />
+        <TGConnectingPoint num="10" id="1523" />
+        <TGConnectingPoint num="11" id="1524" />
+        <TGConnectingPoint num="12" id="1525" />
+        <TGConnectingPoint num="13" id="1526" />
+        <TGConnectingPoint num="14" id="1527" />
+        <TGConnectingPoint num="15" id="1528" />
+        <TGConnectingPoint num="16" id="1529" />
+        <TGConnectingPoint num="17" id="1530" />
+        <TGConnectingPoint num="18" id="1531" />
+        <TGConnectingPoint num="19" id="1532" />
+        <TGConnectingPoint num="20" id="1533" />
+        <TGConnectingPoint num="21" id="1534" />
+        <TGConnectingPoint num="22" id="1535" />
+        <TGConnectingPoint num="23" id="1536" />
+        <TGConnectingPoint num="24" id="1537" />
+        <TGConnectingPoint num="25" id="1538" />
+        <TGConnectingPoint num="26" id="1539" />
+        <TGConnectingPoint num="27" id="1540" />
+        <TGConnectingPoint num="28" id="1541" />
+        <TGConnectingPoint num="29" id="1542" />
+        <TGConnectingPoint num="30" id="1543" />
+        <TGConnectingPoint num="31" id="1544" />
+        <TGConnectingPoint num="32" id="1545" />
+        <TGConnectingPoint num="33" id="1546" />
+        <TGConnectingPoint num="34" id="1547" />
+        <TGConnectingPoint num="35" id="1548" />
+        <TGConnectingPoint num="36" id="1549" />
+        <TGConnectingPoint num="37" id="1550" />
+        <TGConnectingPoint num="38" id="1551" />
+        <TGConnectingPoint num="39" id="1552" />
+        <TGConnectingPoint num="40" id="1553" />
+        <TGConnectingPoint num="41" id="1554" />
+        <TGConnectingPoint num="42" id="1555" />
+        <extraparam>
+          <textline data="Model elements in the use case diagram shall conform to defined " />
+          <textline data="representation and formatting rules." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Modeling_And_Representation_Rules" color="-1773070" />
+          <id data="4" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="1336" index="7" uid="c638bee0-efa9-4e26-9621-d4c196793b9c">
+        <cdparam x="49" y="221" />
+        <sizeparam width="274" height="74" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="MR_5_Actor_Placement_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="1293" />
+        <TGConnectingPoint num="1" id="1294" />
+        <TGConnectingPoint num="2" id="1295" />
+        <TGConnectingPoint num="3" id="1296" />
+        <TGConnectingPoint num="4" id="1297" />
+        <TGConnectingPoint num="5" id="1298" />
+        <TGConnectingPoint num="6" id="1299" />
+        <TGConnectingPoint num="7" id="1300" />
+        <TGConnectingPoint num="8" id="1301" />
+        <TGConnectingPoint num="9" id="1302" />
+        <TGConnectingPoint num="10" id="1303" />
+        <TGConnectingPoint num="11" id="1304" />
+        <TGConnectingPoint num="12" id="1305" />
+        <TGConnectingPoint num="13" id="1306" />
+        <TGConnectingPoint num="14" id="1307" />
+        <TGConnectingPoint num="15" id="1308" />
+        <TGConnectingPoint num="16" id="1309" />
+        <TGConnectingPoint num="17" id="1310" />
+        <TGConnectingPoint num="18" id="1311" />
+        <TGConnectingPoint num="19" id="1312" />
+        <TGConnectingPoint num="20" id="1313" />
+        <TGConnectingPoint num="21" id="1314" />
+        <TGConnectingPoint num="22" id="1315" />
+        <TGConnectingPoint num="23" id="1316" />
+        <TGConnectingPoint num="24" id="1317" />
+        <TGConnectingPoint num="25" id="1318" />
+        <TGConnectingPoint num="26" id="1319" />
+        <TGConnectingPoint num="27" id="1320" />
+        <TGConnectingPoint num="28" id="1321" />
+        <TGConnectingPoint num="29" id="1322" />
+        <TGConnectingPoint num="30" id="1323" />
+        <TGConnectingPoint num="31" id="1324" />
+        <TGConnectingPoint num="32" id="1325" />
+        <TGConnectingPoint num="33" id="1326" />
+        <TGConnectingPoint num="34" id="1327" />
+        <TGConnectingPoint num="35" id="1328" />
+        <TGConnectingPoint num="36" id="1329" />
+        <TGConnectingPoint num="37" id="1330" />
+        <TGConnectingPoint num="38" id="1331" />
+        <TGConnectingPoint num="39" id="1332" />
+        <TGConnectingPoint num="40" id="1333" />
+        <TGConnectingPoint num="41" id="1334" />
+        <TGConnectingPoint num="42" id="1335" />
+        <extraparam>
+          <textline data="Actors shall be placed outside " />
+          <textline data="the system boundary." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Modeling_And_Representation_Rules" color="-1773070" />
+          <id data="4.5" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="1284" index="2" uid="b1019ee4-9b81-4d65-962b-d92985d94973">
+        <cdparam x="918" y="215" />
+        <sizeparam width="261" height="79" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="MR_6_Use_Case_Placement_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="1241" />
+        <TGConnectingPoint num="1" id="1242" />
+        <TGConnectingPoint num="2" id="1243" />
+        <TGConnectingPoint num="3" id="1244" />
+        <TGConnectingPoint num="4" id="1245" />
+        <TGConnectingPoint num="5" id="1246" />
+        <TGConnectingPoint num="6" id="1247" />
+        <TGConnectingPoint num="7" id="1248" />
+        <TGConnectingPoint num="8" id="1249" />
+        <TGConnectingPoint num="9" id="1250" />
+        <TGConnectingPoint num="10" id="1251" />
+        <TGConnectingPoint num="11" id="1252" />
+        <TGConnectingPoint num="12" id="1253" />
+        <TGConnectingPoint num="13" id="1254" />
+        <TGConnectingPoint num="14" id="1255" />
+        <TGConnectingPoint num="15" id="1256" />
+        <TGConnectingPoint num="16" id="1257" />
+        <TGConnectingPoint num="17" id="1258" />
+        <TGConnectingPoint num="18" id="1259" />
+        <TGConnectingPoint num="19" id="1260" />
+        <TGConnectingPoint num="20" id="1261" />
+        <TGConnectingPoint num="21" id="1262" />
+        <TGConnectingPoint num="22" id="1263" />
+        <TGConnectingPoint num="23" id="1264" />
+        <TGConnectingPoint num="24" id="1265" />
+        <TGConnectingPoint num="25" id="1266" />
+        <TGConnectingPoint num="26" id="1267" />
+        <TGConnectingPoint num="27" id="1268" />
+        <TGConnectingPoint num="28" id="1269" />
+        <TGConnectingPoint num="29" id="1270" />
+        <TGConnectingPoint num="30" id="1271" />
+        <TGConnectingPoint num="31" id="1272" />
+        <TGConnectingPoint num="32" id="1273" />
+        <TGConnectingPoint num="33" id="1274" />
+        <TGConnectingPoint num="34" id="1275" />
+        <TGConnectingPoint num="35" id="1276" />
+        <TGConnectingPoint num="36" id="1277" />
+        <TGConnectingPoint num="37" id="1278" />
+        <TGConnectingPoint num="38" id="1279" />
+        <TGConnectingPoint num="39" id="1280" />
+        <TGConnectingPoint num="40" id="1281" />
+        <TGConnectingPoint num="41" id="1282" />
+        <TGConnectingPoint num="42" id="1283" />
+        <extraparam>
+          <textline data="Use cases shall be placed inside " />
+          <textline data="the system boundary." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Modeling_And_Representation_Rules" color="-1773070" />
+          <id data="4.6" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="1380" index="8" uid="c26cf9ac-0ad1-4796-a84d-e51359b2a54f">
+        <cdparam x="939" y="423" />
+        <sizeparam width="258" height="80" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="MR_4_Article_Formatting_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="1337" />
+        <TGConnectingPoint num="1" id="1338" />
+        <TGConnectingPoint num="2" id="1339" />
+        <TGConnectingPoint num="3" id="1340" />
+        <TGConnectingPoint num="4" id="1341" />
+        <TGConnectingPoint num="5" id="1342" />
+        <TGConnectingPoint num="6" id="1343" />
+        <TGConnectingPoint num="7" id="1344" />
+        <TGConnectingPoint num="8" id="1345" />
+        <TGConnectingPoint num="9" id="1346" />
+        <TGConnectingPoint num="10" id="1347" />
+        <TGConnectingPoint num="11" id="1348" />
+        <TGConnectingPoint num="12" id="1349" />
+        <TGConnectingPoint num="13" id="1350" />
+        <TGConnectingPoint num="14" id="1351" />
+        <TGConnectingPoint num="15" id="1352" />
+        <TGConnectingPoint num="16" id="1353" />
+        <TGConnectingPoint num="17" id="1354" />
+        <TGConnectingPoint num="18" id="1355" />
+        <TGConnectingPoint num="19" id="1356" />
+        <TGConnectingPoint num="20" id="1357" />
+        <TGConnectingPoint num="21" id="1358" />
+        <TGConnectingPoint num="22" id="1359" />
+        <TGConnectingPoint num="23" id="1360" />
+        <TGConnectingPoint num="24" id="1361" />
+        <TGConnectingPoint num="25" id="1362" />
+        <TGConnectingPoint num="26" id="1363" />
+        <TGConnectingPoint num="27" id="1364" />
+        <TGConnectingPoint num="28" id="1365" />
+        <TGConnectingPoint num="29" id="1366" />
+        <TGConnectingPoint num="30" id="1367" />
+        <TGConnectingPoint num="31" id="1368" />
+        <TGConnectingPoint num="32" id="1369" />
+        <TGConnectingPoint num="33" id="1370" />
+        <TGConnectingPoint num="34" id="1371" />
+        <TGConnectingPoint num="35" id="1372" />
+        <TGConnectingPoint num="36" id="1373" />
+        <TGConnectingPoint num="37" id="1374" />
+        <TGConnectingPoint num="38" id="1375" />
+        <TGConnectingPoint num="39" id="1376" />
+        <TGConnectingPoint num="40" id="1377" />
+        <TGConnectingPoint num="41" id="1378" />
+        <TGConnectingPoint num="42" id="1379" />
+        <extraparam>
+          <textline data="Articles within use case labels " />
+          <textline data="shall be written in lowercase." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Modeling_And_Representation_Rules" color="-1773070" />
+          <id data="4.4" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="1424" index="9" uid="683009c8-cc64-4c9f-87ad-285d8e5e9e78">
+        <cdparam x="607" y="426" />
+        <sizeparam width="305" height="74" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="MR_3_Extension_Text_Formatting_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="1381" />
+        <TGConnectingPoint num="1" id="1382" />
+        <TGConnectingPoint num="2" id="1383" />
+        <TGConnectingPoint num="3" id="1384" />
+        <TGConnectingPoint num="4" id="1385" />
+        <TGConnectingPoint num="5" id="1386" />
+        <TGConnectingPoint num="6" id="1387" />
+        <TGConnectingPoint num="7" id="1388" />
+        <TGConnectingPoint num="8" id="1389" />
+        <TGConnectingPoint num="9" id="1390" />
+        <TGConnectingPoint num="10" id="1391" />
+        <TGConnectingPoint num="11" id="1392" />
+        <TGConnectingPoint num="12" id="1393" />
+        <TGConnectingPoint num="13" id="1394" />
+        <TGConnectingPoint num="14" id="1395" />
+        <TGConnectingPoint num="15" id="1396" />
+        <TGConnectingPoint num="16" id="1397" />
+        <TGConnectingPoint num="17" id="1398" />
+        <TGConnectingPoint num="18" id="1399" />
+        <TGConnectingPoint num="19" id="1400" />
+        <TGConnectingPoint num="20" id="1401" />
+        <TGConnectingPoint num="21" id="1402" />
+        <TGConnectingPoint num="22" id="1403" />
+        <TGConnectingPoint num="23" id="1404" />
+        <TGConnectingPoint num="24" id="1405" />
+        <TGConnectingPoint num="25" id="1406" />
+        <TGConnectingPoint num="26" id="1407" />
+        <TGConnectingPoint num="27" id="1408" />
+        <TGConnectingPoint num="28" id="1409" />
+        <TGConnectingPoint num="29" id="1410" />
+        <TGConnectingPoint num="30" id="1411" />
+        <TGConnectingPoint num="31" id="1412" />
+        <TGConnectingPoint num="32" id="1413" />
+        <TGConnectingPoint num="33" id="1414" />
+        <TGConnectingPoint num="34" id="1415" />
+        <TGConnectingPoint num="35" id="1416" />
+        <TGConnectingPoint num="36" id="1417" />
+        <TGConnectingPoint num="37" id="1418" />
+        <TGConnectingPoint num="38" id="1419" />
+        <TGConnectingPoint num="39" id="1420" />
+        <TGConnectingPoint num="40" id="1421" />
+        <TGConnectingPoint num="41" id="1422" />
+        <TGConnectingPoint num="42" id="1423" />
+        <extraparam>
+          <textline data="Conditional extension text shall be grammatically " />
+          <textline data="correct and clearly written." />
+          <kind data="Safety" />
+          <criticality data="Low" />
+          <reqType data="Modeling_And_Representation_Rules" color="-1773070" />
+          <id data="4.3" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="1468" index="10" uid="571c5a3f-15ff-42c0-afcc-61e5dc382a49">
+        <cdparam x="303" y="425" />
+        <sizeparam width="277" height="75" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="MR_2_Title_Case_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="1425" />
+        <TGConnectingPoint num="1" id="1426" />
+        <TGConnectingPoint num="2" id="1427" />
+        <TGConnectingPoint num="3" id="1428" />
+        <TGConnectingPoint num="4" id="1429" />
+        <TGConnectingPoint num="5" id="1430" />
+        <TGConnectingPoint num="6" id="1431" />
+        <TGConnectingPoint num="7" id="1432" />
+        <TGConnectingPoint num="8" id="1433" />
+        <TGConnectingPoint num="9" id="1434" />
+        <TGConnectingPoint num="10" id="1435" />
+        <TGConnectingPoint num="11" id="1436" />
+        <TGConnectingPoint num="12" id="1437" />
+        <TGConnectingPoint num="13" id="1438" />
+        <TGConnectingPoint num="14" id="1439" />
+        <TGConnectingPoint num="15" id="1440" />
+        <TGConnectingPoint num="16" id="1441" />
+        <TGConnectingPoint num="17" id="1442" />
+        <TGConnectingPoint num="18" id="1443" />
+        <TGConnectingPoint num="19" id="1444" />
+        <TGConnectingPoint num="20" id="1445" />
+        <TGConnectingPoint num="21" id="1446" />
+        <TGConnectingPoint num="22" id="1447" />
+        <TGConnectingPoint num="23" id="1448" />
+        <TGConnectingPoint num="24" id="1449" />
+        <TGConnectingPoint num="25" id="1450" />
+        <TGConnectingPoint num="26" id="1451" />
+        <TGConnectingPoint num="27" id="1452" />
+        <TGConnectingPoint num="28" id="1453" />
+        <TGConnectingPoint num="29" id="1454" />
+        <TGConnectingPoint num="30" id="1455" />
+        <TGConnectingPoint num="31" id="1456" />
+        <TGConnectingPoint num="32" id="1457" />
+        <TGConnectingPoint num="33" id="1458" />
+        <TGConnectingPoint num="34" id="1459" />
+        <TGConnectingPoint num="35" id="1460" />
+        <TGConnectingPoint num="36" id="1461" />
+        <TGConnectingPoint num="37" id="1462" />
+        <TGConnectingPoint num="38" id="1463" />
+        <TGConnectingPoint num="39" id="1464" />
+        <TGConnectingPoint num="40" id="1465" />
+        <TGConnectingPoint num="41" id="1466" />
+        <TGConnectingPoint num="42" id="1467" />
+        <extraparam>
+          <textline data="Use case and actor labels shall" />
+          <textline data=" follow Title Case formatting." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Modeling_And_Representation_Rules" color="-1773070" />
+          <id data="4.2" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <COMPONENT type="5200" id="1512" index="11" uid="7089d580-d1be-4fb4-906c-703e9195b0c4">
+        <cdparam x="10" y="423" />
+        <sizeparam width="270" height="75" minWidth="1" minHeight="30" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <hidden value="false" />
+        <cdrectangleparam minX="10" maxX="2500" minY="10" maxY="1500" />
+        <infoparam name="Requirement" value="MR_1_System_Boundary_Naming_Rule" />
+        <new d="false" />
+        <TGConnectingPoint num="0" id="1469" />
+        <TGConnectingPoint num="1" id="1470" />
+        <TGConnectingPoint num="2" id="1471" />
+        <TGConnectingPoint num="3" id="1472" />
+        <TGConnectingPoint num="4" id="1473" />
+        <TGConnectingPoint num="5" id="1474" />
+        <TGConnectingPoint num="6" id="1475" />
+        <TGConnectingPoint num="7" id="1476" />
+        <TGConnectingPoint num="8" id="1477" />
+        <TGConnectingPoint num="9" id="1478" />
+        <TGConnectingPoint num="10" id="1479" />
+        <TGConnectingPoint num="11" id="1480" />
+        <TGConnectingPoint num="12" id="1481" />
+        <TGConnectingPoint num="13" id="1482" />
+        <TGConnectingPoint num="14" id="1483" />
+        <TGConnectingPoint num="15" id="1484" />
+        <TGConnectingPoint num="16" id="1485" />
+        <TGConnectingPoint num="17" id="1486" />
+        <TGConnectingPoint num="18" id="1487" />
+        <TGConnectingPoint num="19" id="1488" />
+        <TGConnectingPoint num="20" id="1489" />
+        <TGConnectingPoint num="21" id="1490" />
+        <TGConnectingPoint num="22" id="1491" />
+        <TGConnectingPoint num="23" id="1492" />
+        <TGConnectingPoint num="24" id="1493" />
+        <TGConnectingPoint num="25" id="1494" />
+        <TGConnectingPoint num="26" id="1495" />
+        <TGConnectingPoint num="27" id="1496" />
+        <TGConnectingPoint num="28" id="1497" />
+        <TGConnectingPoint num="29" id="1498" />
+        <TGConnectingPoint num="30" id="1499" />
+        <TGConnectingPoint num="31" id="1500" />
+        <TGConnectingPoint num="32" id="1501" />
+        <TGConnectingPoint num="33" id="1502" />
+        <TGConnectingPoint num="34" id="1503" />
+        <TGConnectingPoint num="35" id="1504" />
+        <TGConnectingPoint num="36" id="1505" />
+        <TGConnectingPoint num="37" id="1506" />
+        <TGConnectingPoint num="38" id="1507" />
+        <TGConnectingPoint num="39" id="1508" />
+        <TGConnectingPoint num="40" id="1509" />
+        <TGConnectingPoint num="41" id="1510" />
+        <TGConnectingPoint num="42" id="1511" />
+        <extraparam>
+          <textline data="The system boundary shall be named " />
+          <textline data="using a noun phrase." />
+          <kind data="Functional" />
+          <criticality data="Low" />
+          <reqType data="Modeling_And_Representation_Rules" color="-1773070" />
+          <id data="4.1" />
+          <satisfied data="false" />
+          <verified data="false" />
+          <attackTreeNode data="" />
+          <violatedAction data="" />
+          <referenceElements data="" />
+        </extraparam>
+      </COMPONENT>
+      <CONNECTOR type="5205" id="1238" index="0" uid="3de95e3b-1127-4cee-9cd2-11462ca09789">
+        <cdparam x="784" y="132" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="1237" />
+        <P1 x="784" y="132" id="1518" />
+        <P2 x="983" y="215" id="1247" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="1240" index="1" uid="b423eae9-6657-41ff-8c47-19c64f9c2f35">
+        <cdparam x="398" y="132" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="1239" />
+        <P1 x="398" y="132" id="1515" />
+        <P2 x="254" y="221" id="1301" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="1286" index="3" uid="fead1f04-aaa1-4f5e-aace-0d4705f379bc">
+        <cdparam x="591" y="150" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="1285" />
+        <P1 x="591" y="150" id="1539" />
+        <P2 x="1068" y="423" id="1344" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="1288" index="4" uid="319eb9c9-e275-4a99-94f3-becc525c4d25">
+        <cdparam x="591" y="150" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="1287" />
+        <P1 x="591" y="150" id="1538" />
+        <P2 x="759" y="426" id="1388" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="1290" index="5" uid="767c7c10-2f6e-4407-9014-0ae299b5403e">
+        <cdparam x="591" y="150" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="1289" />
+        <P1 x="591" y="150" id="1537" />
+        <P2 x="441" y="425" id="1432" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+      <CONNECTOR type="5205" id="1292" index="6" uid="fc6cd956-3c41-49a6-bd06-187def45cb41">
+        <cdparam x="591" y="150" />
+        <sizeparam width="0" height="0" minWidth="0" minHeight="0" maxWidth="2000" maxHeight="2000" minDesiredWidth="0" minDesiredHeight="0" />
+        <infoparam name="connector" value="&lt;&lt;composition&gt;&gt;" />
+        <TGConnectingPoint num="0" id="1291" />
+        <P1 x="591" y="150" id="1523" />
+        <P2 x="145" y="423" id="1476" />
+        <AutomaticDrawing data="true" />
+        <new d="false" />
+      </CONNECTOR>
+    </AvatarRDPanel>
+  </Modeling>
+</RULES_FRAGMENT>

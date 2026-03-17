@@ -1,0 +1,37 @@
+@startuml
+
+rectangle "uc Hospital Management System Use Case" {
+
+    ' Primary Actors
+    actor "Patient" as A_Patient
+    actor "Admin" as A_Admin
+
+    package "Hospital Management System" {
+
+        ' Use Cases
+        usecase "Login" as UC_Login
+        usecase "Register" as UC_Register
+        usecase "View Profile" as UC_View_Profile
+        usecase "Update Database" as UC_Update_Database
+        usecase "Maintain Database" as UC_Maintain_Database
+        usecase "Pay Hospital Dues" as UC_Pay_Hospital_Dues
+
+    }
+
+    ' Secondary Actors
+    actor "Doctor" as A_Doctor
+    actor "Staff" as A_Staff
+
+}
+
+A_Patient -- UC_Login
+A_Patient -- UC_Register
+A_Admin -- UC_Maintain_Database
+A_Doctor -- UC_View_Profile
+A_Staff -- UC_Update_Database
+UC_Register ..> UC_Login : <<include>>
+UC_View_Profile .up.> UC_Login : <<extend>>\nCondition: user requests profile
+UC_Maintain_Database --|> UC_Update_Database
+A_Admin --|> A_Staff
+
+@enduml

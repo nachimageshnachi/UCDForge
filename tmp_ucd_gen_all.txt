@@ -1,0 +1,844 @@
+import time
+import streamlit as st
+import streamlit.components.v1 as components
+from connection import connection  # noqa: F401
+
+# Only use extraction here for now; matching is intentionally omitted.
+from helpers import ask_llm_extract  # type: ignore
+
+
+def _dedupe(seq):
+    seen = set()
+    out = []
+    for x in seq or []:
+        s = (x or "").strip()
+        if not s:
+            continue
+        k = s.lower()
+        if k in seen:
+            continue
+        seen.add(k)
+        out.append(s)
+    return out
+
+
+# Color mapping for actors (colorblind-safe palette)
+_PALETTE = [
+    "#1b9e77", "#d95f02", "#7570b3", "#e7298a", "#66a61e",
+    "#e6ab02", "#a6761d", "#666666", "#1f78b4", "#b15928",
+    "#e31a1c", "#33a02c", "#6a3d9a", "#ff7f00", "#b2df8a",
+]
+
+
+def _ensure_actor_colors(actors_list):
+    if "ucd_actor_colors" not in st.session_state:
+        st.session_state.ucd_actor_colors = {}
+    color_map = dict(st.session_state.ucd_actor_colors)
+    used = set(color_map.values())
+    palette_idx = 0
+    for name in actors_list:
+        if name in color_map:
+            continue
+        while palette_idx < len(_PALETTE) and _PALETTE[palette_idx] in used:
+            palette_idx += 1
+        color = _PALETTE[palette_idx % len(_PALETTE)]
+        palette_idx += 1
+        color_map[name] = color
+        used.add(color)
+    st.session_state.ucd_actor_colors = color_map
+    return color_map
+
+
+def app():
+    st.title("Case-Based Reasoning for Use Case Diagrams")
+
+    st.markdown(
+        """
+        Provide a detailed system description in one paragraph.
+        The model extracts actors, use cases, domains, and relationships. You can refine them below.
+        """
+    )
+
+    # Global layout and button style
+    st.markdown(
+        """
+        <style>
+          .block-container {padding-left: 0.75rem; padding-right: 0.75rem; max-width: 1700px;}
+          .stButton > button { white-space: nowrap; padding: 0.45rem 0.9rem; border-radius: 8px; }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
+    # Helper: scroll to anchor after rerun
+    if st.session_state.get("scroll_to"):
+        components.html(
+            f"""
+            <script>
+              const el = document.getElementById('{st.session_state.get('scroll_to')}');
+              if (el) {{ el.scrollIntoView({{behavior: 'instant', block: 'start'}}); }}
+            </script>
+            """,
+            height=0,
+        )
+        st.session_state.scroll_to = ""
+
+    paragraph_placeholder = (
+        "A system designed for real-time monitoring and control of operational processes, enabling maintenance actions "
+        "upon request or scheduled maintenance routines. It facilitates data acquisition from sensors, computation "
+        "through actuators, storage of results in a device, and communication with users."
+    )
+
+    # --- Extraction Form ---
+    with st.form("paragraph_input_form"):
+        system_paragraph = st.text_area(
+            "System Description",
+            height=200,
+            placeholder=paragraph_placeholder,
+            key="ucd_paragraph",
+        )
+        submitted = st.form_submit_button("Extract Elements")
+
+    if submitted:
+        if not system_paragraph.strip():
+            st.error("Please enter a system description paragraph.")
+            return
+
+        with st.spinner("Extracting elements and inferring relationships..."):
+            try:
+                data = ask_llm_extract(system_paragraph)
+            except Exception as e:
+                st.error(f"Failed to extract elements from paragraph: {e}")
+                return
+
+        # Initialize session state for editing
+        st.session_state.ucd_system_name = data.get("system_name") or ""
+        st.session_state.ucd_primary_actors = _dedupe(data.get("primary_actors") or [])
+        st.session_state.ucd_secondary_actors = _dedupe(data.get("secondary_actors") or [])
+        combined_actors = (st.session_state.ucd_primary_actors or []) + (st.session_state.ucd_secondary_actors or [])
+        st.session_state.ucd_actors = _dedupe(combined_actors)
+        st.session_state.ucd_use_cases = _dedupe(data.get("use_cases") or [])
+        st.session_state.ucd_domains = _dedupe(data.get("domains") or [])
+        st.session_state.ucd_relationships = list(data.get("relationships") or [])
+        st.session_state.ucd_ready = True
+
+    if not st.session_state.get("ucd_ready"):
+        return
+
+    # --- Quick Summary ---
+    with st.expander("Extracted Elements (Summary)", expanded=True):
+        st.write("**System name:**", st.session_state.ucd_system_name)
+        st.write("**Actors (combined):**", st.session_state.ucd_actors or "-")
+        st.write("**Use cases:**", st.session_state.ucd_use_cases or "-")
+        st.write("**Domains:**", st.session_state.ucd_domains or "-")
+        st.write("**Inferred relationships:**", f"{len(st.session_state.ucd_relationships)} found")
+
+    # --- Detailed Editor: Actors & Use Cases ---
+    st.subheader("Edit Actors and Use Cases")
+
+    # No form wrapper here to avoid Streamlit's missing-submit warning
+    c1, c2 = st.columns(2)
+    with c1:
+        st.markdown("Primary Actors")
+        prim_options = st.session_state.ucd_actors
+        prim_selected = st.multiselect(
+            "",
+            options=prim_options,
+            default=st.session_state.ucd_primary_actors,
+            key="ucd_primary_multiselect",
+            placeholder="Select primary actors",
+        )
+
+    with c2:
+        st.markdown("Secondary Actors")
+        sec_options = st.session_state.ucd_actors
+        sec_selected = st.multiselect(
+            "",
+            options=sec_options,
+            default=st.session_state.ucd_secondary_actors,
+            key="ucd_secondary_multiselect",
+            placeholder="Select secondary actors",
+        )
+
+    # Add sections aligned horizontally (previous style per column)
+    add_row_left, add_row_right = st.columns(2)
+    with add_row_left:
+        new_primary = st.text_input("Add new primary actor", value="", key="ucd_new_primary")
+        add_primary = st.button("Add Primary", use_container_width=True, key="btn_add_primary")
+    with add_row_right:
+        new_secondary = st.text_input("Add new secondary actor", value="", key="ucd_new_secondary")
+        add_secondary = st.button("Add Secondary", use_container_width=True, key="btn_add_secondary")
+
+    if add_primary and new_primary.strip():
+        prim_selected = _dedupe(prim_selected + [new_primary.strip()])
+        st.session_state.ucd_primary_multiselect = prim_selected
+        st.session_state.ucd_actors = _dedupe(st.session_state.ucd_actors + [new_primary.strip()])
+
+    if add_secondary and new_secondary.strip():
+        sec_selected = _dedupe(sec_selected + [new_secondary.strip()])
+        st.session_state.ucd_secondary_multiselect = sec_selected
+        st.session_state.ucd_actors = _dedupe(st.session_state.ucd_actors + [new_secondary.strip()])
+
+    st.markdown("Use Cases")
+    uc_options = st.session_state.ucd_use_cases
+    uc_selected = st.multiselect(
+        "",
+        options=uc_options,
+        default=st.session_state.ucd_use_cases,
+        key="ucd_usecases_multiselect",
+        placeholder="Select or keep extracted use cases",
+    )
+    new_uc = st.text_input("Add new use case", value="", key="ucd_new_uc")
+    add_uc = st.button("Add Use Case")
+    if add_uc and new_uc.strip():
+        uc_selected = _dedupe(uc_selected + [new_uc.strip()])
+        st.session_state.ucd_usecases_multiselect = uc_selected
+        st.session_state.ucd_use_cases = uc_selected
+
+    # Save changes button
+    if st.button("Save Elements", key="btn_save_elements"):
+        st.session_state.ucd_primary_actors = _dedupe(st.session_state.ucd_primary_multiselect)
+        st.session_state.ucd_secondary_actors = _dedupe(st.session_state.ucd_secondary_multiselect)
+        st.session_state.ucd_use_cases = _dedupe(st.session_state.ucd_usecases_multiselect)
+        st.session_state.ucd_actors = _dedupe(
+            st.session_state.ucd_primary_actors + st.session_state.ucd_secondary_actors
+        )
+        st.success("Saved actors and use cases.")
+
+    # --- Match the Following (Actors <-> Use Cases) ---
+    st.subheader("Match the Following: Actors <-> Use Cases")
+    st.caption("Visually connect actors to use cases. Use the legend to show/hide actors. These are association relationships.")
+
+    actors = st.session_state.ucd_actors or []
+    use_cases = st.session_state.ucd_use_cases or []
+    actor_colors = _ensure_actor_colors(actors)
+
+    # Legend with visibility toggle (sanitize defaults to avoid Streamlit exceptions)
+    if "ucd_visible_actors" in st.session_state:
+        st.session_state.ucd_visible_actors = [a for a in (st.session_state.ucd_visible_actors or []) if a in actors]
+    else:
+        st.session_state.ucd_visible_actors = list(actors)
+
+    visible_actors = st.multiselect(
+        "Show actors",
+        options=actors,
+        default=st.session_state.ucd_visible_actors,
+        key="ucd_visible_actors",
+        help="Filter which actors' links are drawn",
+    )
+    if not visible_actors:
+        visible_actors = []
+
+    def _pairs_from_relationships():
+        pairs = set()
+        for rel in st.session_state.ucd_relationships or []:
+            rt = (rel.get("relationship_type") or "").lower()
+            stype = (rel.get("source_type") or "").lower()
+            ttype = (rel.get("target_type") or "").lower()
+            sname = rel.get("source_name") or ""
+            tname = rel.get("target_name") or ""
+            if rt != "association":
+                continue
+            if stype == "actor" and ttype == "usecase":
+                if sname in actors and tname in use_cases:
+                    pairs.add((actors.index(sname), use_cases.index(tname)))
+            elif stype == "usecase" and ttype == "actor":
+                if tname in actors and sname in use_cases:
+                    pairs.add((actors.index(tname), use_cases.index(sname)))
+        return sorted(pairs)
+
+    def _sync_pairs_to_relationships(pairs):
+        others = [r for r in (st.session_state.ucd_relationships or []) if (r.get("relationship_type") or "").lower() != "association"]
+        assoc = []
+        seen = set()
+        for ai, ui in pairs:
+            if ai < 0 or ai >= len(actors) or ui < 0 or ui >= len(use_cases):
+                continue
+            a = actors[ai]
+            u = use_cases[ui]
+            key = (a.lower(), u.lower())
+            if key in seen:
+                continue
+            seen.add(key)
+            assoc.append({
+                "relationship_type": "association",
+                "source_name": a,
+                "source_type": "actor",
+                "target_name": u,
+                "target_type": "usecase",
+                "extension": "",
+                "confidence": 0.95,
+            })
+        st.session_state.ucd_relationships = assoc + others
+
+    if "ucd_match_pairs" not in st.session_state:
+        st.session_state.ucd_match_pairs = _pairs_from_relationships()
+
+    def _render_match_svg(actors_list, use_cases_list, pairs_list, visible, colors):
+        left_items = actors_list
+        right_items = use_cases_list
+        n = max(len(left_items), len(right_items), 1)
+        row_h = 38
+        pad = 8
+        legend_h = 32 if left_items else 0
+        label_h = 26
+        height = legend_h + label_h + n * row_h
+        width = "100%"
+
+        def _y(idx):
+            return legend_h + label_h + row_h * idx + row_h // 2
+
+        left_rows = []
+        for i, name in enumerate(left_items):
+            color = colors.get(name, "#666666")
+            dim = "0.35" if (visible and name not in visible) else "1.0"
+            left_rows.append(
+                f'<div class="item" title="{name}" style="opacity:{dim}"><span class="chip" style="background:{color}"></span>{i+1}. {name}</div>'
+            )
+        left_html = "".join(left_rows)
+        right_html = "".join(f'<div class="item" title="{name}">{i+1}. {name}</div>' for i, name in enumerate(right_items))
+
+        lines_svg = []
+        for ai, ui in pairs_list:
+            if ai < len(left_items) and ui < len(right_items):
+                x1 = "45%"
+                y1 = _y(ai)
+                x2 = "55%"
+                y2 = _y(ui)
+                stroke = colors.get(left_items[ai], "#666666")
+                opacity = "1.0" if (not visible or left_items[ai] in visible) else "0.15"
+                lines_svg.append(
+                    f'<g><circle cx="{x1}" cy="{y1}" r="3" fill="{stroke}" fill-opacity="{opacity}" />'
+                    f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{stroke}" stroke-opacity="{opacity}" stroke-width="2" stroke-linecap="round" />'
+                    f'<circle cx="{x2}" cy="{y2}" r="3" fill="{stroke}" fill-opacity="{opacity}" /></g>'
+                )
+
+        legend_items = "".join(
+            f'<div class="legend-item"><span class="chip" style="background:{colors.get(n, "#666666")}"></span>{n}</div>'
+            for n in left_items
+        )
+
+        html = f"""
+        <style>
+          .match-wrap {{ position: relative; width: {width}; }}
+          .cols {{ display: flex; justify-content: space-between; }}
+          .col {{ width: 45%; }}
+          .item {{ height: {row_h}px; display: flex; align-items: center; border-bottom: 1px solid #eee; font-family: sans-serif; font-size: 14px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
+          .label {{ font-weight: 600; margin-bottom: 8px; font-family: sans-serif; }}
+          .chip {{ width: 10px; height: 10px; display: inline-block; margin-right: 8px; border-radius: 2px; }}
+          .legend {{ display: flex; flex-wrap: wrap; gap: 12px; align-items: center; height: {legend_h}px; margin-bottom: 4px; font-family: sans-serif; font-size: 12px; }}
+          .legend-item {{ display: flex; align-items: center; gap: 6px; }}
+        </style>
+        <div class="match-wrap" style="padding: 0 {pad}px;">
+          <div class="legend">{legend_items}</div>
+          <div class="cols">
+            <div class="col">
+              <div class="label">Actors</div>
+              {left_html}
+            </div>
+            <div class="col">
+              <div class="label">Use Cases</div>
+              {right_html}
+            </div>
+          </div>
+          <svg width="100%" height="{height}" style="position:absolute; top:0; left:0; pointer-events:none;">
+            {''.join(lines_svg)}
+          </svg>
+        </div>
+        """
+        components.html(html, height=height + 20)
+
+    filtered_pairs = [p for p in st.session_state.ucd_match_pairs if (not visible_actors) or (actors[p[0]] in visible_actors)]
+    _render_match_svg(actors, use_cases, filtered_pairs, visible_actors, actor_colors)
+
+    # Controls to add/remove links (place button below, left aligned)
+    c_add1, c_add2 = st.columns([3, 3])
+    with c_add1:
+        sel_actor = st.selectbox("Actor", options=actors or [""], key="match_add_actor")
+    with c_add2:
+        sel_uc = st.selectbox("Use Case", options=use_cases or [""], key="match_add_uc")
+    st.markdown('<a id="assoc_section"></a>', unsafe_allow_html=True)
+    left_sp, acb_btn, right_sp = st.columns([5, 2, 5])
+    with acb_btn:
+        if st.button("Add Association", key="match_add_btn", use_container_width=True) and sel_actor and sel_uc:
+            ai = actors.index(sel_actor)
+            ui = use_cases.index(sel_uc)
+            pair = (ai, ui)
+            if pair not in st.session_state.ucd_match_pairs:
+                st.session_state.ucd_match_pairs.append(pair)
+                _sync_pairs_to_relationships(st.session_state.ucd_match_pairs)
+                st.success(f"Linked {sel_actor} -> {sel_uc}")
+                st.session_state.scroll_to = "assoc_section"
+                st.experimental_rerun()
+
+    # Current Associations: per-row modify (Update/Remove) like Extend/Include
+    if st.session_state.ucd_match_pairs:
+        st.markdown("Current Associations")
+        # Header row for alignment
+        hc1, hc2, hc3 = st.columns([4, 4, 2])
+        with hc1:
+            st.markdown("**Actor**")
+        with hc2:
+            st.markdown("**Use Case**")
+        with hc3:
+            st.markdown("**Actions**")
+
+        for idx, (ai, ui) in enumerate(list(st.session_state.ucd_match_pairs)):
+            c1, c2, c3 = st.columns([4, 4, 2])
+            with c1:
+                current_actor = actors[ai] if 0 <= ai < len(actors) else (actors[0] if actors else "")
+                new_actor = st.selectbox(
+                    "Actor",
+                    options=actors or [""],
+                    index=(actors.index(current_actor) if current_actor in actors else 0),
+                    key=f"assoc_actor_{idx}",
+                    label_visibility="collapsed",
+                )
+            with c2:
+                current_uc = use_cases[ui] if 0 <= ui < len(use_cases) else (use_cases[0] if use_cases else "")
+                new_uc = st.selectbox(
+                    "Use Case",
+                    options=use_cases or [""],
+                    index=(use_cases.index(current_uc) if current_uc in use_cases else 0),
+                    key=f"assoc_uc_{idx}",
+                    label_visibility="collapsed",
+                )
+            with c3:
+                b1, b2 = st.columns(2)
+                with b1:
+                    if st.button("Update", key=f"assoc_upd_{idx}", use_container_width=True):
+                        if new_actor in actors and new_uc in use_cases:
+                            new_ai = actors.index(new_actor)
+                            new_ui = use_cases.index(new_uc)
+                            st.session_state.ucd_match_pairs[idx] = (new_ai, new_ui)
+                            # de-dup
+                            dedup = []
+                            seen = set()
+                            for p in st.session_state.ucd_match_pairs:
+                                if p not in seen:
+                                    seen.add(p)
+                                    dedup.append(p)
+                            st.session_state.ucd_match_pairs = dedup
+                            _sync_pairs_to_relationships(st.session_state.ucd_match_pairs)
+                            st.success("Association updated")
+                            st.session_state.scroll_to = "assoc_section"
+                            st.experimental_rerun()
+                with b2:
+                    if st.button("Remove", key=f"assoc_rm_{idx}", use_container_width=True):
+                        st.session_state.ucd_match_pairs.pop(idx)
+                        _sync_pairs_to_relationships(st.session_state.ucd_match_pairs)
+                        st.warning("Association removed")
+                        st.session_state.scroll_to = "assoc_section"
+                        st.experimental_rerun()
+
+    # --- Use Case ↔ Use Case: Include ---
+    st.subheader("Match the Following: Include (Use Case -> Use Case)")
+    st.caption("Link base use cases (left) to included use cases (right). Only UC↔UC is allowed.")
+
+    def _include_pairs_from_relationships():
+        pairs = set()
+        for rel in st.session_state.ucd_relationships or []:
+            if (rel.get("relationship_type") or "").lower() != "include":
+                continue
+            if (rel.get("source_type") or "").lower() != "usecase" or (rel.get("target_type") or "").lower() != "usecase":
+                continue
+            sname = rel.get("source_name") or ""
+            tname = rel.get("target_name") or ""
+            if sname in use_cases and tname in use_cases:
+                pairs.add((use_cases.index(sname), use_cases.index(tname)))
+        return sorted(pairs)
+
+    def _sync_include_pairs_to_relationships(pairs):
+        others = [r for r in (st.session_state.ucd_relationships or []) if (r.get("relationship_type") or "").lower() != "include"]
+        inc = []
+        seen = set()
+        for si, ti in pairs:
+            if si < 0 or ti < 0 or si >= len(use_cases) or ti >= len(use_cases):
+                continue
+            s = use_cases[si]
+            t = use_cases[ti]
+            key = (s.lower(), t.lower())
+            if key in seen:
+                continue
+            seen.add(key)
+            inc.append({
+                "relationship_type": "include",
+                "source_name": s,
+                "source_type": "usecase",
+                "target_name": t,
+                "target_type": "usecase",
+                "extension": "",
+                "confidence": 0.95,
+            })
+        st.session_state.ucd_relationships = inc + others
+
+    if "ucd_include_pairs" not in st.session_state:
+        st.session_state.ucd_include_pairs = _include_pairs_from_relationships()
+
+    def _render_uc_uc_svg(ucs_left, ucs_right, pairs_list, stroke_color="#1f78b4", dash="4,3", labels=None):
+        left_items = ucs_left
+        right_items = ucs_right
+        n = max(len(left_items), len(right_items), 1)
+        row_h = 30
+        pad = 8
+        label_h = 24  # approx label height+margin
+        height = label_h + n * row_h
+        width = "100%"
+
+        def _y(idx):
+            return label_h + row_h * idx + row_h // 2
+
+        left_html = "".join(f'<div class="uc-item" title="{name}">{i+1}. {name}</div>' for i, name in enumerate(left_items))
+        right_html = "".join(f'<div class="uc-item" title="{name}">{i+1}. {name}</div>' for i, name in enumerate(right_items))
+
+        lines_svg = []
+        for si, ti in pairs_list:
+            if si < len(left_items) and ti < len(right_items):
+                x1 = "45%"
+                y1 = _y(si)
+                x2 = "55%"
+                y2 = _y(ti)
+                dash_attr = f' stroke-dasharray="{dash}"' if dash else ""
+                label = ""
+                if labels:
+                    label = labels.get(f"{si}|{ti}", "")
+                if label:
+                    midx = "50%"
+                    midy = (y1 + y2) / 2
+                    lines_svg.append(
+                        f'<g><circle cx="{x1}" cy="{y1}" r="3" fill="{stroke_color}" />'
+                        f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{stroke_color}" stroke-width="2" stroke-linecap="round"{dash_attr} />'
+                        f'<circle cx="{x2}" cy="{y2}" r="3" fill="{stroke_color}" />'
+                        f'<text x="{midx}" y="{midy - 6}" text-anchor="middle" style="font-family:sans-serif;font-size:11px;fill:#555;">{label}</text></g>'
+                    )
+                else:
+                    lines_svg.append(
+                        f'<g><circle cx="{x1}" cy="{y1}" r="3" fill="{stroke_color}" />'
+                        f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="{stroke_color}" stroke-width="2" stroke-linecap="round"{dash_attr} />'
+                        f'<circle cx="{x2}" cy="{y2}" r="3" fill="{stroke_color}" /></g>'
+                    )
+
+        html = f"""
+        <style>
+          .uc-cols {{ position: relative; display: flex; justify-content: space-between; }}
+          .uc-col {{ width: 45%; }}
+          .uc-item {{ height: {row_h}px; line-height: {row_h}px; display: flex; align-items: center; border-bottom: 1px solid #eee; font-family: sans-serif; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }}
+          .label {{ font-weight: 600; margin-bottom: 6px; font-family: sans-serif; }}
+        </style>
+        <div class="uc-cols" style="padding: 0 {pad}px;">
+          <div class="uc-col">
+            <div class="label">Use Cases (Left)</div>
+            {left_html}
+          </div>
+          <div class="uc-col">
+            <div class="label">Use Cases (Right)</div>
+            {right_html}
+          </div>
+          <svg width="100%" height="{height}" style="position:absolute; top:0; left:0; pointer-events:none;">
+          {''.join(lines_svg)}
+        </svg>
+        """
+        components.html(html, height=height + 10)
+
+    _render_uc_uc_svg(use_cases, use_cases, st.session_state.ucd_include_pairs, stroke_color="#1f78b4", dash="")
+
+    # Controls for include
+    ic1, ic2 = st.columns([3, 3])
+    with ic1:
+        inc_src = st.selectbox("Base UC", options=use_cases or [""], key="inc_src")
+    with ic2:
+        inc_tgt = st.selectbox("Included UC", options=use_cases or [""], key="inc_tgt")
+    # Button below dropdowns (left aligned)
+    st.markdown('<a id="include_section"></a>', unsafe_allow_html=True)
+    ic_sp_l, icb_btn, ic_sp_r = st.columns([5, 2, 5])
+    with icb_btn:
+        if st.button("Add Include", key="inc_add", use_container_width=True):
+            if not inc_src or not inc_tgt:
+                st.warning("Select both Base UC and Included UC.")
+            elif inc_src == inc_tgt:
+                st.warning("Base UC and Included UC must be different.")
+            else:
+                si = use_cases.index(inc_src)
+                ti = use_cases.index(inc_tgt)
+                if (si, ti) in st.session_state.ucd_include_pairs:
+                    st.info("Include already exists.")
+                else:
+                    st.session_state.ucd_include_pairs.append((si, ti))
+                    _sync_include_pairs_to_relationships(st.session_state.ucd_include_pairs)
+                    st.success("Include added.")
+                    st.session_state.scroll_to = "include_section"
+                    st.experimental_rerun()
+
+    if st.session_state.ucd_include_pairs:
+        st.markdown("Current Includes")
+        for idx, (si, ti) in enumerate(list(st.session_state.ucd_include_pairs)):
+            label = f"{use_cases[si]} includes {use_cases[ti]}" if si < len(use_cases) and ti < len(use_cases) else "Invalid"
+            c_l, c_b = st.columns([7, 2])
+            with c_l:
+                st.write(f"- {label}")
+            with c_b:
+                if st.button("Remove", key=f"inc_rm_{idx}", use_container_width=True):
+                    st.session_state.ucd_include_pairs.pop(idx)
+                    _sync_include_pairs_to_relationships(st.session_state.ucd_include_pairs)
+                    st.experimental_rerun()
+
+    # --- Use Case ↔ Use Case: Extend ---
+    st.subheader("Match the Following: Extend (Use Case -> Base Use Case)")
+    st.caption("Link extension use cases (left) to base use cases (right). You can set an Extension Point for each link.")
+
+    def _extend_pairs_from_relationships():
+        pairs = set()
+        meta = {}
+        for rel in st.session_state.ucd_relationships or []:
+            if (rel.get("relationship_type") or "").lower() != "extend":
+                continue
+            if (rel.get("source_type") or "").lower() != "usecase" or (rel.get("target_type") or "").lower() != "usecase":
+                continue
+            sname = rel.get("source_name") or ""
+            tname = rel.get("target_name") or ""
+            if sname in use_cases and tname in use_cases:
+                si = use_cases.index(sname)
+                ti = use_cases.index(tname)
+                pairs.add((si, ti))
+                meta[f"{si}|{ti}"] = rel.get("extension", "")
+        return sorted(pairs), meta
+
+    def _sync_extend_pairs_to_relationships(pairs, meta):
+        others = [r for r in (st.session_state.ucd_relationships or []) if (r.get("relationship_type") or "").lower() != "extend"]
+        ext = []
+        seen = set()
+        for si, ti in pairs:
+            if si < 0 or ti < 0 or si >= len(use_cases) or ti >= len(use_cases):
+                continue
+            s = use_cases[si]
+            t = use_cases[ti]
+            key = (s.lower(), t.lower())
+            if key in seen:
+                continue
+            seen.add(key)
+            ext_point = meta.get(f"{si}|{ti}", "")
+            ext.append({
+                "relationship_type": "extend",
+                "source_name": s,
+                "source_type": "usecase",
+                "target_name": t,
+                "target_type": "usecase",
+                "extension": ext_point,
+                "confidence": 0.95,
+            })
+        st.session_state.ucd_relationships = ext + others
+
+    if "ucd_extend_pairs" not in st.session_state or "ucd_extend_meta" not in st.session_state:
+        pairs, meta = _extend_pairs_from_relationships()
+        st.session_state.ucd_extend_pairs = pairs
+        st.session_state.ucd_extend_meta = meta
+
+    _render_uc_uc_svg(use_cases, use_cases, st.session_state.ucd_extend_pairs, stroke_color="#ff7f0e", dash="", labels=st.session_state.ucd_extend_meta)
+
+    # Controls for extend
+    ex1, ex2, ex3 = st.columns([3, 3, 3])
+    with ex1:
+        ext_src = st.selectbox("Extension UC", options=use_cases or [""], key="ext_src")
+    with ex2:
+        ext_tgt = st.selectbox("Base UC", options=use_cases or [""], key="ext_tgt")
+    with ex3:
+        ext_point_input = st.text_input("Extension Point (optional)", value="", key="ext_point_new")
+    # Button below dropdowns (left aligned)
+    ex_sp_l, exb_btn, ex_sp_r = st.columns([5, 2, 5])
+    with exb_btn:
+        if st.button("Add Extend", key="ext_add", use_container_width=True):
+            if not ext_src or not ext_tgt:
+                st.warning("Select both Extension UC and Base UC.")
+            elif ext_src == ext_tgt:
+                st.warning("Extension UC and Base UC must be different.")
+            else:
+                si = use_cases.index(ext_src)
+                ti = use_cases.index(ext_tgt)
+                key = f"{si}|{ti}"
+                if (si, ti) in st.session_state.ucd_extend_pairs:
+                    # Update extension point if pair exists
+                    st.session_state.ucd_extend_meta[key] = (ext_point_input or "").strip()
+                    _sync_extend_pairs_to_relationships(st.session_state.ucd_extend_pairs, st.session_state.ucd_extend_meta)
+                    st.success("Updated extension point.")
+                    st.session_state.scroll_to = "extend_section"
+                    st.experimental_rerun()
+                else:
+                    st.session_state.ucd_extend_pairs.append((si, ti))
+                    st.session_state.ucd_extend_meta[key] = (ext_point_input or "").strip()
+                    _sync_extend_pairs_to_relationships(st.session_state.ucd_extend_pairs, st.session_state.ucd_extend_meta)
+                    st.success("Extend added.")
+                    st.session_state.scroll_to = "extend_section"
+                    st.experimental_rerun()
+
+    if st.session_state.ucd_extend_pairs:
+        st.markdown("Current Extends")
+        for idx, (si, ti) in enumerate(list(st.session_state.ucd_extend_pairs)):
+            key = f"{si}|{ti}"
+            ext_lbl = st.session_state.ucd_extend_meta.get(key, "")
+            c_l, c_e, c_u, c_b = st.columns([6, 4, 2, 2])
+            with c_l:
+                lbl = f"{use_cases[si]} extends {use_cases[ti]}"
+                st.write(f"- {lbl}")
+            with c_e:
+                new_ext_lbl = st.text_input("Extension Point", value=ext_lbl, key=f"ext_lbl_{idx}")
+            with c_u:
+                if st.button("Update", key=f"ext_upd_{idx}", use_container_width=True):
+                    st.session_state.ucd_extend_meta[key] = new_ext_lbl.strip()
+                    _sync_extend_pairs_to_relationships(st.session_state.ucd_extend_pairs, st.session_state.ucd_extend_meta)
+                    st.experimental_rerun()
+            with c_b:
+                if st.button("Remove", key=f"ext_rm_{idx}", use_container_width=True):
+                    st.session_state.ucd_extend_pairs.pop(idx)
+                    st.session_state.ucd_extend_meta.pop(key, None)
+                    _sync_extend_pairs_to_relationships(st.session_state.ucd_extend_pairs, st.session_state.ucd_extend_meta)
+                    st.experimental_rerun()
+
+    # --- Relationships Editor ---
+    st.subheader("Relationships")
+    st.caption("Modify extracted relationships or add new ones. The visual matches above synchronize association links.")
+
+    # Show current relationships
+    if st.session_state.ucd_relationships:
+        for i, rel in enumerate(list(st.session_state.ucd_relationships)):
+            with st.expander(f"Relationship {i + 1}"):
+                rel_type = st.selectbox(
+                    "Type",
+                    ["association", "include", "extend", "generalization"],
+                    index=["association", "include", "extend", "generalization"].index(rel.get("relationship_type", "association")),
+                    key=f"rel_{i}_type",
+                )
+
+                # Enforce type constraints for selections
+                if rel_type in ("include", "extend"):
+                    src_type_opts = ["usecase"]
+                    tgt_type_opts = ["usecase"]
+                elif rel_type == "generalization":
+                    src_type_opts = ["actor", "usecase"]
+                    tgt_type_opts = ["actor", "usecase"]
+                else:
+                    src_type_opts = ["actor", "usecase"]
+                    tgt_type_opts = ["actor", "usecase"]
+
+                # Source selectors
+                src_type_default = rel.get("source_type", src_type_opts[0])
+                if src_type_default not in src_type_opts:
+                    src_type_default = src_type_opts[0]
+                src_type = st.selectbox(
+                    "Source Type",
+                    src_type_opts,
+                    index=src_type_opts.index(src_type_default),
+                    key=f"rel_{i}_src_type",
+                )
+                src_options = st.session_state.ucd_actors if src_type == "actor" else st.session_state.ucd_use_cases
+                src_name_default = rel.get("source_name", src_options[0] if src_options else "")
+                if src_options and src_name_default not in src_options:
+                    src_name_default = src_options[0]
+                src_name = st.selectbox(
+                    "Source Name",
+                    options=src_options or [""],
+                    index=(src_options.index(src_name_default) if src_options and src_name_default in src_options else 0),
+                    key=f"rel_{i}_src_name",
+                )
+
+                # Target selectors
+                tgt_type_default = rel.get("target_type", tgt_type_opts[0])
+                if tgt_type_default not in tgt_type_opts:
+                    tgt_type_default = tgt_type_opts[0]
+                tgt_type = st.selectbox(
+                    "Target Type",
+                    tgt_type_opts,
+                    index=tgt_type_opts.index(tgt_type_default),
+                    key=f"rel_{i}_tgt_type",
+                )
+                tgt_options = st.session_state.ucd_actors if tgt_type == "actor" else st.session_state.ucd_use_cases
+                tgt_name_default = rel.get("target_name", tgt_options[0] if tgt_options else "")
+                if tgt_options and tgt_name_default not in tgt_options:
+                    tgt_name_default = tgt_options[0]
+                tgt_name = st.selectbox(
+                    "Target Name",
+                    options=tgt_options or [""],
+                    index=(tgt_options.index(tgt_name_default) if tgt_options and tgt_name_default in tgt_options else 0),
+                    key=f"rel_{i}_tgt_name",
+                )
+
+                ext = ""
+                if rel_type == "extend":
+                    ext = st.text_input("Extension (optional for extend)", value=rel.get("extension", ""), key=f"rel_{i}_ext")
+
+                c_upd, c_del = st.columns(2)
+                with c_upd:
+                    if st.button("Update", key=f"rel_{i}_update"):
+                        # Final constraints guard
+                        if rel_type in ("include", "extend"):
+                            src_type = "usecase"
+                            tgt_type = "usecase"
+                        elif rel_type == "generalization":
+                            tgt_type = src_type
+                        st.session_state.ucd_relationships[i] = {
+                            "relationship_type": rel_type,
+                            "source_name": src_name,
+                            "source_type": src_type,
+                            "target_name": tgt_name,
+                            "target_type": tgt_type,
+                            "extension": ext if rel_type == "extend" else "",
+                            "confidence": float(rel.get("confidence", 0.9)),
+                        }
+                        st.success("Updated relationship")
+                with c_del:
+                    if st.button("Delete", key=f"rel_{i}_delete"):
+                        st.session_state.ucd_relationships.pop(i)
+                        st.warning("Deleted relationship")
+                        st.experimental_rerun()
+
+    # Add new relationship
+    with st.expander("Add Relationship", expanded=False):
+        new_rel_type = st.selectbox("Type", ["association", "include", "extend", "generalization"], key="new_rel_type")
+
+        if new_rel_type in ("include", "extend"):
+            src_type_opts = ["usecase"]
+            tgt_type_opts = ["usecase"]
+        elif new_rel_type == "generalization":
+            src_type_opts = ["actor", "usecase"]
+            tgt_type_opts = src_type_opts
+        else:
+            src_type_opts = ["actor", "usecase"]
+            tgt_type_opts = ["actor", "usecase"]
+
+        new_src_type = st.selectbox("Source Type", src_type_opts, key="new_rel_src_type")
+        new_tgt_type = (st.selectbox("Target Type", tgt_type_opts, key="new_rel_tgt_type")
+                        if new_rel_type != "generalization" else new_src_type)
+
+        new_src_name = st.selectbox(
+            "Source Name",
+            options=(st.session_state.ucd_actors if new_src_type == "actor" else st.session_state.ucd_use_cases) or [""],
+            key="new_rel_src_name",
+        )
+        new_tgt_name = st.selectbox(
+            "Target Name",
+            options=(st.session_state.ucd_actors if new_tgt_type == "actor" else st.session_state.ucd_use_cases) or [""],
+            key="new_rel_tgt_name",
+        )
+        new_ext_val = ""
+        if new_rel_type == "extend":
+            new_ext_val = st.text_input("Extension (optional for extend)", value="", key="new_rel_ext")
+
+        if st.button("Add", key="new_rel_add"):
+            if new_rel_type in ("include", "extend"):
+                new_src_type = "usecase"
+                new_tgt_type = "usecase"
+            elif new_rel_type == "generalization":
+                new_tgt_type = new_src_type
+
+            st.session_state.ucd_relationships.append(
+                {
+                    "relationship_type": new_rel_type,
+                    "source_name": new_src_name,
+                    "source_type": new_src_type,
+                    "target_name": new_tgt_name,
+                    "target_type": new_tgt_type,
+                    "extension": new_ext_val if new_rel_type == "extend" else "",
+                    "confidence": 0.9,
+                }
+            )
+            st.success("Added relationship")
+

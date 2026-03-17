@@ -1,0 +1,154 @@
+CaseId,SystemName,ActorName,ActorType,Synonyms
+1,Online Shopping System,Administrator,Primary,System Manager | System Admin | System Admin | School Admin | Admin | Admin | Admin | System Admin | Admin | System Manager
+1,Online Shopping System,Backend Database System,Secondary,Data System | Database
+1,Online Shopping System,User,Primary,Borrower | Student | Controller | Customer | Customer | Client | Shopper | Patron | Subscriber | Rider | Passenger | Client | Client | Learner | Caller | Client | Operator
+2,Administration Application,Helpdesk,Secondary,Support
+2,Administration Application,Website Administrator,Primary,Web Admin | Admin
+3,Design Support System,Administration,Primary,Admin | Management
+3,Design Support System,Client,Primary,Customer | Diner | Patron | Customer | User
+3,Design Support System,Engineer,Primary,Developer | Designer
+4,Vehicle ,Driver,Primary,Operator | Vehicle Operator | Operator
+4,Vehicle ,Vehicle Occupant,Primary,Rider | Passenger
+5,Airport,Airport Staff,Primary,Airport Employee | Terminal Staff
+5,Airport,Passenger,Primary,Patron | Traveler | Flyer | Traveler
+6,Sentinel EMS,Customer Service,Primary,Customer Support | Service Agent
+6,Sentinel EMS,Developer,Primary,Software Engineer | Programmer
+6,Sentinel EMS,Privilege Manager,Primary,Access Manager | Privilege Admin
+6,Sentinel EMS,Product Manager,Primary,Product Lead | Product Owner
+7,Cab Booking Application,Backend,Secondary,System Core | Processing Unit | Server
+7,Cab Booking Application,User,Primary,Borrower | Student | Controller | Customer | Customer | Client | Shopper | Patron | Subscriber | Rider | Passenger | Client | Client | Learner | Caller | Client | Operator
+8,Appointment Booking ,Payment Gateway,Secondary,Payor | Gateway
+8,Appointment Booking ,Service Provider,Primary,Provider | System Admin | Provider | Practitioner
+8,Appointment Booking ,User,Primary,Borrower | Student | Controller | Customer | Customer | Client | Shopper | Patron | Subscriber | Rider | Passenger | Client | Client | Learner | Caller | Client | Operator
+9,Satellite System,Environmental Test Engineer,Primary,Test Engineer | Environment Engineer
+9,Satellite System,Flight Controller,Primary,Flight Team | Controller
+9,Satellite System,Payload Operator,Primary,Payload User | Operator
+9,Satellite System,Solar Simulation Chamber,Secondary,Simulation Chamber | Solar Chamber
+10,UAV Mission Planning,Camera,Secondary,Imager
+10,UAV Mission Planning,GPS,Secondary,Global Positioning
+10,UAV Mission Planning,Operator,Primary,Admin | User | Controller | User | Staff | Controller | User
+10,UAV Mission Planning,Server,Secondary,Host | System Server
+11,Real Time System Controller,Actuator,Secondary,Effector
+11,Real Time System Controller,Maintenance Crew,Primary,Crew Member | Maintenance Personnel
+11,Real Time System Controller,Sensor,Secondary,Detector | Detector
+11,Real Time System Controller,Supervisor,Primary,Overseer | Manager | Bike Supervisor | Manager | Overseer | Supervisor Role
+11,Real Time System Controller,System User,Primary,Operator | User
+12,Aircraft Design Review System,Design Engineer,Primary,Design Analyst | Designer
+12,Aircraft Design Review System,Project Manager,Primary,Program Manager | Project Lead
+12,Aircraft Design Review System,Systems Engineer,Primary,System Engineer | Systems Analyst
+13,Inverted Pendulum System,Disturbance,Secondary,Impact | Perturbation
+13,Inverted Pendulum System,User,Primary,Borrower | Student | Controller | Customer | Customer | Client | Shopper | Patron | Subscriber | Rider | Passenger | Client | Client | Learner | Caller | Client | Operator
+14,Security System,Intruder,Primary,Attacker | Attacker | Threat Actor | Threat
+14,Security System,Operator,Primary,Admin | User | Controller | User | Staff | Controller | User
+15,Library Management System,Librarian,Primary,Staff Member | Library Staff
+15,Library Management System,User,Primary,Borrower | Student | Controller | Customer | Customer | Client | Shopper | Patron | Subscriber | Rider | Passenger | Client | Client | Learner | Caller | Client | Operator
+16,Cellular Telephone,Cellular Network,Secondary,Cell System | Network
+16,Cellular Telephone,User,Primary,Borrower | Student | Controller | Customer | Customer | Client | Shopper | Patron | Subscriber | Rider | Passenger | Client | Client | Learner | Caller | Client | Operator
+17,Maintenance Management System,Customer,Primary,Patron | Passenger | Client | User | Passenger | Traveler | Car Owner | Passenger | Vehicle Owner | Bank Client | Account Holder | User | Client | Shopper
+17,Maintenance Management System,Maintenance Manager,Primary,Maintenance Lead | Manager
+17,Maintenance Management System,Technician,Primary,Service Personnel | System Expert | Mechanic | Field Engineer | Service Personnel | Service Tech
+18,Multi Plant DCS,Commercial User,Primary,Customer | User
+18,Multi Plant DCS,Controller,Secondary,Control System
+18,Multi Plant DCS,Maintenance Operator,Primary,Operator | Maintainer | System Maintainer | Operator
+18,Multi Plant DCS,Residential User,Primary,Resident | User
+18,Multi Plant DCS,User,Primary,Borrower | Student | Controller | Customer | Customer | Client | Shopper | Patron | Subscriber | Rider | Passenger | Client | Client | Learner | Caller | Client | Operator
+19,Ticket Booking System,Airline Company,Primary,Air Carrier | Airline Provider
+19,Ticket Booking System,Customer,Primary,Patron | Passenger | Client | User | Passenger | Traveler | Car Owner | Passenger | Vehicle Owner | Bank Client | Account Holder | User | Client | Shopper
+19,Ticket Booking System,Tourist Company,Primary,Tour Operator | Tourism Provider
+19,Ticket Booking System,Travel Agent,Primary,Travel Provider | Agent
+20,Bike Management System,Administrator,Primary,System Manager | System Admin | System Admin | School Admin | Admin | Admin | Admin | System Admin | Admin | System Manager
+20,Bike Management System,Supervisor,Primary,Overseer | Manager | Bike Supervisor | Manager | Overseer | Supervisor Role
+21,Restaurant,Cashier,Primary,Clerk | Payment Processor | Teller
+21,Restaurant,Chef,Primary,Kitchen Staff | Cook
+21,Restaurant,Client,Primary,Customer | Diner | Patron | Customer | User
+21,Restaurant,Waiter,Primary,Food Server | Server
+22,School Management System,Administrator,Primary,System Manager | System Admin | System Admin | School Admin | Admin | Admin | Admin | System Admin | Admin | System Manager
+22,School Management System,Student,Primary,Learner | Learner | Learner | Enrollee | Candidate | Learner | Course Participant | Pupil
+22,School Management System,Teacher,Primary,Educator | Instructor
+23,Online Learning System,Service Provider,Primary,Provider | System Admin | Provider | Practitioner
+23,Online Learning System,User,Primary,Borrower | Student | Controller | Customer | Customer | Client | Shopper | Patron | Subscriber | Rider | Passenger | Client | Client | Learner | Caller | Client | Operator
+24,Order_Management_System,Purchasing Manager,Primary,Procurement Manager | Buyer
+24,Order_Management_System,Warehouse Manager,Primary,Inventory Manager | Stock Manager
+25,Coffin Escape System,Audience,Primary,Spectator | Viewer
+25,Coffin Escape System,Coffin Maker,Primary,Maker | Craftsman
+25,Coffin Escape System,Escape Artist,Primary,Performer | Artist
+25,Coffin Escape System,Safety Officer,Primary,Officer | Supervisor
+26,Healthcare,Administrative Clerk,Primary,Clerk | Admin Staff
+26,Healthcare,Doctor,Primary,Physician | Clinician | Physician | Clinician
+26,Healthcare,Guardian,Primary,Protector | Caregiver
+26,Healthcare,Nurse,Primary,Practitioner | Care Nurse | Caregiver
+26,Healthcare,Patient,Primary,Individual | Subject | Recipient | Individual | Individual | Client
+27,POS,Accounting System,Secondary,Finance System | Finance System | Ledger System
+27,POS,Cashier,Primary,Clerk | Payment Processor | Teller
+27,POS,Customer,Primary,Patron | Passenger | Client | User | Passenger | Traveler | Car Owner | Passenger | Vehicle Owner | Bank Client | Account Holder | User | Client | Shopper
+27,POS,Manager,Primary,Supervisor
+27,POS,Sales Activity System,Secondary,Sales System
+27,POS,System Administrator,Primary,System Admin | Admin | Admin | System Manager
+27,POS,Tax Calculator,Secondary,Tax Engine
+28,Train Ticket Reservation,Customer,Primary,Patron | Passenger | Client | User | Passenger | Traveler | Car Owner | Passenger | Vehicle Owner | Bank Client | Account Holder | User | Client | Shopper
+28,Train Ticket Reservation,Ticket Booking App,Secondary,Booking Application | App
+29,Parking System,Driver,Primary,Operator | Vehicle Operator | Operator
+29,Parking System,Parking Manager,Primary,Park Admin | Manager
+30,Surveillance System ,Bear,Primary,Predator
+30,Surveillance System ,GPS Constellation,Secondary,GPS
+30,Surveillance System ,Ground Station,Secondary,Control Station | Station
+30,Surveillance System ,Mission Operator,Primary,Mission Control | Operator
+30,Surveillance System ,Sheep,Primary,Livestock
+30,Surveillance System ,Weather,Secondary,Atmosphere
+31,Coursework Management,Administrator,Primary,System Manager | System Admin | System Admin | School Admin | Admin | Admin | Admin | System Admin | Admin | System Manager
+31,Coursework Management,Lecturer,Primary,Course Tutor | Instructor
+31,Coursework Management,Student,Primary,Learner | Learner | Learner | Enrollee | Candidate | Learner | Course Participant | Pupil
+31,Coursework Management,Submitter,Primary,Contributor
+32,Renewable Energy Monitoring System,Control Engineer,Primary,Controller | System Control
+32,Renewable Energy Monitoring System,Field Control Engineer,Primary,Remote Control | Field Controller
+32,Renewable Energy Monitoring System,System Administrator,Primary,System Admin | Admin | Admin | System Manager
+33,Game,Game Administrator,Primary,Game Manager | Admin
+33,Game,Player,Primary,Participant | Gamer
+34,Trading System,Accounting System,Secondary,Finance System | Finance System | Ledger System
+34,Trading System,Trader,Primary,Trade Operator | Market Participant
+34,Trading System,Trading Manager,Primary,Trade Supervisor | Market Manager
+35,Bank,Bank Employee,Primary,Bank Staff | Teller
+35,Bank,Customer,Primary,Patron | Passenger | Client | User | Passenger | Traveler | Car Owner | Passenger | Vehicle Owner | Bank Client | Account Holder | User | Client | Shopper
+36,Automobile Service Management System,Car Owner,Primary,Vehicle Owner | Customer
+36,Automobile Service Management System,Service Engineer,Primary,Service Specialist | Engineer
+36,Automobile Service Management System,Service Representative,Primary,Rep | Service Agent
+36,Automobile Service Management System,Technician,Primary,Service Personnel | System Expert | Mechanic | Field Engineer | Service Personnel | Service Tech
+37,Clinic Management,Doctor,Primary,Physician | Clinician | Physician | Clinician
+37,Clinic Management,Nurse,Primary,Practitioner | Care Nurse | Caregiver
+37,Clinic Management,Patient,Primary,Individual | Subject | Recipient | Individual | Individual | Client
+38,Car Maintenance,Customer,Primary,Patron | Passenger | Client | User | Passenger | Traveler | Car Owner | Passenger | Vehicle Owner | Bank Client | Account Holder | User | Client | Shopper
+38,Car Maintenance,Mechanic,Primary,Auto Technician | Service Technician
+38,Car Maintenance,Service Center,Secondary,Auto Shop | Repair Facility
+39,Lab  Testing System,Lab Technician,Primary,Lab Worker | Technician
+39,Lab  Testing System,Medical Officer,Primary,Doctor | Physician
+39,Lab  Testing System,Patient,Primary,Individual | Subject | Recipient | Individual | Individual | Client
+40,Course Registration,Professor,Primary,Instructor | Faculty Member
+40,Course Registration,Registrar,Primary,Registrar Office | Registration Staff
+40,Course Registration,Student,Primary,Learner | Learner | Learner | Enrollee | Candidate | Learner | Course Participant | Pupil
+41,Flight Reservation System,Administrator,Primary,System Manager | System Admin | System Admin | School Admin | Admin | Admin | Admin | System Admin | Admin | System Manager
+41,Flight Reservation System,Agent,Primary,Travel Agent
+41,Flight Reservation System,Customer,Primary,Patron | Passenger | Client | User | Passenger | Traveler | Car Owner | Passenger | Vehicle Owner | Bank Client | Account Holder | User | Client | Shopper
+42,Loan Management,Home Buyer,Primary,Buyer | Borrower | Applicant
+42,Loan Management,Loan Officer,Primary,Loan Specialist | Lender
+43,Boarding System,Passenger,Primary,Patron | Traveler | Flyer | Traveler
+43,Boarding System,Ticket Clerk,Primary,Clerk | Agent
+44,Energy Distribution Management System,Control Center System,Secondary,Center System | Control System
+44,Energy Distribution Management System,Grid Operator,Primary,Grid Control | Operator
+45,Fire Alarm System,Civillian,Primary,Resident | Occupant
+45,Fire Alarm System,Fire Department,Primary,Emergency Service | Fire Crew
+45,Fire Alarm System,Installation Personnel,Primary,Installer | Setup Crew
+45,Fire Alarm System,Maintenance Operator,Primary,Operator | Maintainer | System Maintainer | Operator
+45,Fire Alarm System,Sensor,Secondary,Detector | Detector
+45,Fire Alarm System,Technician,Primary,Service Personnel | System Expert | Mechanic | Field Engineer | Service Personnel | Service Tech
+46,Exam Mobile Application ,Data Entry Personnel,Primary,Data Entry | Entry Staff
+46,Exam Mobile Application ,Data Manager,Primary,Data Admin | Info Manager
+46,Exam Mobile Application ,Qualification Manager,Primary,Credential Manager | Qualification Admin
+46,Exam Mobile Application ,Student,Primary,Learner | Learner | Learner | Enrollee | Candidate | Learner | Course Participant | Pupil
+47,Airport Management System,Airport Safety Team,Secondary,Safety Team | Airport Safety
+47,Airport Management System,ATC,Secondary,Air Traffic
+47,Airport Management System,Ground Operations Team,Secondary,Ground Team | Operations Staff
+48,Monitoring System,Advanced Operator,Primary,Senior Staff | Expert User
+48,Monitoring System,Intruder,Primary,Attacker | Attacker | Threat Actor | Threat
+48,Monitoring System,Operator,Primary,Admin | User | Controller | User | Staff | Controller | User
+48,Monitoring System,Supervisor,Primary,Overseer | Manager | Bike Supervisor | Manager | Overseer | Supervisor Role
+49,Missile System,Launch Station,Secondary,Firing Post | Launcher

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Project name="CBR_UCD" author="" >
+<exp obj="UCD" type="Concept" >
+  <desc>
+  </desc>
+</exp>
+<exp obj="UCD" type="Concept" >
+  <desc>
+      </desc>
+</exp>
+<exp obj="id" c="UCD" type="AttributeDesc" >
+  <desc>
+&#10;    </desc>
+</exp>
+</Project>

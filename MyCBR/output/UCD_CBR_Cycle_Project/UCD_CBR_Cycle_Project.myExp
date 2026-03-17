@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Project name="UCD_CBR_Cycle_Project" author="" >
+<exp obj="UCD_CBR_Cycle_ProjectCase" type="Concept" >
+  <desc>
+Structured use-case-diagram cases exported from the repository case base.
+  </desc>
+</exp>
+<exp obj="SystemName" c="UCD_CBR_Cycle_ProjectCase" type="AttributeDesc" >
+  <desc>
+Full system boundary name matched with NGram(3) string similarity.
+  </desc>
+</exp>
+<exp obj="Description" c="UCD_CBR_Cycle_ProjectCase" type="AttributeDesc" >
+  <desc>
+Full system description matched with JaroWinkler string similarity.
+  </desc>
+</exp>
+<exp obj="ActorNames" c="UCD_CBR_Cycle_ProjectCase" type="AttributeDesc" >
+  <desc>
+Pipe-separated list of all actor names (primary and secondary).
+  </desc>
+</exp>
+<exp obj="UseCaseNames" c="UCD_CBR_Cycle_ProjectCase" type="AttributeDesc" >
+  <desc>
+Pipe-separated list of all use-case names.
+  </desc>
+</exp>
+<exp obj="RelationshipTypes" c="UCD_CBR_Cycle_ProjectCase" type="AttributeDesc" >
+  <desc>
+Pipe-separated sorted set of relationship types used (association, include, extend, generalization).
+  </desc>
+</exp>
+<exp obj="DomainList" c="UCD_CBR_Cycle_ProjectCase" type="AttributeDesc" >
+  <desc>
+Pipe-separated list of domain tags.
+  </desc>
+</exp>
+<exp obj="PrimaryDomain" c="UCD_CBR_Cycle_ProjectCase" type="AttributeDesc" >
+  <desc>
+Primary domain extracted from the case metadata.
+  </desc>
+</exp>
+<exp obj="UseCaseCount" c="UCD_CBR_Cycle_ProjectCase" type="AttributeDesc" >
+  <desc>
+Number of use cases in the case.
+  </desc>
+</exp>
+</Project>

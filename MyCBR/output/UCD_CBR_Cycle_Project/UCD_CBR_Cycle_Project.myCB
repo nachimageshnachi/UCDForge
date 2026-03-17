@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Project name="UCD_CBR_Cycle_Project" author="" >
+<instances name="UCD_CBR_Cycle_ProjectCase">
+  <instance id="UCD_CBR_Cycle_ProjectCase #0" >
+    <att name="SystemName" value="Missile System" />
+    <att name="Description" value="The Missile System is operated by a Launch Station to engage targets and launch missiles. The system includes procedures for testing and handling failed launch scenarios. The Launch Station initiates target engagement, missile launches, and manages failed launch procedures, which may extend the launch process with testing." />
+    <att name="PrimaryDomain" value="Missile Defense" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Launch Station" />
+    <att name="UseCaseNames" value="Engage Target | Trigger Test | Launch Missile | Execute Failed Launch Procedure" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Missile Defense | Weapon Systems | Launch Operations | System Testing | Failure Management" />
+    <att name="PrimaryActorCount" value="0.0" />
+    <att name="SecondaryActorCount" value="1.0" />
+    <att name="UseCaseCount" value="4.0" />
+    <att name="RelationshipCount" value="5.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #1" >
+    <att name="SystemName" value="Monitoring System" />
+    <att name="Description" value="The Monitoring System enables Operators, Advanced Operators, Intruders, and Supervisors to interact with environmental monitoring and system control functions. Operators perform autonomous monitoring, while Advanced Operators can set up tracking and perform manual monitoring. Intruders can monitor the environment, and Supervisors handle camera faults. The system includes initialization and termination procedures as part of environmental monitoring." />
+    <att name="PrimaryDomain" value="Security Monitoring" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="Yes" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Operator | Advanced Operator | Intruder | Supervisor" />
+    <att name="UseCaseNames" value="Setup Track | Initialize System | Terminate System | Perform Autonomous Monitoring | Perform Manual Monitoring | Monitor Environment | Handle Camera Fault" />
+    <att name="RelationshipTypes" value="association | extend | generalization | include" />
+    <att name="DomainList" value="Security Monitoring | System Administration | Environmental Monitoring | Fault Management | Operator Interface" />
+    <att name="PrimaryActorCount" value="4.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="7.0" />
+    <att name="RelationshipCount" value="10.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #2" >
+    <att name="SystemName" value="Airport Management System" />
+    <att name="Description" value="The Airport Management System facilitates the coordination of air traffic control, ground operations, and airport safety. The ATC manages control zones and clearances, while also being involved in conflict alerting and prevention, and mission planning. The Ground Operations Team and Airport Safety Team primarily participate in conflict alerting and mission planning respectively. The system extends conflict alerting with conflict prevention when a conflict occurs." />
+    <att name="PrimaryDomain" value="Air Traffic Control" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="No" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Ground Operations Team | Airport Safety Team | ATC" />
+    <att name="UseCaseNames" value="Manage Control Zone | Manage Clearance | Alert During Conflict | Prevent Conflict | Plan Mission" />
+    <att name="RelationshipTypes" value="association | extend" />
+    <att name="DomainList" value="Air Traffic Control | Airport Operations | Conflict Management | Mission Planning | Safety and Security" />
+    <att name="PrimaryActorCount" value="0.0" />
+    <att name="SecondaryActorCount" value="3.0" />
+    <att name="UseCaseCount" value="5.0" />
+    <att name="RelationshipCount" value="9.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #3" >
+    <att name="SystemName" value="Exam Mobile Application " />
+    <att name="Description" value="The Exam Mobile Application facilitates exam result management, candidate registration, and transcript verification. Students access their accounts and results, while Data Entry Personnel manage registration and session termination. Qualification Managers authorize results and generate transcripts, and Data Managers verify results. The system supports result updates, reporting, and transcript issuance." />
+    <att name="PrimaryDomain" value="Exam Result Management" />
+    <att name="SystemKind" value="Application" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Data Entry Personnel | Qualification Manager | Data Manager | Student" />
+    <att name="UseCaseNames" value="Publish Result | Verify Transcript | Generate Report | Edit Result | Verify Result | View Registration Data | View Result | Terminate Session | Access Account | Update Information | Enter Result | Register Candidate | Generate Transcript | Recieve Transcript | Authorize Result" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Exam Result Management | Candidate Registration | Transcript Verification | User Account Management | Reporting and Analytics" />
+    <att name="PrimaryActorCount" value="4.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="15.0" />
+    <att name="RelationshipCount" value="17.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #4" >
+    <att name="SystemName" value="Fire Alarm System" />
+    <att name="Description" value="The Fire Alarm System is designed to detect fires, alert users and authorities, and facilitate system maintenance and shutdown. It interacts with Technicians for initialization and shutdown, Maintenance Operators for fault handling and maintenance, Installation Personnel for system setup, Civilians who are alerted in case of false alarms or actual fires, Fire Department who are informed of fire events, and Sensors which detect fire events. The system also handles system faults and displays a standby state when no fire is detected." />
+    <att name="PrimaryDomain" value="Fire Safety" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="Yes" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Technician | Maintenance Operator | Installation Personnel | Civillian | Fire Department | Sensor" />
+    <att name="UseCaseNames" value="Handle System Fault | Handle False Alarm | Display Standby | Warn Environment | Perform Maintenance | Alert User | Inform Authority | Detect Fire | Shutdown System | Initialize System" />
+    <att name="RelationshipTypes" value="association | extend | generalization | include" />
+    <att name="DomainList" value="Fire Safety | Alarm Systems | Emergency Response | System Maintenance | Sensor Integration" />
+    <att name="PrimaryActorCount" value="5.0" />
+    <att name="SecondaryActorCount" value="1.0" />
+    <att name="UseCaseCount" value="10.0" />
+    <att name="RelationshipCount" value="18.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #5" >
+    <att name="SystemName" value="Energy Distribution Management System" />
+    <att name="Description" value="The Energy Distribution Management System facilitates the operation and monitoring of power distribution. The Grid Operator interacts with the system to record energy usage and authenticate themselves. The Control Center System is involved in selecting power sources, validating billing, and monitoring power flow. Use cases include generating reports, allocating power, checking transformer loads, activating backup lines, and selecting distribution areas. Authentication is required before selecting a power source, and billing validation includes report generation. Monitoring power flow can be extended by activating a backup line when the main power is unavailable. Transformer load checks are included in power allocation, and power flow monitoring includes transformer load checks." />
+    <att name="PrimaryDomain" value="Energy Distribution" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Grid Operator | Control Center System" />
+    <att name="UseCaseNames" value="Generate Energy Report | Validate Energy Billing | Record Energy Usage | Allocate Power Supply | Check Transformer Load | Activate Backup Line | Monitor Power Flow | Select Distribution Area | Select Power Source | Authenticate Operator" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Energy Distribution | Power Grid Management | Billing and Reporting | System Authentication | Power Supply Allocation" />
+    <att name="PrimaryActorCount" value="1.0" />
+    <att name="SecondaryActorCount" value="1.0" />
+    <att name="UseCaseCount" value="10.0" />
+    <att name="RelationshipCount" value="11.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #6" >
+    <att name="SystemName" value="Boarding System" />
+    <att name="Description" value="The Boarding System manages the process of passenger boarding, involving interactions between Passengers and Ticket Clerks. Passengers handover luggage and receive tickets, while Ticket Clerks handle luggage processing, which includes assigning seats and weighing luggage. The system facilitates the efficient and organized boarding of passengers." />
+    <att name="PrimaryDomain" value="Airline Boarding" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Passenger | Ticket Clerk" />
+    <att name="UseCaseNames" value="Assign Seat | Give Ticket | Handover Luggage | Weigh Luggage | Handle Luggage" />
+    <att name="RelationshipTypes" value="association | include" />
+    <att name="DomainList" value="Airline Boarding | Luggage Handling | Passenger Services | Ticket Management | Travel Logistics" />
+    <att name="PrimaryActorCount" value="2.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="5.0" />
+    <att name="RelationshipCount" value="5.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #7" >
+    <att name="SystemName" value="Loan Management" />
+    <att name="Description" value="The Loan Management system facilitates the loan application and approval process. Loan Officers utilize the system to check applicant eligibility, credit history, and assess home values, ultimately sanctioning loans. Home Buyers interact with the system to process mortgage and loan applications. The system serves as a central platform for managing the loan lifecycle, from initial application to final approval." />
+    <att name="PrimaryDomain" value="Mortgage Lending" />
+    <att name="SystemKind" value="Management" />
+    <att name="HasInclude" value="No" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Loan Officer | Home Buyer" />
+    <att name="UseCaseNames" value="Sanction Loan | Check Eligibility | Check Credit History | Assess Home Value | Process Mortgage Application | Process Loan Application" />
+    <att name="RelationshipTypes" value="association" />
+    <att name="DomainList" value="Mortgage Lending | Loan Origination | Credit Risk Assessment | Financial Services | Home Finance" />
+    <att name="PrimaryActorCount" value="2.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="6.0" />
+    <att name="RelationshipCount" value="6.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #8" >
+    <att name="SystemName" value="Flight Reservation System" />
+    <att name="Description" value="The Flight Reservation System facilitates booking, managing, and modifying flight reservations. Customers can search for and book tickets. Agents assist passengers and manage reservations. Administrators handle user accounts, flight schedules, and technical issues. The system includes functionality for checking flight availability, editing bookings, and cancelling reservations, with the latter optionally triggering reservation management." />
+    <att name="PrimaryDomain" value="Airline Reservation" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Administrator | Agent | Customer" />
+    <att name="UseCaseNames" value="Edit Booking | Cancel Booking | Manage Reservation | Check Availability | Assist Passenger | Resolve Technical Issue | Manage User Account | Manage Flight Schedule | Book Ticket | Search Flight" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Airline Reservation | Travel Management | Customer Service | Flight Operations | User Account Management" />
+    <att name="PrimaryActorCount" value="3.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="10.0" />
+    <att name="RelationshipCount" value="10.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #9" >
+    <att name="SystemName" value="Course Registration" />
+    <att name="Description" value="The Course Registration system facilitates the process of students enrolling in college, selecting courses, and registering for those courses. Professors are involved in course selection, and the Registrar manages the closing of registration. Students can also drop courses, potentially extending the registration process based on change requirements." />
+    <att name="PrimaryDomain" value="Higher Education Administration" />
+    <att name="SystemKind" value="Registration" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Registrar | Professor | Student" />
+    <att name="UseCaseNames" value="Drop Course | Enrol In College | Close Registration | Select Course | Register For Course" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Higher Education Administration | Student Information Systems | Course Management | Academic Registration | Educational Services" />
+    <att name="PrimaryActorCount" value="3.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="5.0" />
+    <att name="RelationshipCount" value="6.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #10" >
+    <att name="SystemName" value="Lab  Testing System" />
+    <att name="Description" value="The Lab Testing System facilitates the process of patient assessment, test prescription, test performance, and result delivery. Medical Officers assess patients, prescribe medication and tests. Patients fill out forms and undergo testing. Lab Technicians perform tests and provide results. The system supports the interaction between these stakeholders to manage the lab testing workflow." />
+    <att name="PrimaryDomain" value="Healthcare Administration" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="No" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Medical Officer | Lab Technician | Patient" />
+    <att name="UseCaseNames" value="Fill Form | Prescribe Medication | Assess Patient | Prescribe Test | Give Result | Perform Test" />
+    <att name="RelationshipTypes" value="association" />
+    <att name="DomainList" value="Healthcare Administration | Laboratory Information Management | Patient Management | Medical Testing | Prescription Management" />
+    <att name="PrimaryActorCount" value="3.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="6.0" />
+    <att name="RelationshipCount" value="7.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #11" >
+    <att name="SystemName" value="Car Maintenance" />
+    <att name="Description" value="The Car Maintenance system facilitates the process of vehicle repair and upkeep. Customers initiate requests for maintenance, potentially filing insurance claims and making payments. Mechanics perform the maintenance work, sometimes requiring parts to be ordered and shipped. The Service Center manages activities, delivers cars, receives payments, and handles part logistics. The system also includes invoice generation and activity monitoring." />
+    <att name="PrimaryDomain" value="Automotive Maintenance" />
+    <att name="SystemKind" value="Maintenance" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Mechanic | Customer | Service Center" />
+    <att name="UseCaseNames" value="Receive Payment | Raise Request | Claim Insurance | Make Payment | Send Invoice | Deliver Car | Monitor Activity | Ship Part | Order Part | Perform Maintenance" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Automotive Maintenance | Vehicle Repair Services | Parts Ordering and Logistics | Payment Processing | Insurance Claim Management" />
+    <att name="PrimaryActorCount" value="2.0" />
+    <att name="SecondaryActorCount" value="1.0" />
+    <att name="UseCaseCount" value="10.0" />
+    <att name="RelationshipCount" value="11.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #12" >
+    <att name="SystemName" value="Clinic Management" />
+    <att name="Description" value="The Clinic Management system facilitates interactions between Doctors, Nurses, and Patients to manage patient information, appointments, and medical records. Doctors can view patient histories and give prescriptions. Nurses can print reports. Patients can schedule appointments and enter their own information. The system also records visit information, which is included as part of the appointment scheduling process." />
+    <att name="PrimaryDomain" value="Healthcare Information Management" />
+    <att name="SystemKind" value="Management" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Doctor | Nurse | Patient" />
+    <att name="UseCaseNames" value="View Patient History | Print Report | Give Prescription | Record Visit Information | Schedule Appointment | Enter Patient Information" />
+    <att name="RelationshipTypes" value="association | include" />
+    <att name="DomainList" value="Healthcare Information Management | Patient Scheduling | Medical Records Management | Prescription Management | Clinical Reporting" />
+    <att name="PrimaryActorCount" value="3.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="6.0" />
+    <att name="RelationshipCount" value="6.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #13" >
+    <att name="SystemName" value="Automobile Service Management System" />
+    <att name="Description" value="The Automobile Service Management System facilitates interactions between Car Owners, Service Representatives, Technicians, and Service Engineers to manage vehicle service appointments, repairs, and related information. Service Representatives handle contact information and appointment booking. Technicians perform vehicle repairs, while Service Engineers inspect vehicles. The system supports spare part registration and generates service reports, potentially extending appointment booking when service is required, and includes spare part registration within the appointment process." />
+    <att name="PrimaryDomain" value="Automotive Service Management" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Service Representative | Technician | Service Engineer | Car Owner" />
+    <att name="UseCaseNames" value="Register Contact Information | Book Appointment | Generate Service Report | Register Spare Part | Repair Vehicle | Inspect Vehicle | Book Service Appointment" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Automotive Service Management | Appointment Scheduling | Vehicle Maintenance | Customer Relationship Management | Spare Parts Inventory" />
+    <att name="PrimaryActorCount" value="4.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="7.0" />
+    <att name="RelationshipCount" value="8.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #14" >
+    <att name="SystemName" value="Bank" />
+    <att name="Description" value="The Bank system facilitates financial transactions and account management for Customers, supported by Bank Employees. Customers can Deposit Funds, Withdraw Funds, and Open Accounts. Bank Employees Proivde Service to customers. Both Deposit and Withdraw operations include an Update Balance function to maintain accurate account records." />
+    <att name="PrimaryDomain" value="Banking Operations" />
+    <att name="SystemKind" value="Bank" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Bank Employee | Customer" />
+    <att name="UseCaseNames" value="Proivde Service | Update Balance | Withdraw Fund | Deposit Fund | Open Account" />
+    <att name="RelationshipTypes" value="association | include" />
+    <att name="DomainList" value="Banking Operations | Financial Transactions | Account Management | Customer Service | Funds Management" />
+    <att name="PrimaryActorCount" value="2.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="5.0" />
+    <att name="RelationshipCount" value="6.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #15" >
+    <att name="SystemName" value="Trading System" />
+    <att name="Description" value="The Trading System facilitates deal capture, price display, risk analysis, account updates, and limit setting. Traders interact with the system to capture deals, view prices, and analyze risks. The Trading Manager sets limits within the system. The Accounting System interacts with the system to update accounts." />
+    <att name="PrimaryDomain" value="Financial Trading" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="No" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Trader | Trading Manager | Accounting System" />
+    <att name="UseCaseNames" value="Capture Deal | Display Price | Analyze Risk | Update Account | Set Limit" />
+    <att name="RelationshipTypes" value="association" />
+    <att name="DomainList" value="Financial Trading | Risk Management | Account Management | Trade Execution | Financial Regulations" />
+    <att name="PrimaryActorCount" value="2.0" />
+    <att name="SecondaryActorCount" value="1.0" />
+    <att name="UseCaseCount" value="5.0" />
+    <att name="RelationshipCount" value="5.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #16" >
+    <att name="SystemName" value="Game" />
+    <att name="Description" value="The Game system manages a leaderboard and game settings. Game Administrators can edit, update, and modify settings, while Players can view, play the game, and modify settings. Viewing the leaderboard includes fetching the leaderboard data. Playing the game automatically updates the leaderboard." />
+    <att name="PrimaryDomain" value="Game Management" />
+    <att name="SystemKind" value="Game" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Game Administrator | Player" />
+    <att name="UseCaseNames" value="Edit Leaderboard | Update Leaderboard | Fetch Leaderboard | Modify Setting | View Leaderboard | Play Game" />
+    <att name="RelationshipTypes" value="association | include" />
+    <att name="DomainList" value="Game Management | Leaderboard Administration | User Account Management | Game Settings Configuration | Player Engagement" />
+    <att name="PrimaryActorCount" value="2.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="6.0" />
+    <att name="RelationshipCount" value="8.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #17" >
+    <att name="SystemName" value="Renewable Energy Monitoring System" />
+    <att name="Description" value="The Renewable Energy Monitoring System facilitates the monitoring and analysis of energy production from turbines. System Administrators perform equipment checks, Control Engineers analyze energy data, and Field Control Engineers monitor turbines and register new sensors. The system generates energy reports based on turbine monitoring data, and sensor registration is integral to turbine monitoring." />
+    <att name="PrimaryDomain" value="Renewable Energy Management" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="System Administrator | Control Engineer | Field Control Engineer" />
+    <att name="UseCaseNames" value="Generate Energy Report | Register New Sensor | Perform Equipment Check | Analyze Energy Data | Monitor Turbine" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Renewable Energy Management | Turbine Monitoring | Energy Data Analytics | Sensor Management | System Administration" />
+    <att name="PrimaryActorCount" value="3.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="5.0" />
+    <att name="RelationshipCount" value="6.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #18" >
+    <att name="SystemName" value="Coursework Management" />
+    <att name="Description" value="The Coursework Management system facilitates the administration, delivery, submission, and assessment of coursework. Administrators configure courses, Lecturers retrieve coursework for grading, and Students submit coursework and retrieve their marks. Submitters publish marks, potentially triggered by a student's request to retrieve their mark." />
+    <att name="PrimaryDomain" value="Educational Administration" />
+    <att name="SystemKind" value="Management" />
+    <att name="HasInclude" value="No" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Administrator | Lecturer | Submitter | Student" />
+    <att name="UseCaseNames" value="Set Up Course Configuration | Retrieve Coursework | Publlish Mark | Retrieve Mark | Submit Coursework" />
+    <att name="RelationshipTypes" value="association | extend" />
+    <att name="DomainList" value="Educational Administration | Course Management | Student Assessment | Learning Management Systems | Academic Record Keeping" />
+    <att name="PrimaryActorCount" value="4.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="5.0" />
+    <att name="RelationshipCount" value="6.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #19" >
+    <att name="SystemName" value="Surveillance System " />
+    <att name="Description" value="The Surveillance System monitors a safe zone for sheep and bears, utilizing input from a Mission Operator, Ground Station, GPS Constellation, and Weather data. The system allows for mission planning and preparation, surveying of the safe zone, and protection of sheep. The Ground Station and GPS Constellation provide data for system monitoring. Bears attempt to enter the safe zone, while sheep require protection. Mission preparation includes parameterization and planning phases." />
+    <att name="PrimaryDomain" value="Wildlife Monitoring" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Mission Operator | Sheep | Bear | Ground Station | GPS Constellation | Weather" />
+    <att name="UseCaseNames" value="Enter Safe Zone | Protect Sheep | Survey Safe Zone | Monitor System | Parameterize Mission | Plan Mission | Prepare Mission" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Wildlife Monitoring | Security Systems | Mission Planning | Environmental Monitoring | Geospatial Data Processing" />
+    <att name="PrimaryActorCount" value="3.0" />
+    <att name="SecondaryActorCount" value="3.0" />
+    <att name="UseCaseCount" value="7.0" />
+    <att name="RelationshipCount" value="12.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #20" >
+    <att name="SystemName" value="Parking System" />
+    <att name="Description" value="The Parking System manages parking fees and provides receipts. The Parking Manager adjusts parking rates, while Drivers pay parking bills. The system supports hourly and daily rate adjustments, which are generalizations of a broader 'Adjust Rate' function. The Parking Manager can also print receipts." />
+    <att name="PrimaryDomain" value="Parking Management" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="No" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="Yes" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Parking Manager | Driver" />
+    <att name="UseCaseNames" value="Print Reciept | Adjust Hourly Rate | Adjust Daily Rate | Adjust Rate | Pay Parking Bill" />
+    <att name="RelationshipTypes" value="association | generalization" />
+    <att name="DomainList" value="Parking Management | Payment Processing | Rate Management | Receipt Generation | User Authentication" />
+    <att name="PrimaryActorCount" value="2.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="5.0" />
+    <att name="RelationshipCount" value="5.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #21" >
+    <att name="SystemName" value="Train Ticket Reservation" />
+    <att name="Description" value="The Train Ticket Reservation system enables customers to reserve train tickets through a Ticket Booking App. Customers can access their accounts, choose origins and destinations, select trains, view seat availability, make payments, and receive tickets. The Ticket Booking App facilitates the process by providing access to train schedules, handling payments, and issuing tickets." />
+    <att name="PrimaryDomain" value="Train Travel Booking" />
+    <att name="SystemKind" value="Reservation" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Customer | Ticket Booking App" />
+    <att name="UseCaseNames" value="Issue Ticket | Receive Payment | Make Payment | Choose Train | Show Available Seat | Show Alternative Train | Show Available Train | Choose Destination | Choose Origin | Access User Account" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Train Travel Booking | Online Payment Processing | User Account Management | Train Schedule Management | Ticket Issuance" />
+    <att name="PrimaryActorCount" value="1.0" />
+    <att name="SecondaryActorCount" value="1.0" />
+    <att name="UseCaseCount" value="10.0" />
+    <att name="RelationshipCount" value="11.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #22" >
+    <att name="SystemName" value="POS" />
+    <att name="Description" value="The POS system facilitates retail transactions, user management, and activity analysis. Cashiers collect cash and process sales with customer interaction. Managers oversee cash collection and sales processes. System Administrators manage user accounts and security. The system integrates with external actors like the Accounting System and Tax Calculator for financial processing, and the Sales Activity System for data analysis. Returns are handled as an extension of the sales process under specific conditions." />
+    <att name="PrimaryDomain" value="Point of Sale Systems" />
+    <att name="SystemKind" value="POS" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="System Administrator | Manager | Cashier | Customer | Accounting System | Tax Calculator | Sales Activity System" />
+    <att name="UseCaseNames" value="Collect Cash | Manage Security | Manage User | Analyze Activity | Handle Return | Process Sale" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Point of Sale Systems | Retail Management | Financial Transactions | User Account Management | Sales Analytics" />
+    <att name="PrimaryActorCount" value="4.0" />
+    <att name="SecondaryActorCount" value="3.0" />
+    <att name="UseCaseCount" value="6.0" />
+    <att name="RelationshipCount" value="11.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #23" >
+    <att name="SystemName" value="Healthcare" />
+    <att name="Description" value="The Healthcare system manages patient care processes, from initial complaint recording and admission through assessment, treatment, progress reporting, and eventual discharge. Administrative Clerks record initial complaints, while Guardians and Patients participate in the admission process. Nurses and Doctors assess patient status and advise medical treatment. The system also handles legal authorization and discharge procedures, involving review of summaries and recommendations." />
+    <att name="PrimaryDomain" value="Patient Admission and Discharge" />
+    <att name="SystemKind" value="Healthcare" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Administrative Clerk | Guardian | Patient | Nurse | Doctor" />
+    <att name="UseCaseNames" value="Recommend Patient Discharge | Maintain Progress Report | Advise Medical Treatment | Assess Patient Status | Review Discharge Summary | Obtain Legal Authorization | Record Initial Complaint | Admit Patient" />
+    <att name="RelationshipTypes" value="association | include" />
+    <att name="DomainList" value="Patient Admission and Discharge | Medical Treatment and Assessment | Patient Record Management | Legal and Regulatory Compliance | Healthcare Administration" />
+    <att name="PrimaryActorCount" value="5.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="8.0" />
+    <att name="RelationshipCount" value="10.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #24" >
+    <att name="SystemName" value="Coffin Escape System" />
+    <att name="Description" value="The Coffin Escape System facilitates a stunt performance where an Escape Artist attempts to escape from a coffin. The system involves a Coffin Maker who ensures the coffin's quality, a Safety Officer and the Escape Artist who collaborate to minimize risks, and an Audience whose excitement is a key consideration. Computer control can be optionally enabled to assist with fluid pumping during the stunt. The system relies on pumping fluids and ensuring sufficient air within the coffin for the stunt to be performed." />
+    <att name="PrimaryDomain" value="Stunt Performance" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Coffin Maker | Audience | Safety Officer | Escape Artist" />
+    <att name="UseCaseNames" value="Enable Computer Control System | Pump Fluid | Allow Stunt Fluid | Ensure Sufficient Air | Ensure Coffin Quality | Maximize Excitement | Minimize Risk | Perform Stunt" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Stunt Performance | Risk Management | Safety Systems | Coffin Manufacturing | Audience Engagement" />
+    <att name="PrimaryActorCount" value="4.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="8.0" />
+    <att name="RelationshipCount" value="10.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #25" >
+    <att name="SystemName" value="Order_Management_System" />
+    <att name="Description" value="The Order Management System facilitates the ordering, checking, and segregation of parts. The Purchasing Manager initiates orders, checks permissions, and orders parts. The Warehouse Manager segregates orders, views orders, checks parts, and registers parts. The system extends the 'Order Part' use case with a 'Check Part' function when parts are unavailable." />
+    <att name="PrimaryDomain" value="Supply Chain Management" />
+    <att name="SystemKind" value="Order_Management_System" />
+    <att name="HasInclude" value="No" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Purchasing Manager | Warehouse Manager" />
+    <att name="UseCaseNames" value="Check Permission | Place Order | See Order | Segregate Order | Order Part | Check Part | Register Part" />
+    <att name="RelationshipTypes" value="association | extend" />
+    <att name="DomainList" value="Supply Chain Management | Inventory Control | Procurement | Order Processing | Warehouse Operations" />
+    <att name="PrimaryActorCount" value="2.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="7.0" />
+    <att name="RelationshipCount" value="8.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #26" >
+    <att name="SystemName" value="Online Learning System" />
+    <att name="Description" value="The Online Learning System facilitates user registration, account management, access to learning materials, and interaction with service providers. Users can access courses, study materials, and quizzes, while service providers manage user registration and account verification. The system supports profile editing, including password changes, and provides access to FAQs and contact details." />
+    <att name="PrimaryDomain" value="E-Learning" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Service Provider | User" />
+    <att name="UseCaseNames" value="Update Account | Change Password | Edit Profile | Access Quiz | Access Study Material | Verify Account | View Contact Detail | View Faq | View Course List | Register User | Access Account" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="E-Learning | User Account Management | Course Catalog | Content Delivery | User Support" />
+    <att name="PrimaryActorCount" value="2.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="11.0" />
+    <att name="RelationshipCount" value="11.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #27" >
+    <att name="SystemName" value="School Management System" />
+    <att name="Description" value="The School Management System facilitates interactions between Administrators, Students, and Teachers to manage school-related information, enrollment, examinations, attendance, and reporting. Administrators add and edit information, prepare report cards, and oversee the system. Students fill admission forms and write exams. Teachers prepare and evaluate exams, and mark attendance." />
+    <att name="PrimaryDomain" value="Education Management" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Administrator | Student | Teacher" />
+    <att name="UseCaseNames" value="Add Information | Declare Result | Prepare Report Card | Write Exam | Complete Enrolment | Fill Admission Form | Evaluate Exam Paper | Prepare Exam Paper | Mark Attendance | Edit Information" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Education Management | Student Information Systems | Examination Management | Academic Reporting | Attendance Tracking" />
+    <att name="PrimaryActorCount" value="3.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="10.0" />
+    <att name="RelationshipCount" value="10.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #28" >
+    <att name="SystemName" value="Restaurant" />
+    <att name="Description" value="The Restaurant system facilitates the ordering, preparation, serving, and payment for food. Clients order food through a Waiter, which initiates the cooking process by the Chef. Once cooked, the Waiter serves the food, and the Client pays the bill through the Cashier. Serving food always includes paying the bill, cooking food always includes serving food, and ordering food always includes cooking food." />
+    <att name="PrimaryDomain" value="Restaurant Management" />
+    <att name="SystemKind" value="Restaurant" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Chef | Cashier | Client | Waiter" />
+    <att name="UseCaseNames" value="Pay Bill | Serve Food | Cook Food | Order Food" />
+    <att name="RelationshipTypes" value="association | include" />
+    <att name="DomainList" value="Restaurant Management | Food Service | Point of Sale (POS) | Order Processing | Culinary Operations" />
+    <att name="PrimaryActorCount" value="4.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="4.0" />
+    <att name="RelationshipCount" value="9.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #29" >
+    <att name="SystemName" value="Bike Management System" />
+    <att name="Description" value="The Bike Management System facilitates the rental and maintenance of bicycles. Administrators manage bike and customer lists, while Supervisors handle bike issuance and returns. The system supports finding bikes, handling customer inquiries, and generating receipts. The system interacts with Administrators for bike list maintenance and with Supervisors for bike handling operations." />
+    <att name="PrimaryDomain" value="Bike Rental Management" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Administrator | Supervisor" />
+    <att name="UseCaseNames" value="Find Bike | Handle Enquiry | Print Receipt | Handle Bike Return | Issue Bike | Maintain Customer List | Maintain Bike List" />
+    <att name="RelationshipTypes" value="association | include" />
+    <att name="DomainList" value="Bike Rental Management | Inventory Management | Customer Relationship Management | Point of Sale | System Administration" />
+    <att name="PrimaryActorCount" value="2.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="7.0" />
+    <att name="RelationshipCount" value="7.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #30" >
+    <att name="SystemName" value="Ticket Booking System" />
+    <att name="Description" value="The Ticket Booking System facilitates the booking of tours and airline tickets through various stakeholders. Customers can book airline tickets and make payments. Travel agents can also book airline tickets and deliver airline tickets. The tourist company is involved in booking tours, and the airline company participates in the airline ticket booking process. Customers may also pay agent fees." />
+    <att name="PrimaryDomain" value="Airline Ticketing" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="No" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Tourist Company | Airline Company | Customer | Travel Agent" />
+    <att name="UseCaseNames" value="Pay Agent Fee | Make Payment | Book Tour | Deliver Airlineticket | Book Airline Ticket" />
+    <att name="RelationshipTypes" value="association" />
+    <att name="DomainList" value="Airline Ticketing | Tour Booking | Payment Processing | Travel Agency Services | Customer Service" />
+    <att name="PrimaryActorCount" value="4.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="5.0" />
+    <att name="RelationshipCount" value="8.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #31" >
+    <att name="SystemName" value="Multi Plant DCS" />
+    <att name="Description" value="The Multi Plant DCS system manages cooling services across multiple plants, involving interactions with Maintenance Operators, Commercial Users, Residential Users, a general User, and a Controller. The Controller manages chiller sequencing and temperature monitoring, while users are alerted to refrigerant leaks. Maintenance Operators provide maintenance services, which can trigger refrigerant leak alerts. Cooling services include monitoring chilled water temperatures. Commercial and Residential Users are specialized types of Users." />
+    <att name="PrimaryDomain" value="HVAC Control Systems" />
+    <att name="SystemKind" value="DCS" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="Yes" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Maintenance Operator | Commercial User | Residential User | User | Controller" />
+    <att name="UseCaseNames" value="Provide Maintenance | Alert Refrigerant Leakage | Control Chiller Sequencing | Monitor Chilled Water Temperature | Provide Cooling Service" />
+    <att name="RelationshipTypes" value="association | extend | generalization | include" />
+    <att name="DomainList" value="HVAC Control Systems | Refrigerant Management | Chiller Plant Operations | Industrial Automation | Building Management Systems" />
+    <att name="PrimaryActorCount" value="4.0" />
+    <att name="SecondaryActorCount" value="1.0" />
+    <att name="UseCaseCount" value="5.0" />
+    <att name="RelationshipCount" value="10.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #32" >
+    <att name="SystemName" value="Maintenance Management System" />
+    <att name="Description" value="The Maintenance Management System facilitates the tracking and execution of maintenance activities for equipment. Customers can request maintenance and register new equipment. Technicians schedule and perform maintenance, while the Maintenance Manager oversees maintenance execution. The system also generates reports, potentially extending from maintenance requests when changes are required. The system supports the lifecycle of equipment maintenance from initial registration through scheduled and reactive maintenance, and reporting." />
+    <att name="PrimaryDomain" value="Equipment Maintenance" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Maintenance Manager | Technician | Customer" />
+    <att name="UseCaseNames" value="Generate Report | Register New Equipment | Perform Maintenance | Schedule Maintenance | Request Maintenance" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Equipment Maintenance | Preventive Maintenance Scheduling | Corrective Maintenance Management | Asset Management | Reporting and Analytics" />
+    <att name="PrimaryActorCount" value="3.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="5.0" />
+    <att name="RelationshipCount" value="6.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #33" >
+    <att name="SystemName" value="Cellular Telephone" />
+    <att name="Description" value="The Cellular Telephone system enables users to make and end phone calls, place conference calls, monitor signal strength, and utilize a scheduler. The system interacts with users directly for call management and with the cellular network for signal monitoring and scheduler functionality. The cellular network provides the underlying infrastructure for these services." />
+    <att name="PrimaryDomain" value="Telecommunications" />
+    <att name="SystemKind" value="Telephone" />
+    <att name="HasInclude" value="No" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="User | Cellular Network" />
+    <att name="UseCaseNames" value="Cut Call | Place Conference Call | Monitor Signal Strength | Use Scheduler | Place Phone Call" />
+    <att name="RelationshipTypes" value="association | extend" />
+    <att name="DomainList" value="Telecommunications | Mobile Computing | Call Management | Wireless Communication | Personal Productivity" />
+    <att name="PrimaryActorCount" value="1.0" />
+    <att name="SecondaryActorCount" value="1.0" />
+    <att name="UseCaseCount" value="5.0" />
+    <att name="RelationshipCount" value="5.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #34" >
+    <att name="SystemName" value="Library Management System" />
+    <att name="Description" value="The Library Management System facilitates book-related transactions between Users and Librarians. Users can purchase and borrow books, while Librarians manage user registration and loan updates. The system ensures books are properly tracked and returned, with borrowing inherently including a return process. User registration incorporates loan update functionality." />
+    <att name="PrimaryDomain" value="Library Management" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Librarian | User" />
+    <att name="UseCaseNames" value="Purchase Book | Update Loan | Return Book | Register User | Borrow Book" />
+    <att name="RelationshipTypes" value="association | include" />
+    <att name="DomainList" value="Library Management | Book Lending | User Account Management | Inventory Management | Transaction Processing" />
+    <att name="PrimaryActorCount" value="2.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="5.0" />
+    <att name="RelationshipCount" value="6.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #35" >
+    <att name="SystemName" value="Security System" />
+    <att name="Description" value="The Security System monitors for intrusions and allows an Operator to activate and deactivate the system. An Intruder triggers sensors, which the system monitors. The system's primary function is to detect and respond to security breaches, with the Operator having control over system activation and deactivation, and monitoring system status." />
+    <att name="PrimaryDomain" value="Physical Security" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="No" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Intruder | Operator" />
+    <att name="UseCaseNames" value="Trigger Sensor | Monitor | Deactivate System | Activate System" />
+    <att name="RelationshipTypes" value="association | extend" />
+    <att name="DomainList" value="Physical Security | Intrusion Detection | Security System Management | Access Control | Surveillance" />
+    <att name="PrimaryActorCount" value="2.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="4.0" />
+    <att name="RelationshipCount" value="5.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #36" >
+    <att name="SystemName" value="Inverted Pendulum System" />
+    <att name="Description" value="The Inverted Pendulum System is controlled by a User and subject to external Disturbances. The User can start and stop the controller, set the controller gain, and set the amplifier gain. The Disturbance actor introduces external forces to the system, affecting its stability. The system's core functionality revolves around maintaining the pendulum's balance through controller adjustments." />
+    <att name="PrimaryDomain" value="Control Systems Engineering" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="No" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="User | Disturbance" />
+    <att name="UseCaseNames" value="Disturb System | Stop Controller | Start Controller | Set Controller Gain | Set Amplifier Gain" />
+    <att name="RelationshipTypes" value="association" />
+    <att name="DomainList" value="Control Systems Engineering | Robotics | System Dynamics | Signal Processing | Mechanical Engineering" />
+    <att name="PrimaryActorCount" value="1.0" />
+    <att name="SecondaryActorCount" value="1.0" />
+    <att name="UseCaseCount" value="5.0" />
+    <att name="RelationshipCount" value="5.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #37" >
+    <att name="SystemName" value="Aircraft Design Review System" />
+    <att name="Description" value="The Aircraft Design Review System facilitates the review and approval of aircraft designs. Design Engineers submit designs and register components. Systems Engineers review these designs. Project Managers approve modifications. The system generates review reports, optionally extending the submission process when changes are required, and incorporates design component registration into the submission process." />
+    <att name="PrimaryDomain" value="Aerospace Engineering" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Project Manager | Systems Engineer | Design Engineer" />
+    <att name="UseCaseNames" value="Generate Review Report | Register Design Component | Approve Modification | Review Design | Submit Design" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Aerospace Engineering | Design Review | Configuration Management | Systems Engineering | Project Management" />
+    <att name="PrimaryActorCount" value="3.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="5.0" />
+    <att name="RelationshipCount" value="6.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #38" >
+    <att name="SystemName" value="Real Time System Controller" />
+    <att name="Description" value="The Real Time System Controller manages system maintenance, setup, and shutdown procedures, as well as data acquisition, computation, and information delivery. The Maintenance Crew initiates maintenance procedures, while the Supervisor oversees system setup and shutdown. The System User receives information from the system. Sensors provide input for computation, and actuators execute computational results. The system supports both scheduled and on-demand maintenance." />
+    <att name="PrimaryDomain" value="Real-time Control Systems" />
+    <att name="SystemKind" value="Controller" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="Yes" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Maintenance Crew | Supervisor | System User | Sensor | Actuator" />
+    <att name="UseCaseNames" value="Apply Upon Request Maintenance | Apply Scheduled Maintenance | Apply Maintenance Procedure | Run Shutdown Procdure | Run Setup Proedure | Acquire Input | Perform Computation | Store Result | Inform User" />
+    <att name="RelationshipTypes" value="association | extend | generalization | include" />
+    <att name="DomainList" value="Real-time Control Systems | System Maintenance Management | Data Acquisition and Processing | Supervisory Control | User Information Systems" />
+    <att name="PrimaryActorCount" value="3.0" />
+    <att name="SecondaryActorCount" value="2.0" />
+    <att name="UseCaseCount" value="9.0" />
+    <att name="RelationshipCount" value="10.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #39" >
+    <att name="SystemName" value="UAV Mission Planning" />
+    <att name="Description" value="The UAV Mission Planning system enables an Operator to plan, execute, and monitor missions for Unmanned Aerial Vehicles (UAVs). The Operator interacts with the system to create missions, allocate UAVs, and evaluate mission outcomes. The system utilizes a Camera for image capture during missions, a Server for command processing and mission initiation, and GPS for coordinate management. The system supports creating markers and removing coordinates as part of mission definition, and sending commands to the UAV during mission execution." />
+    <att name="PrimaryDomain" value="UAV Mission Management" />
+    <att name="SystemKind" value="Planning" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Operator | Camera | Server | GPS" />
+    <att name="UseCaseNames" value="Evaluate Mission | Create Marker | Remove Coordinate | Capture Image | Allocate Uav | Feed Command | Assign Search Area | Send Command | Start Mission | Monitor Mission | Create Mission" />
+    <att name="RelationshipTypes" value="association | include" />
+    <att name="DomainList" value="UAV Mission Management | Geospatial Data Processing | Command and Control Systems | Image Acquisition | Mission Planning" />
+    <att name="PrimaryActorCount" value="1.0" />
+    <att name="SecondaryActorCount" value="3.0" />
+    <att name="UseCaseCount" value="11.0" />
+    <att name="RelationshipCount" value="14.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #40" >
+    <att name="SystemName" value="Satellite System" />
+    <att name="Description" value="The Satellite System manages the operation of a satellite, enabling payload status retrieval, command transmission (both real-time and stored), infrared sensor pointing, and orbital maneuvers. The system interacts with Payload Operators for status and sensor control, Flight Controllers for orbital adjustments, and Environmental Test Engineers for power generation testing. The Solar Simulation Chamber is used to test electricity generation." />
+    <att name="PrimaryDomain" value="Satellite Command and Control" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="Yes" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Payload Operator | Flight Controller | Environmental Test Engineer | Solar Simulation Chamber" />
+    <att name="UseCaseNames" value="Get Payload Status | Send Real Time Command | Send Stored Command | Point Infrared Sensor | Send Command | Execute Hohmann Transfer | Generate Electricity" />
+    <att name="RelationshipTypes" value="association | generalization | include" />
+    <att name="DomainList" value="Satellite Command and Control | Payload Management | Orbital Mechanics | Power Systems Testing | Infrared Sensor Operation" />
+    <att name="PrimaryActorCount" value="3.0" />
+    <att name="SecondaryActorCount" value="1.0" />
+    <att name="UseCaseCount" value="7.0" />
+    <att name="RelationshipCount" value="10.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #41" >
+    <att name="SystemName" value="Appointment Booking " />
+    <att name="Description" value="The Appointment Booking system facilitates the scheduling of appointments between a User and a Service Provider. Users can initiate calls, while Service Providers manage technical issues and appointment slots. The Payment Gateway handles payment-related functionalities. Scheduling an appointment automatically triggers a confirmation. Showing a payment method necessitates receiving payment. Displaying available slots can be extended to show alternative options when no slots are available." />
+    <att name="PrimaryDomain" value="Appointment Scheduling" />
+    <att name="SystemKind" value="Booking" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="User | Service Provider | Payment Gateway" />
+    <att name="UseCaseNames" value="Resolve Technical Issue | Send Confirmation | Schedule Appointment | Receive Payment | Show Payment Method | Show Alternative Option | Display Available Slot | Make Call" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Appointment Scheduling | Service Management | Payment Processing | Customer Support | Communication" />
+    <att name="PrimaryActorCount" value="2.0" />
+    <att name="SecondaryActorCount" value="1.0" />
+    <att name="UseCaseCount" value="8.0" />
+    <att name="RelationshipCount" value="9.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #42" >
+    <att name="SystemName" value="Cab Booking Application" />
+    <att name="Description" value="The Cab Booking Application facilitates users in booking cabs. Users interact with the system to choose locations, book cabs, view available cabs, confirm bookings, access their accounts, and delete bookings. The Backend actor supports the system by confirming bookings and providing available cab information." />
+    <att name="PrimaryDomain" value="Ride-Hailing Services" />
+    <att name="SystemKind" value="Application" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="User | Backend" />
+    <att name="UseCaseNames" value="Choose Location | Delete Booking | Show Driver Information | Confirm Booking | Show Payment Method | Book Cab | Show Available Cabs | Access Account" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Ride-Hailing Services | Transportation Logistics | Mobile Applications | Payment Processing | User Account Management" />
+    <att name="PrimaryActorCount" value="1.0" />
+    <att name="SecondaryActorCount" value="1.0" />
+    <att name="UseCaseCount" value="8.0" />
+    <att name="RelationshipCount" value="11.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #43" >
+    <att name="SystemName" value="Sentinel EMS" />
+    <att name="Description" value="The Sentinel EMS system manages product definition, customer management, and environment configuration. Privilege Managers and Customer Service representatives manage customer data. Developers generate product keys, trial products, branded resources, and runtime installers. Product Managers define product features. The system includes functionality for defining both trial and full products, with trial products incorporating runtime installer generation. Environment management is included in branded resource generation and product key generation." />
+    <att name="PrimaryDomain" value="Product Lifecycle Management" />
+    <att name="SystemKind" value="EMS" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="Yes" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Privilege Manager | Customer Service | Developer | Product Manager" />
+    <att name="UseCaseNames" value="Generate Product Key | Define Trial Product | Define Full Product | Manage Customer | Manage Environment | Generate Branded Rus | Generate Runtime Installer | Generate Trial Product | Define Product | Define Feature" />
+    <att name="RelationshipTypes" value="association | extend | generalization | include" />
+    <att name="DomainList" value="Product Lifecycle Management | Entitlement Management | Software Distribution | Customer Relationship Management | Environment Configuration" />
+    <att name="PrimaryActorCount" value="4.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="10.0" />
+    <att name="RelationshipCount" value="13.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #44" >
+    <att name="SystemName" value="Airport" />
+    <att name="Description" value="The Airport system manages passenger check-in, baggage handling, and boarding processes. Airport Staff interact with the system to issue boarding passes and validate check-ins. Passengers interact with the system to validate their check-in (individually or in groups) and drop off baggage. The system includes processes for assigning gates and handling baggage, which are incorporated into other use cases." />
+    <att name="PrimaryDomain" value="Airline Operations" />
+    <att name="SystemKind" value="Airport" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Airport Staff | Passenger" />
+    <att name="UseCaseNames" value="Assign Gate | Handle Baggage | Enter Security Screening | Issue Boarding Pass | Validate Counter Checkin | Drop Baggage | Validate Individual Checkin | Validate Group Checkin" />
+    <att name="RelationshipTypes" value="association | include" />
+    <att name="DomainList" value="Airline Operations | Airport Security | Baggage Handling | Passenger Check-in | Gate Management" />
+    <att name="PrimaryActorCount" value="2.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="8.0" />
+    <att name="RelationshipCount" value="8.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #45" >
+    <att name="SystemName" value="Vehicle " />
+    <att name="Description" value="The Vehicle system manages core vehicle functions and passenger interactions. The Driver operates the vehicle, while the Vehicle Occupant interacts with accessories and enters/exits the vehicle. The system provides functionalities like driving, braking, controlling entertainment and climate, and managing vehicle access. The system interacts with the Driver to perform driving actions, and with the Vehicle Occupant to control accessories and manage entry/exit." />
+    <att name="PrimaryDomain" value="Automotive Engineering" />
+    <att name="SystemKind" value="Vehicle" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="Yes" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Vehicle Occupant | Driver" />
+    <att name="UseCaseNames" value="Perform Anti Lock Braking | Drive Vehicle | Control Entertainment System | Control Vehicle Accessory | Control Climate System | Exit Vehicle | Open Door | Enter Vehicle" />
+    <att name="RelationshipTypes" value="association | extend | generalization | include" />
+    <att name="DomainList" value="Automotive Engineering | Vehicle Control Systems | Passenger Comfort Systems | Vehicle Safety Systems | Vehicle Access Control" />
+    <att name="PrimaryActorCount" value="2.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="8.0" />
+    <att name="RelationshipCount" value="9.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #46" >
+    <att name="SystemName" value="Design Support System" />
+    <att name="Description" value="The Design Support System facilitates the design and finalization of products, primarily furniture, involving clients, engineers, and administration. Clients initiate requirements and finalize products, while engineers focus on structural and heating design approvals. Administration verifies client requirements. The system supports issue reporting that can extend the product finalization process." />
+    <att name="PrimaryDomain" value="Furniture Design" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Client | Administration | Engineer" />
+    <att name="UseCaseNames" value="Report Issue | Finalize Product | Verify Client Requirement | Validate Furniture Design | Approve Heating Design | Approve Structural Design" />
+    <att name="RelationshipTypes" value="association | extend | include" />
+    <att name="DomainList" value="Furniture Design | Structural Engineering | Heating, Ventilation, and Air Conditioning (HVAC) | Requirements Management | Product Lifecycle Management" />
+    <att name="PrimaryActorCount" value="3.0" />
+    <att name="SecondaryActorCount" value="0.0" />
+    <att name="UseCaseCount" value="6.0" />
+    <att name="RelationshipCount" value="10.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #47" >
+    <att name="SystemName" value="Administration Application" />
+    <att name="Description" value="The Administration Application provides functionalities for managing system operations, user access, and logging. The Website Administrator and Helpdesk interact with the system to perform tasks such as managing users, sessions, logs, and access control policies. System backups are performed as part of access control policy management. The Helpdesk primarily focuses on log and session management, while the Website Administrator handles a broader range of administrative tasks including user management." />
+    <att name="PrimaryDomain" value="System Administration" />
+    <att name="SystemKind" value="Application" />
+    <att name="HasInclude" value="Yes" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Website Administrator | Helpdesk" />
+    <att name="UseCaseNames" value="Perform System Backup | Manage Access Control Policy | Manage Logs | Manage Session | Manage User" />
+    <att name="RelationshipTypes" value="association | include" />
+    <att name="DomainList" value="System Administration | Access Control Management | User Management | Log Management | System Backup and Recovery" />
+    <att name="PrimaryActorCount" value="1.0" />
+    <att name="SecondaryActorCount" value="1.0" />
+    <att name="UseCaseCount" value="5.0" />
+    <att name="RelationshipCount" value="7.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #48" >
+    <att name="SystemName" value="Online Shopping System" />
+    <att name="Description" value="The Online Shopping System facilitates product management, user registration, and the purchase of products. Administrators manage the product catalog, while users can browse, add items to a cart, purchase products, report issues, and access their accounts. The Backend Database System supports product information and user registration." />
+    <att name="PrimaryDomain" value="E-commerce" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="No" />
+    <att name="HasExtend" value="Yes" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Sql" />
+    <att name="ActorNames" value="Administrator | User | Backend Database System" />
+    <att name="UseCaseNames" value="Recommend New Product | Update Product Detail | Delete Product | Add Product | Report Technical Issue | Register User | Buy Product | Add To Cart | View Product | Access Account" />
+    <att name="RelationshipTypes" value="association | extend" />
+    <att name="DomainList" value="E-commerce | Product Management | User Account Management | Database Management | Customer Support" />
+    <att name="PrimaryActorCount" value="2.0" />
+    <att name="SecondaryActorCount" value="1.0" />
+    <att name="UseCaseCount" value="10.0" />
+    <att name="RelationshipCount" value="12.0" />
+  </instance>
+  <instance id="UCD_CBR_Cycle_ProjectCase #49" >
+    <att name="SystemName" value="Library Management System" />
+    <att name="Description" value="A system for managing library books, members, and borrowing processes." />
+    <att name="PrimaryDomain" value="Education" />
+    <att name="SystemKind" value="System" />
+    <att name="HasInclude" value="No" />
+    <att name="HasExtend" value="No" />
+    <att name="HasGeneralization" value="No" />
+    <att name="CaseOrigin" value="Working" />
+    <att name="ActorNames" value="Library Member | Library System" />
+    <att name="UseCaseNames" value="Borrow Book | Return Book | Search Catalog" />
+    <att name="RelationshipTypes" value="association" />
+    <att name="DomainList" value="Education" />
+    <att name="PrimaryActorCount" value="1.0" />
+    <att name="SecondaryActorCount" value="1.0" />
+    <att name="UseCaseCount" value="3.0" />
+    <att name="RelationshipCount" value="2.0" />
+  </instance>
+</instances>
+<cb name="UCD_CBR_Cycle_ProjectCB">
+     <case name="UCD_CBR_Cycle_ProjectCase #0" />
+     <case name="UCD_CBR_Cycle_ProjectCase #1" />
+     <case name="UCD_CBR_Cycle_ProjectCase #2" />
+     <case name="UCD_CBR_Cycle_ProjectCase #3" />
+     <case name="UCD_CBR_Cycle_ProjectCase #4" />
+     <case name="UCD_CBR_Cycle_ProjectCase #5" />
+     <case name="UCD_CBR_Cycle_ProjectCase #6" />
+     <case name="UCD_CBR_Cycle_ProjectCase #7" />
+     <case name="UCD_CBR_Cycle_ProjectCase #8" />
+     <case name="UCD_CBR_Cycle_ProjectCase #9" />
+     <case name="UCD_CBR_Cycle_ProjectCase #10" />
+     <case name="UCD_CBR_Cycle_ProjectCase #11" />
+     <case name="UCD_CBR_Cycle_ProjectCase #12" />
+     <case name="UCD_CBR_Cycle_ProjectCase #13" />
+     <case name="UCD_CBR_Cycle_ProjectCase #14" />
+     <case name="UCD_CBR_Cycle_ProjectCase #15" />
+     <case name="UCD_CBR_Cycle_ProjectCase #16" />
+     <case name="UCD_CBR_Cycle_ProjectCase #17" />
+     <case name="UCD_CBR_Cycle_ProjectCase #18" />
+     <case name="UCD_CBR_Cycle_ProjectCase #19" />
+     <case name="UCD_CBR_Cycle_ProjectCase #20" />
+     <case name="UCD_CBR_Cycle_ProjectCase #21" />
+     <case name="UCD_CBR_Cycle_ProjectCase #22" />
+     <case name="UCD_CBR_Cycle_ProjectCase #23" />
+     <case name="UCD_CBR_Cycle_ProjectCase #24" />
+     <case name="UCD_CBR_Cycle_ProjectCase #25" />
+     <case name="UCD_CBR_Cycle_ProjectCase #26" />
+     <case name="UCD_CBR_Cycle_ProjectCase #27" />
+     <case name="UCD_CBR_Cycle_ProjectCase #28" />
+     <case name="UCD_CBR_Cycle_ProjectCase #29" />
+     <case name="UCD_CBR_Cycle_ProjectCase #30" />
+     <case name="UCD_CBR_Cycle_ProjectCase #31" />
+     <case name="UCD_CBR_Cycle_ProjectCase #32" />
+     <case name="UCD_CBR_Cycle_ProjectCase #33" />
+     <case name="UCD_CBR_Cycle_ProjectCase #34" />
+     <case name="UCD_CBR_Cycle_ProjectCase #35" />
+     <case name="UCD_CBR_Cycle_ProjectCase #36" />
+     <case name="UCD_CBR_Cycle_ProjectCase #37" />
+     <case name="UCD_CBR_Cycle_ProjectCase #38" />
+     <case name="UCD_CBR_Cycle_ProjectCase #39" />
+     <case name="UCD_CBR_Cycle_ProjectCase #40" />
+     <case name="UCD_CBR_Cycle_ProjectCase #41" />
+     <case name="UCD_CBR_Cycle_ProjectCase #42" />
+     <case name="UCD_CBR_Cycle_ProjectCase #43" />
+     <case name="UCD_CBR_Cycle_ProjectCase #44" />
+     <case name="UCD_CBR_Cycle_ProjectCase #45" />
+     <case name="UCD_CBR_Cycle_ProjectCase #46" />
+     <case name="UCD_CBR_Cycle_ProjectCase #47" />
+     <case name="UCD_CBR_Cycle_ProjectCase #48" />
+     <case name="UCD_CBR_Cycle_ProjectCase #49" />
+</cb>
+</Project>

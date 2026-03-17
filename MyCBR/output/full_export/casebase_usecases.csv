@@ -1,0 +1,345 @@
+CaseId,SystemName,UseCaseName,Synonyms
+1,Online Shopping System,Access Account,Login Account | Open Account | Open Profile | View Account | Open Account | Login Account | Open Account | View Account
+1,Online Shopping System,Add Product,Create Product
+1,Online Shopping System,Add To Cart,Insert Item
+1,Online Shopping System,Buy Product,Purchase Product
+1,Online Shopping System,Delete Product,Remove Product
+1,Online Shopping System,Recommend New Product,Suggest Product | Propose Product
+1,Online Shopping System,Register User,Create User | Enroll User | Add User | Create User | Create User
+1,Online Shopping System,Report Technical Issue,Log Issue | Notify Problem
+1,Online Shopping System,Update Product Detail,Revise Product | Modify Product
+1,Online Shopping System,View Product,Inspect Product
+2,Administration Application,Manage Access Control Policy,Control Access | Access Management
+2,Administration Application,Manage Logs,Review Logs | Audit Logs
+2,Administration Application,Manage Session,Session Control | Control Session
+2,Administration Application,Manage User,User Control | Control User | Update User | Maintain User
+2,Administration Application,Perform System Backup,Create Backup | Backup System
+3,Design Support System,Approve Heating Design,Check Heating | Review Heating
+3,Design Support System,Approve Structural Design,Check Structure | Review Structure
+3,Design Support System,Finalize Product,Close Product | Complete Product
+3,Design Support System,Report Issue,Log Issue | Note Problem
+3,Design Support System,Validate Furniture Design,Review Furniture | Check Furniture
+3,Design Support System,Verify Client Requirement,Check Requirement | Confirm Requirement
+4,Vehicle ,Control Climate System,Adjust Climate | Manage Climate
+4,Vehicle ,Control Entertainment System,Adjust Entertainment | Manage Entertainment
+4,Vehicle ,Control Vehicle Accessory,Adjust Accessory | Manage Accessory
+4,Vehicle ,Drive Vehicle,Operate Vehicle | Steer Vehicle
+4,Vehicle ,Enter Vehicle,Board Vehicle
+4,Vehicle ,Exit Vehicle,Leave Vehicle
+4,Vehicle ,Open Door,Unlock Door
+4,Vehicle ,Perform Anti Lock Braking,Engage Abs | Activate Abs
+5,Airport,Assign Gate,Allocate Gate
+5,Airport,Drop Baggage,Check Baggage
+5,Airport,Enter Security Screening,Pass Screening
+5,Airport,Handle Baggage,Manage Baggage
+5,Airport,Issue Boarding Pass,Provide Pass
+5,Airport,Validate Counter Checkin,Confirm Checkin
+5,Airport,Validate Group Checkin,Confirm Checkin
+5,Airport,Validate Individual Checkin,Confirm Checkin
+6,Sentinel EMS,Define Feature,Configure Feature | Set Feature
+6,Sentinel EMS,Define Full Product,Set Product | Configure Product
+6,Sentinel EMS,Define Product,Configure Product | Set Product
+6,Sentinel EMS,Define Trial Product,Configure Trial | Set Trial
+6,Sentinel EMS,Generate Branded Rus,Issue Rus | Create Rus
+6,Sentinel EMS,Generate Product Key,Create Key | Issue Key
+6,Sentinel EMS,Generate Runtime Installer,Build Installer | Create Installer
+6,Sentinel EMS,Generate Trial Product,Issue Trial | Create Trial
+6,Sentinel EMS,Manage Customer,Update Customer | Maintain Customer
+6,Sentinel EMS,Manage Environment,Maintain Environment | Update Environment
+7,Cab Booking Application,Access Account,Login Account | Open Account | Open Profile | View Account | Open Account | Login Account | Open Account | View Account
+7,Cab Booking Application,Book Cab,Order Cab | Request Ride
+7,Cab Booking Application,Choose Location,Define Destination | Select Location
+7,Cab Booking Application,Confirm Booking,Accept Ride | Validate Booking
+7,Cab Booking Application,Delete Booking,Cancel Booking | Remove Reservation
+7,Cab Booking Application,Show Available Cabs,List Vehicle | Display Cabs
+7,Cab Booking Application,Show Driver Information,Present Driver | Display Driver
+7,Cab Booking Application,Show Payment Method,Display Payment | Present Option | Display Method | Present Method
+8,Appointment Booking ,Display Available Slot,Show Slot | Present Availability
+8,Appointment Booking ,Make Call,Place Call
+8,Appointment Booking ,Receive Payment,Process Payment | Accept Payment | Collect Payment | Accept Payment | Accept Payment
+8,Appointment Booking ,Resolve Technical Issue,Fix Problem | Fix Issue | Correct Error
+8,Appointment Booking ,Schedule Appointment,Book Appointment | Book Appointment | Arrange Visit | Arrange Visit
+8,Appointment Booking ,Send Confirmation,Issue Confirmation | Deliver Notice
+8,Appointment Booking ,Show Alternative Option,Display Alternative | Present Choice
+8,Appointment Booking ,Show Payment Method,Display Payment | Present Option | Display Method | Present Method
+9,Satellite System,Execute Hohmann Transfer,Initiate Transfer | Perform Transfer
+9,Satellite System,Generate Electricity,Produce Power | Create Electricity
+9,Satellite System,Get Payload Status,Read Status | Fetch Status
+9,Satellite System,Point Infrared Sensor,Aim Sensor | Direct Sensor
+9,Satellite System,Send Command,Transmit Command | Issue Command | Transmit Command
+9,Satellite System,Send Real Time Command,Transmit Command | Issue Command
+9,Satellite System,Send Stored Command,Issue Stored Command | Transmit Stored Command
+10,UAV Mission Planning,Allocate Uav,Assign Uav
+10,UAV Mission Planning,Assign Search Area,Define Area
+10,UAV Mission Planning,Capture Image,Record Image
+10,UAV Mission Planning,Create Marker,Define Marker
+10,UAV Mission Planning,Create Mission,Define Mission
+10,UAV Mission Planning,Evaluate Mission,Assess Mission
+10,UAV Mission Planning,Feed Command,Provide Command
+10,UAV Mission Planning,Monitor Mission,Track Mission
+10,UAV Mission Planning,Remove Coordinate,Delete Coordinate
+10,UAV Mission Planning,Send Command,Transmit Command | Issue Command | Transmit Command
+10,UAV Mission Planning,Start Mission,Initiate Mission
+11,Real Time System Controller,Acquire Input,Receive Input | Get Input
+11,Real Time System Controller,Apply Maintenance Procedure,Execute Procedure
+11,Real Time System Controller,Apply Scheduled Maintenance,Perform Scheduled Maintenance
+11,Real Time System Controller,Apply Upon Request Maintenance,Request Maintenance | Perform Maintenance
+11,Real Time System Controller,Inform User,Notify User
+11,Real Time System Controller,Perform Computation,Compute Data | Process Data
+11,Real Time System Controller,Run Setup Proedure,Execute Setup | Perform Setup
+11,Real Time System Controller,Run Shutdown Procdure,Perform Shutdown | Execute Shutdown
+11,Real Time System Controller,Store Result,Save Result
+12,Aircraft Design Review System,Approve Modification,Authorize Change | Accept Change
+12,Aircraft Design Review System,Generate Review Report,Create Report | Produce Report
+12,Aircraft Design Review System,Register Design Component,Log Component | Record Component
+12,Aircraft Design Review System,Review Design,Examine Design | Inspect Design
+12,Aircraft Design Review System,Submit Design,Provide Design | Present Design
+13,Inverted Pendulum System,Disturb System,Induce Disturbance
+13,Inverted Pendulum System,Set Amplifier Gain,Adjust Amplifier
+13,Inverted Pendulum System,Set Controller Gain,Adjust Gain
+13,Inverted Pendulum System,Start Controller,Initiate Controller
+13,Inverted Pendulum System,Stop Controller,Halt Controller
+14,Security System,Activate System,Start System | Enable System
+14,Security System,Deactivate System,Disable System | Shut Down
+14,Security System,Monitor,Check Status | Observe System
+14,Security System,Trigger Sensor,Sense Event | Activate Sensor
+15,Library Management System,Borrow Book,Take Book | Check Out Book
+15,Library Management System,Purchase Book,Acquire Book | Buy Book
+15,Library Management System,Register User,Create User | Enroll User | Add User | Create User | Create User
+15,Library Management System,Return Book,Give Back Book
+15,Library Management System,Update Loan,Adjust Loan | Modify Loan
+16,Cellular Telephone,Cut Call,End Call | Terminate Call
+16,Cellular Telephone,Monitor Signal Strength,Read Signal | Check Signal
+16,Cellular Telephone,Place Conference Call,Initiate Conference | Start Conference
+16,Cellular Telephone,Place Phone Call,Start Call | Initiate Call
+16,Cellular Telephone,Use Scheduler,Run Scheduler | Access Scheduler
+17,Maintenance Management System,Generate Report,Produce Report | Produce Report | Create Report | Create Report
+17,Maintenance Management System,Perform Maintenance,Conduct Maintenance | Execute Maintenance | Conduct Service | Execute Maintenance | Conduct Maintenance
+17,Maintenance Management System,Register New Equipment,Add Equipment | Record Equipment
+17,Maintenance Management System,Request Maintenance,Submit Request | File Request
+17,Maintenance Management System,Schedule Maintenance,Plan Maintenance | Arrange Maintenance
+18,Multi Plant DCS,Alert Refrigerant Leakage,Detect Leakage | Report Leakage
+18,Multi Plant DCS,Control Chiller Sequencing,Sequence Chiller | Manage Sequencing
+18,Multi Plant DCS,Monitor Chilled Water Temperature,Check Temperature | Read Temperature
+18,Multi Plant DCS,Provide Cooling Service,Offer Cooling | Deliver Service
+18,Multi Plant DCS,Provide Maintenance,Do Maintenance | Perform Maintenance
+19,Ticket Booking System,Book Airline Ticket,Schedule Flight | Reserve Ticket
+19,Ticket Booking System,Book Tour,Reserve Tour | Schedule Tour
+19,Ticket Booking System,Deliver Airlineticket,Provide Ticket | Issue Ticket
+19,Ticket Booking System,Make Payment,Submit Payment | Submit Payment | Process Payment | Submit Payment | Process Payment
+19,Ticket Booking System,Pay Agent Fee,Settle Fee | Remit Fee
+20,Bike Management System,Find Bike,Locate Bike | Search Bike
+20,Bike Management System,Handle Bike Return,Accept Return | Process Return
+20,Bike Management System,Handle Enquiry,Process Enquiry | Answer Enquiry
+20,Bike Management System,Issue Bike,Provide Bike | Release Bike
+20,Bike Management System,Maintain Bike List,Manage Bike | Update Bike
+20,Bike Management System,Maintain Customer List,Update Customer | Manage Customer
+20,Bike Management System,Print Receipt,Generate Receipt
+21,Restaurant,Cook Food,Prepare Meal | Create Dish
+21,Restaurant,Order Food,Place Order | Request Meal
+21,Restaurant,Pay Bill,Settle Account | Process Payment
+21,Restaurant,Serve Food,Deliver Food | Present Meal
+22,School Management System,Add Information,Record Data | Input Data
+22,School Management System,Complete Enrolment,Finalize Enrolment | Process Enrolment
+22,School Management System,Declare Result,Report Result | Publish Result
+22,School Management System,Edit Information,Modify Data | Update Data
+22,School Management System,Evaluate Exam Paper,Grade Paper | Assess Paper
+22,School Management System,Fill Admission Form,Submit Form | Complete Form
+22,School Management System,Mark Attendance,Track Attendance | Record Attendance
+22,School Management System,Prepare Exam Paper,Create Exam | Design Exam
+22,School Management System,Prepare Report Card,Generate Report | Create Report
+22,School Management System,Write Exam,Compose Exam | Draft Exam
+23,Online Learning System,Access Account,Login Account | Open Account | Open Profile | View Account | Open Account | Login Account | Open Account | View Account
+23,Online Learning System,Access Quiz,View Quiz
+23,Online Learning System,Access Study Material,Obtain Material | View Material
+23,Online Learning System,Change Password,Reset Password
+23,Online Learning System,Edit Profile,Modify Profile | Revise Profile
+23,Online Learning System,Register User,Create User | Enroll User | Add User | Create User | Create User
+23,Online Learning System,Update Account,Modify Account | Revise Account | Modify Account | Adjust Account
+23,Online Learning System,Verify Account,Confirm Account
+23,Online Learning System,View Contact Detail,See Contact
+23,Online Learning System,View Course List,See Cours
+23,Online Learning System,View Faq,See Faq
+24,Order_Management_System,Check Part,Inspect Part | Verify Part
+24,Order_Management_System,Check Permission,Confirm Authority | Verify Access
+24,Order_Management_System,Order Part,Procure Part | Request Part | Request Part | Procure Part
+24,Order_Management_System,Place Order,Create Order | Submit Order
+24,Order_Management_System,Register Part,Record Part | Log Part
+24,Order_Management_System,See Order,Inspect Order | View Order
+24,Order_Management_System,Segregate Order,Separate Order | Isolate Order
+25,Coffin Escape System,Allow Stunt Fluid,Release Fluid
+25,Coffin Escape System,Enable Computer Control System,Activate Control | Control System
+25,Coffin Escape System,Ensure Coffin Quality,Confirm Quality | Verify Quality
+25,Coffin Escape System,Ensure Sufficient Air,Secure Air | Provide Air
+25,Coffin Escape System,Maximize Excitement,Boost Excitement
+25,Coffin Escape System,Minimize Risk,Reduce Risk
+25,Coffin Escape System,Perform Stunt,Execute Stunt
+25,Coffin Escape System,Pump Fluid,Transfer Fluid
+26,Healthcare,Admit Patient,Accept Patient | Register Recipient
+26,Healthcare,Advise Medical Treatment,Suggest Treatment | Provide Advice
+26,Healthcare,Assess Patient Status,Evaluate Patient | Check Status
+26,Healthcare,Maintain Progress Report,Track Progress | Update Report
+26,Healthcare,Obtain Legal Authorization,Secure Approval | Gain Consent
+26,Healthcare,Recommend Patient Discharge,Propose Release | Suggest Discharge
+26,Healthcare,Record Initial Complaint,Note Issue | Log Complaint
+26,Healthcare,Review Discharge Summary,Inspect Report | Examine Summary
+27,POS,Analyze Activity,Assess Activity | Review Activity
+27,POS,Collect Cash,Receive Payment | Accept Cash
+27,POS,Handle Return,Accept Return | Process Return
+27,POS,Manage Security,Secure System | Control Access
+27,POS,Manage User,User Control | Control User | Update User | Maintain User
+27,POS,Process Sale,Complete Sale | Record Sale
+28,Train Ticket Reservation,Access User Account,View Account | Open Account
+28,Train Ticket Reservation,Choose Destination,Select Destination
+28,Train Ticket Reservation,Choose Origin,Select Origin
+28,Train Ticket Reservation,Choose Train,Select Train
+28,Train Ticket Reservation,Issue Ticket,Create Ticket | Generate Ticket
+28,Train Ticket Reservation,Make Payment,Submit Payment | Submit Payment | Process Payment | Submit Payment | Process Payment
+28,Train Ticket Reservation,Receive Payment,Process Payment | Accept Payment | Collect Payment | Accept Payment | Accept Payment
+28,Train Ticket Reservation,Show Alternative Train,Display Alternative
+28,Train Ticket Reservation,Show Available Seat,Display Seat
+28,Train Ticket Reservation,Show Available Train,Display Train
+29,Parking System,Adjust Daily Rate,Modify Rate | Set Daily Rate
+29,Parking System,Adjust Hourly Rate,Modify Rate | Set Hourly Rate
+29,Parking System,Adjust Rate,Modify Rate | Set Rate
+29,Parking System,Pay Parking Bill,Submit Payment | Settle Bill
+29,Parking System,Print Reciept,Issue Receipt | Generate Receipt
+30,Surveillance System ,Enter Safe Zone,Access Zone
+30,Surveillance System ,Monitor System,Check System
+30,Surveillance System ,Parameterize Mission,Define Mission
+30,Surveillance System ,Plan Mission,Mission Planning | Create Plan
+30,Surveillance System ,Prepare Mission,Ready Mission
+30,Surveillance System ,Protect Sheep,Guard Livestock
+30,Surveillance System ,Survey Safe Zone,Scan Zone
+31,Coursework Management,Publlish Mark,Publish Mark | Release Mark
+31,Coursework Management,Retrieve Coursework,Get Coursework
+31,Coursework Management,Retrieve Mark,Get Mark
+31,Coursework Management,Set Up Course Configuration,Configure Course | Setup Course
+31,Coursework Management,Submit Coursework,Send Coursework
+32,Renewable Energy Monitoring System,Analyze Energy Data,Process Data | Review Data
+32,Renewable Energy Monitoring System,Generate Energy Report,Create Report | Produce Report | Create Report | Produce Report
+32,Renewable Energy Monitoring System,Monitor Turbine,Track Turbine | Observe Turbine
+32,Renewable Energy Monitoring System,Perform Equipment Check,Inspect Equipment | Check Equipment
+32,Renewable Energy Monitoring System,Register New Sensor,Define Sensor | Add Sensor
+33,Game,Edit Leaderboard,Adjust Leaderboard | Change Leaderboard
+33,Game,Fetch Leaderboard,Get Leaderboard | Retrieve Leaderboard
+33,Game,Modify Setting,Change Setting | Adjust Setting
+33,Game,Play Game,Run Game | Start Game
+33,Game,Update Leaderboard,Revise Leaderboard | Refresh Leaderboard
+33,Game,View Leaderboard,Inspect Leaderboard | See Leaderboard
+34,Trading System,Analyze Risk,Evaluate Risk | Assess Risk
+34,Trading System,Capture Deal,Log Deal | Record Trade
+34,Trading System,Display Price,Present Price | Show Price
+34,Trading System,Set Limit,Define Limit | Establish Limit
+34,Trading System,Update Account,Modify Account | Revise Account | Modify Account | Adjust Account
+35,Bank,Deposit Fund,Receive Fund | Add Fund
+35,Bank,Open Account,Create Account | Establish Account
+35,Bank,Proivde Service,Offer Service | Deliver Service
+35,Bank,Update Balance,Modify Balance | Adjust Balance
+35,Bank,Withdraw Fund,Remove Fund | Dispense Fund
+36,Automobile Service Management System,Book Appointment,Schedule Visit | Arrange Booking
+36,Automobile Service Management System,Book Service Appointment,Schedule Service | Arrange Service
+36,Automobile Service Management System,Generate Service Report,Create Report | Produce Report
+36,Automobile Service Management System,Inspect Vehicle,Check Vehicle | Examine Vehicle
+36,Automobile Service Management System,Register Contact Information,Record Contact | Capture Contact
+36,Automobile Service Management System,Register Spare Part,Add Part | Record Part
+36,Automobile Service Management System,Repair Vehicle,Fix Vehicle | Restore Vehicle
+37,Clinic Management,Enter Patient Information,Input Data | Record Detail
+37,Clinic Management,Give Prescription,Issue Prescription | Provide Medication
+37,Clinic Management,Print Report,Output Report | Generate Report
+37,Clinic Management,Record Visit Information,Document Visit | Log Visit
+37,Clinic Management,Schedule Appointment,Book Appointment | Book Appointment | Arrange Visit | Arrange Visit
+37,Clinic Management,View Patient History,Inspect Record | Review History
+38,Car Maintenance,Claim Insurance,File Claim
+38,Car Maintenance,Deliver Car,Return Vehicle
+38,Car Maintenance,Make Payment,Submit Payment | Submit Payment | Process Payment | Submit Payment | Process Payment
+38,Car Maintenance,Monitor Activity,Track Activity
+38,Car Maintenance,Order Part,Procure Part | Request Part | Request Part | Procure Part
+38,Car Maintenance,Perform Maintenance,Conduct Maintenance | Execute Maintenance | Conduct Service | Execute Maintenance | Conduct Maintenance
+38,Car Maintenance,Raise Request,Create Request | Submit Request
+38,Car Maintenance,Receive Payment,Process Payment | Accept Payment | Collect Payment | Accept Payment | Accept Payment
+38,Car Maintenance,Send Invoice,Issue Invoice | Deliver Invoice
+38,Car Maintenance,Ship Part,Dispatch Part
+39,Lab  Testing System,Assess Patient,Evaluate Patient | Examine Patient
+39,Lab  Testing System,Fill Form,Complete Form | Enter Data
+39,Lab  Testing System,Give Result,Provide Result | Report Result
+39,Lab  Testing System,Perform Test,Execute Test | Run Test
+39,Lab  Testing System,Prescribe Medication,Order Medication
+39,Lab  Testing System,Prescribe Test,Order Test
+40,Course Registration,Close Registration,End Registration | Terminate Registration
+40,Course Registration,Drop Course,Cancel Course | Remove Course
+40,Course Registration,Enrol In College,Enter College | Join College
+40,Course Registration,Register For Course,Add Course | Enroll Course
+40,Course Registration,Select Course,Pick Course | Choose Course
+41,Flight Reservation System,Assist Passenger,Aid Passenger
+41,Flight Reservation System,Book Ticket,Issue Ticket
+41,Flight Reservation System,Cancel Booking,Void Booking
+41,Flight Reservation System,Check Availability,Verify Availability
+41,Flight Reservation System,Edit Booking,Modify Booking
+41,Flight Reservation System,Manage Flight Schedule,Handle Schedule
+41,Flight Reservation System,Manage Reservation,Handle Reservation
+41,Flight Reservation System,Manage User Account,Handle Account
+41,Flight Reservation System,Resolve Technical Issue,Fix Problem | Fix Issue | Correct Error
+41,Flight Reservation System,Search Flight,Find Flight
+42,Loan Management,Assess Home Value,Estimate Value | Value Home
+42,Loan Management,Check Credit History,Verify Credit | Review Credit
+42,Loan Management,Check Eligibility,Verify Eligibility
+42,Loan Management,Process Loan Application,Handle Loan | Review Loan
+42,Loan Management,Process Mortgage Application,Review Mortgage | Handle Mortgage
+42,Loan Management,Sanction Loan,Fund Loan | Approve Loan
+43,Boarding System,Assign Seat,Allocate Seat
+43,Boarding System,Give Ticket,Issue Ticket
+43,Boarding System,Handle Luggage,Manage Luggage
+43,Boarding System,Handover Luggage,Transfer Luggage
+43,Boarding System,Weigh Luggage,Scale Luggage
+44,Energy Distribution Management System,Activate Backup Line,Start Line | Enable Line
+44,Energy Distribution Management System,Allocate Power Supply,Provide Power | Assign Supply
+44,Energy Distribution Management System,Authenticate Operator,Verify Operator | Confirm Operator
+44,Energy Distribution Management System,Check Transformer Load,Inspect Load | Review Load
+44,Energy Distribution Management System,Generate Energy Report,Create Report | Produce Report | Create Report | Produce Report
+44,Energy Distribution Management System,Monitor Power Flow,Track Flow | Observe Flow
+44,Energy Distribution Management System,Record Energy Usage,Capture Usage | Log Usage
+44,Energy Distribution Management System,Select Distribution Area,Pick Area | Choose Area
+44,Energy Distribution Management System,Select Power Source,Choose Source | Pick Source
+44,Energy Distribution Management System,Validate Energy Billing,Verify Billing | Confirm Billing
+45,Fire Alarm System,Alert User,Notify User
+45,Fire Alarm System,Detect Fire,Sense Fire
+45,Fire Alarm System,Display Standby,Show Status
+45,Fire Alarm System,Handle False Alarm,Clear Alarm | Resolve Alarm
+45,Fire Alarm System,Handle System Fault,Correct Error | Resolve Fault
+45,Fire Alarm System,Inform Authority,Notify Authority
+45,Fire Alarm System,Initialize System,Start System | Boot System | Boot System | Start System
+45,Fire Alarm System,Perform Maintenance,Conduct Maintenance | Execute Maintenance | Conduct Service | Execute Maintenance | Conduct Maintenance
+45,Fire Alarm System,Shutdown System,Stop System
+45,Fire Alarm System,Warn Environment,Notify Area
+46,Exam Mobile Application ,Access Account,Login Account | Open Account | Open Profile | View Account | Open Account | Login Account | Open Account | View Account
+46,Exam Mobile Application ,Authorize Result,Approve Result | Confirm Result
+46,Exam Mobile Application ,Edit Result,Modify Result | Change Result
+46,Exam Mobile Application ,Enter Result,Input Result | Record Result
+46,Exam Mobile Application ,Generate Report,Produce Report | Produce Report | Create Report | Create Report
+46,Exam Mobile Application ,Generate Transcript,Produce Transcript | Create Transcript
+46,Exam Mobile Application ,Publish Result,Post Result | Release Result
+46,Exam Mobile Application ,Recieve Transcript,Get Transcript | Obtain Transcript
+46,Exam Mobile Application ,Register Candidate,Enroll Candidate | Add Candidate
+46,Exam Mobile Application ,Terminate Session,End Session | Close Session
+46,Exam Mobile Application ,Update Information,Change Info | Modify Info
+46,Exam Mobile Application ,Verify Result,Check Result | Confirm Result
+46,Exam Mobile Application ,Verify Transcript,Check Transcript | Confirm Transcript
+46,Exam Mobile Application ,View Registration Data,Inspect Registration | See Registration
+46,Exam Mobile Application ,View Result,Inspect Result | See Result
+47,Airport Management System,Alert During Conflict,Conflict Alert | Alert Conflict
+47,Airport Management System,Manage Clearance,Clearance Management
+47,Airport Management System,Manage Control Zone,Control Zone Management | Zone Management
+47,Airport Management System,Plan Mission,Mission Planning | Create Plan
+47,Airport Management System,Prevent Conflict,Conflict Prevention
+48,Monitoring System,Handle Camera Fault,Resolve Fault | Fix Camera
+48,Monitoring System,Initialize System,Start System | Boot System | Boot System | Start System
+48,Monitoring System,Monitor Environment,Observe Environment | Assess Environment
+48,Monitoring System,Perform Autonomous Monitoring,Execute Monitoring | Run Monitoring
+48,Monitoring System,Perform Manual Monitoring,Execute Monitoring | Run Monitoring
+48,Monitoring System,Setup Track,Configure Track | Define Track
+48,Monitoring System,Terminate System,Stop System | End System
+49,Missile System,Engage Target,Attack Target | Target Engagement
+49,Missile System,Execute Failed Launch Procedure,Manage Failure | Handle Launch Failure
+49,Missile System,Launch Missile,Fire Missile
+49,Missile System,Trigger Test,Run Test | Initiate Test

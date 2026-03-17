@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Project name="UCD_CBR_Cycle_Project" author="" >
+<svs>
+  <sv name="_others_"/>
+  <sv name="_unknown_"/>
+  <sv name="_undefined_"/>
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="_others_">
+</qsym>
+<qsym name="_unknown_">
+</qsym>
+<qsym name="_undefined_">
+</qsym>
+</fct>
+</svs>
+<model>
+  <concept name="UCD_CBR_Cycle_ProjectCase">
+    <desc name="SystemName" type="String" mult="false" >
+      <fct name="ngram_system" type="String" stringMetric="NGRAM" n="3" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true"/>
+      <fct name="default function" type="String" stringMetric="EQUAL" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true"/>
+    </desc>
+    <desc name="Description" type="String" mult="false" >
+      <fct name="jarowinkler_desc" type="String" stringMetric="JAROWINKLER" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true"/>
+      <fct name="default function" type="String" stringMetric="EQUAL" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true"/>
+    </desc>
+    <desc name="PrimaryDomain" type="Symbol" mult="false" >
+      <symbol value="Aerospace Engineering" />
+      <symbol value="Air Traffic Control" />
+      <symbol value="Airline Boarding" />
+      <symbol value="Airline Operations" />
+      <symbol value="Airline Reservation" />
+      <symbol value="Airline Ticketing" />
+      <symbol value="Appointment Scheduling" />
+      <symbol value="Automotive Engineering" />
+      <symbol value="Automotive Maintenance" />
+      <symbol value="Automotive Service Management" />
+      <symbol value="Banking Operations" />
+      <symbol value="Bike Rental Management" />
+      <symbol value="Control Systems Engineering" />
+      <symbol value="E-Learning" />
+      <symbol value="E-commerce" />
+      <symbol value="Education" />
+      <symbol value="Education Management" />
+      <symbol value="Educational Administration" />
+      <symbol value="Energy Distribution" />
+      <symbol value="Equipment Maintenance" />
+      <symbol value="Exam Result Management" />
+      <symbol value="Financial Trading" />
+      <symbol value="Fire Safety" />
+      <symbol value="Furniture Design" />
+      <symbol value="Game Management" />
+      <symbol value="HVAC Control Systems" />
+      <symbol value="Healthcare Administration" />
+      <symbol value="Healthcare Information Management" />
+      <symbol value="Higher Education Administration" />
+      <symbol value="Library Management" />
+      <symbol value="Missile Defense" />
+      <symbol value="Mortgage Lending" />
+      <symbol value="Parking Management" />
+      <symbol value="Patient Admission and Discharge" />
+      <symbol value="Physical Security" />
+      <symbol value="Point of Sale Systems" />
+      <symbol value="Product Lifecycle Management" />
+      <symbol value="Real-time Control Systems" />
+      <symbol value="Renewable Energy Management" />
+      <symbol value="Restaurant Management" />
+      <symbol value="Ride-Hailing Services" />
+      <symbol value="Satellite Command and Control" />
+      <symbol value="Security Monitoring" />
+      <symbol value="Stunt Performance" />
+      <symbol value="Supply Chain Management" />
+      <symbol value="System Administration" />
+      <symbol value="Telecommunications" />
+      <symbol value="Train Travel Booking" />
+      <symbol value="UAV Mission Management" />
+      <symbol value="Wildlife Monitoring" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Aerospace Engineering">
+</qsym>
+<qsym name="Air Traffic Control">
+</qsym>
+<qsym name="Airline Boarding">
+</qsym>
+<qsym name="Airline Operations">
+</qsym>
+<qsym name="Airline Reservation">
+</qsym>
+<qsym name="Airline Ticketing">
+</qsym>
+<qsym name="Appointment Scheduling">
+</qsym>
+<qsym name="Automotive Engineering">
+</qsym>
+<qsym name="Automotive Maintenance">
+</qsym>
+<qsym name="Automotive Service Management">
+</qsym>
+<qsym name="Banking Operations">
+</qsym>
+<qsym name="Bike Rental Management">
+</qsym>
+<qsym name="Control Systems Engineering">
+</qsym>
+<qsym name="E-Learning">
+</qsym>
+<qsym name="E-commerce">
+</qsym>
+<qsym name="Education">
+</qsym>
+<qsym name="Education Management">
+</qsym>
+<qsym name="Educational Administration">
+</qsym>
+<qsym name="Energy Distribution">
+</qsym>
+<qsym name="Equipment Maintenance">
+</qsym>
+<qsym name="Exam Result Management">
+</qsym>
+<qsym name="Financial Trading">
+</qsym>
+<qsym name="Fire Safety">
+</qsym>
+<qsym name="Furniture Design">
+</qsym>
+<qsym name="Game Management">
+</qsym>
+<qsym name="HVAC Control Systems">
+</qsym>
+<qsym name="Healthcare Administration">
+</qsym>
+<qsym name="Healthcare Information Management">
+</qsym>
+<qsym name="Higher Education Administration">
+</qsym>
+<qsym name="Library Management">
+</qsym>
+<qsym name="Missile Defense">
+</qsym>
+<qsym name="Mortgage Lending">
+</qsym>
+<qsym name="Parking Management">
+</qsym>
+<qsym name="Patient Admission and Discharge">
+</qsym>
+<qsym name="Physical Security">
+</qsym>
+<qsym name="Point of Sale Systems">
+</qsym>
+<qsym name="Product Lifecycle Management">
+</qsym>
+<qsym name="Real-time Control Systems">
+</qsym>
+<qsym name="Renewable Energy Management">
+</qsym>
+<qsym name="Restaurant Management">
+</qsym>
+<qsym name="Ride-Hailing Services">
+</qsym>
+<qsym name="Satellite Command and Control">
+</qsym>
+<qsym name="Security Monitoring">
+</qsym>
+<qsym name="Stunt Performance">
+</qsym>
+<qsym name="Supply Chain Management">
+</qsym>
+<qsym name="System Administration">
+</qsym>
+<qsym name="Telecommunications">
+</qsym>
+<qsym name="Train Travel Booking">
+</qsym>
+<qsym name="UAV Mission Management">
+</qsym>
+<qsym name="Wildlife Monitoring">
+</qsym>
+<qsym name="_others_">
+</qsym>
+<qsym name="_undefined_">
+</qsym>
+<qsym name="_unknown_">
+</qsym>
+</fct>
+    </desc>
+    <desc name="SystemKind" type="Symbol" mult="false" >
+      <symbol value="Airport" />
+      <symbol value="Application" />
+      <symbol value="Bank" />
+      <symbol value="Booking" />
+      <symbol value="Controller" />
+      <symbol value="DCS" />
+      <symbol value="EMS" />
+      <symbol value="Game" />
+      <symbol value="Healthcare" />
+      <symbol value="Maintenance" />
+      <symbol value="Management" />
+      <symbol value="Order_Management_System" />
+      <symbol value="POS" />
+      <symbol value="Planning" />
+      <symbol value="Registration" />
+      <symbol value="Reservation" />
+      <symbol value="Restaurant" />
+      <symbol value="System" />
+      <symbol value="Telephone" />
+      <symbol value="Vehicle" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Airport">
+</qsym>
+<qsym name="Application">
+</qsym>
+<qsym name="Bank">
+</qsym>
+<qsym name="Booking">
+</qsym>
+<qsym name="Controller">
+</qsym>
+<qsym name="DCS">
+</qsym>
+<qsym name="EMS">
+</qsym>
+<qsym name="Game">
+</qsym>
+<qsym name="Healthcare">
+</qsym>
+<qsym name="Maintenance">
+</qsym>
+<qsym name="Management">
+</qsym>
+<qsym name="Order_Management_System">
+</qsym>
+<qsym name="POS">
+</qsym>
+<qsym name="Planning">
+</qsym>
+<qsym name="Registration">
+</qsym>
+<qsym name="Reservation">
+</qsym>
+<qsym name="Restaurant">
+</qsym>
+<qsym name="System">
+</qsym>
+<qsym name="Telephone">
+</qsym>
+<qsym name="Vehicle">
+</qsym>
+<qsym name="_others_">
+</qsym>
+<qsym name="_undefined_">
+</qsym>
+<qsym name="_unknown_">
+</qsym>
+</fct>
+    </desc>
+    <desc name="HasInclude" type="Symbol" mult="false" >
+      <symbol value="No" />
+      <symbol value="Yes" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="No">
+</qsym>
+<qsym name="Yes">
+</qsym>
+<qsym name="_others_">
+</qsym>
+<qsym name="_undefined_">
+</qsym>
+<qsym name="_unknown_">
+</qsym>
+</fct>
+    </desc>
+    <desc name="HasExtend" type="Symbol" mult="false" >
+      <symbol value="No" />
+      <symbol value="Yes" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="No">
+</qsym>
+<qsym name="Yes">
+</qsym>
+<qsym name="_others_">
+</qsym>
+<qsym name="_undefined_">
+</qsym>
+<qsym name="_unknown_">
+</qsym>
+</fct>
+    </desc>
+    <desc name="HasGeneralization" type="Symbol" mult="false" >
+      <symbol value="No" />
+      <symbol value="Yes" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="No">
+</qsym>
+<qsym name="Yes">
+</qsym>
+<qsym name="_others_">
+</qsym>
+<qsym name="_undefined_">
+</qsym>
+<qsym name="_unknown_">
+</qsym>
+</fct>
+    </desc>
+    <desc name="CaseOrigin" type="Symbol" mult="false" >
+      <symbol value="Sql" />
+      <symbol value="Working" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Sql">
+</qsym>
+<qsym name="Working">
+</qsym>
+<qsym name="_others_">
+</qsym>
+<qsym name="_undefined_">
+</qsym>
+<qsym name="_unknown_">
+</qsym>
+</fct>
+    </desc>
+    <desc name="ActorNames" type="Symbol" mult="false" >
+      <symbol value="Administrative Clerk | Guardian | Patient | Nurse | Doctor" />
+      <symbol value="Administrator | Agent | Customer" />
+      <symbol value="Administrator | Lecturer | Submitter | Student" />
+      <symbol value="Administrator | Student | Teacher" />
+      <symbol value="Administrator | Supervisor" />
+      <symbol value="Administrator | User | Backend Database System" />
+      <symbol value="Airport Staff | Passenger" />
+      <symbol value="Bank Employee | Customer" />
+      <symbol value="Chef | Cashier | Client | Waiter" />
+      <symbol value="Client | Administration | Engineer" />
+      <symbol value="Coffin Maker | Audience | Safety Officer | Escape Artist" />
+      <symbol value="Customer | Ticket Booking App" />
+      <symbol value="Data Entry Personnel | Qualification Manager | Data Manager | Student" />
+      <symbol value="Doctor | Nurse | Patient" />
+      <symbol value="Game Administrator | Player" />
+      <symbol value="Grid Operator | Control Center System" />
+      <symbol value="Ground Operations Team | Airport Safety Team | ATC" />
+      <symbol value="Intruder | Operator" />
+      <symbol value="Launch Station" />
+      <symbol value="Librarian | User" />
+      <symbol value="Library Member | Library System" />
+      <symbol value="Loan Officer | Home Buyer" />
+      <symbol value="Maintenance Crew | Supervisor | System User | Sensor | Actuator" />
+      <symbol value="Maintenance Manager | Technician | Customer" />
+      <symbol value="Maintenance Operator | Commercial User | Residential User | User | Controller" />
+      <symbol value="Mechanic | Customer | Service Center" />
+      <symbol value="Medical Officer | Lab Technician | Patient" />
+      <symbol value="Mission Operator | Sheep | Bear | Ground Station | GPS Constellation | Weather" />
+      <symbol value="Operator | Advanced Operator | Intruder | Supervisor" />
+      <symbol value="Operator | Camera | Server | GPS" />
+      <symbol value="Parking Manager | Driver" />
+      <symbol value="Passenger | Ticket Clerk" />
+      <symbol value="Payload Operator | Flight Controller | Environmental Test Engineer | Solar Simulation Chamber" />
+      <symbol value="Privilege Manager | Customer Service | Developer | Product Manager" />
+      <symbol value="Project Manager | Systems Engineer | Design Engineer" />
+      <symbol value="Purchasing Manager | Warehouse Manager" />
+      <symbol value="Registrar | Professor | Student" />
+      <symbol value="Service Provider | User" />
+      <symbol value="Service Representative | Technician | Service Engineer | Car Owner" />
+      <symbol value="System Administrator | Control Engineer | Field Control Engineer" />
+      <symbol value="System Administrator | Manager | Cashier | Customer | Accounting System | Tax Calculator | Sales Activity System" />
+      <symbol value="Technician | Maintenance Operator | Installation Personnel | Civillian | Fire Department | Sensor" />
+      <symbol value="Tourist Company | Airline Company | Customer | Travel Agent" />
+      <symbol value="Trader | Trading Manager | Accounting System" />
+      <symbol value="User | Backend" />
+      <symbol value="User | Cellular Network" />
+      <symbol value="User | Disturbance" />
+      <symbol value="User | Service Provider | Payment Gateway" />
+      <symbol value="Vehicle Occupant | Driver" />
+      <symbol value="Website Administrator | Helpdesk" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Administrative Clerk | Guardian | Patient | Nurse | Doctor">
+</qsym>
+<qsym name="Administrator | Agent | Customer">
+</qsym>
+<qsym name="Administrator | Lecturer | Submitter | Student">
+</qsym>
+<qsym name="Administrator | Student | Teacher">
+</qsym>
+<qsym name="Administrator | Supervisor">
+</qsym>
+<qsym name="Administrator | User | Backend Database System">
+</qsym>
+<qsym name="Airport Staff | Passenger">
+</qsym>
+<qsym name="Bank Employee | Customer">
+</qsym>
+<qsym name="Chef | Cashier | Client | Waiter">
+</qsym>
+<qsym name="Client | Administration | Engineer">
+</qsym>
+<qsym name="Coffin Maker | Audience | Safety Officer | Escape Artist">
+</qsym>
+<qsym name="Customer | Ticket Booking App">
+</qsym>
+<qsym name="Data Entry Personnel | Qualification Manager | Data Manager | Student">
+</qsym>
+<qsym name="Doctor | Nurse | Patient">
+</qsym>
+<qsym name="Game Administrator | Player">
+</qsym>
+<qsym name="Grid Operator | Control Center System">
+</qsym>
+<qsym name="Ground Operations Team | Airport Safety Team | ATC">
+</qsym>
+<qsym name="Intruder | Operator">
+</qsym>
+<qsym name="Launch Station">
+</qsym>
+<qsym name="Librarian | User">
+</qsym>
+<qsym name="Library Member | Library System">
+</qsym>
+<qsym name="Loan Officer | Home Buyer">
+</qsym>
+<qsym name="Maintenance Crew | Supervisor | System User | Sensor | Actuator">
+</qsym>
+<qsym name="Maintenance Manager | Technician | Customer">
+</qsym>
+<qsym name="Maintenance Operator | Commercial User | Residential User | User | Controller">
+</qsym>
+<qsym name="Mechanic | Customer | Service Center">
+</qsym>
+<qsym name="Medical Officer | Lab Technician | Patient">
+</qsym>
+<qsym name="Mission Operator | Sheep | Bear | Ground Station | GPS Constellation | Weather">
+</qsym>
+<qsym name="Operator | Advanced Operator | Intruder | Supervisor">
+</qsym>
+<qsym name="Operator | Camera | Server | GPS">
+</qsym>
+<qsym name="Parking Manager | Driver">
+</qsym>
+<qsym name="Passenger | Ticket Clerk">
+</qsym>
+<qsym name="Payload Operator | Flight Controller | Environmental Test Engineer | Solar Simulation Chamber">
+</qsym>
+<qsym name="Privilege Manager | Customer Service | Developer | Product Manager">
+</qsym>
+<qsym name="Project Manager | Systems Engineer | Design Engineer">
+</qsym>
+<qsym name="Purchasing Manager | Warehouse Manager">
+</qsym>
+<qsym name="Registrar | Professor | Student">
+</qsym>
+<qsym name="Service Provider | User">
+</qsym>
+<qsym name="Service Representative | Technician | Service Engineer | Car Owner">
+</qsym>
+<qsym name="System Administrator | Control Engineer | Field Control Engineer">
+</qsym>
+<qsym name="System Administrator | Manager | Cashier | Customer | Accounting System | Tax Calculator | Sales Activity System">
+</qsym>
+<qsym name="Technician | Maintenance Operator | Installation Personnel | Civillian | Fire Department | Sensor">
+</qsym>
+<qsym name="Tourist Company | Airline Company | Customer | Travel Agent">
+</qsym>
+<qsym name="Trader | Trading Manager | Accounting System">
+</qsym>
+<qsym name="User | Backend">
+</qsym>
+<qsym name="User | Cellular Network">
+</qsym>
+<qsym name="User | Disturbance">
+</qsym>
+<qsym name="User | Service Provider | Payment Gateway">
+</qsym>
+<qsym name="Vehicle Occupant | Driver">
+</qsym>
+<qsym name="Website Administrator | Helpdesk">
+</qsym>
+<qsym name="_others_">
+</qsym>
+<qsym name="_undefined_">
+</qsym>
+<qsym name="_unknown_">
+</qsym>
+</fct>
+    </desc>
+    <desc name="UseCaseNames" type="Symbol" mult="false" >
+      <symbol value="Add Information | Declare Result | Prepare Report Card | Write Exam | Complete Enrolment | Fill Admission Form | Evaluate Exam Paper | Prepare Exam Paper | Mark Attendance | Edit Information" />
+      <symbol value="Apply Upon Request Maintenance | Apply Scheduled Maintenance | Apply Maintenance Procedure | Run Shutdown Procdure | Run Setup Proedure | Acquire Input | Perform Computation | Store Result | Inform User" />
+      <symbol value="Assign Gate | Handle Baggage | Enter Security Screening | Issue Boarding Pass | Validate Counter Checkin | Drop Baggage | Validate Individual Checkin | Validate Group Checkin" />
+      <symbol value="Assign Seat | Give Ticket | Handover Luggage | Weigh Luggage | Handle Luggage" />
+      <symbol value="Borrow Book | Return Book | Search Catalog" />
+      <symbol value="Capture Deal | Display Price | Analyze Risk | Update Account | Set Limit" />
+      <symbol value="Check Permission | Place Order | See Order | Segregate Order | Order Part | Check Part | Register Part" />
+      <symbol value="Choose Location | Delete Booking | Show Driver Information | Confirm Booking | Show Payment Method | Book Cab | Show Available Cabs | Access Account" />
+      <symbol value="Collect Cash | Manage Security | Manage User | Analyze Activity | Handle Return | Process Sale" />
+      <symbol value="Cut Call | Place Conference Call | Monitor Signal Strength | Use Scheduler | Place Phone Call" />
+      <symbol value="Disturb System | Stop Controller | Start Controller | Set Controller Gain | Set Amplifier Gain" />
+      <symbol value="Drop Course | Enrol In College | Close Registration | Select Course | Register For Course" />
+      <symbol value="Edit Booking | Cancel Booking | Manage Reservation | Check Availability | Assist Passenger | Resolve Technical Issue | Manage User Account | Manage Flight Schedule | Book Ticket | Search Flight" />
+      <symbol value="Edit Leaderboard | Update Leaderboard | Fetch Leaderboard | Modify Setting | View Leaderboard | Play Game" />
+      <symbol value="Enable Computer Control System | Pump Fluid | Allow Stunt Fluid | Ensure Sufficient Air | Ensure Coffin Quality | Maximize Excitement | Minimize Risk | Perform Stunt" />
+      <symbol value="Engage Target | Trigger Test | Launch Missile | Execute Failed Launch Procedure" />
+      <symbol value="Enter Safe Zone | Protect Sheep | Survey Safe Zone | Monitor System | Parameterize Mission | Plan Mission | Prepare Mission" />
+      <symbol value="Evaluate Mission | Create Marker | Remove Coordinate | Capture Image | Allocate Uav | Feed Command | Assign Search Area | Send Command | Start Mission | Monitor Mission | Create Mission" />
+      <symbol value="Fill Form | Prescribe Medication | Assess Patient | Prescribe Test | Give Result | Perform Test" />
+      <symbol value="Find Bike | Handle Enquiry | Print Receipt | Handle Bike Return | Issue Bike | Maintain Customer List | Maintain Bike List" />
+      <symbol value="Generate Energy Report | Register New Sensor | Perform Equipment Check | Analyze Energy Data | Monitor Turbine" />
+      <symbol value="Generate Energy Report | Validate Energy Billing | Record Energy Usage | Allocate Power Supply | Check Transformer Load | Activate Backup Line | Monitor Power Flow | Select Distribution Area | Select Power Source | Authenticate Operator" />
+      <symbol value="Generate Product Key | Define Trial Product | Define Full Product | Manage Customer | Manage Environment | Generate Branded Rus | Generate Runtime Installer | Generate Trial Product | Define Product | Define Feature" />
+      <symbol value="Generate Report | Register New Equipment | Perform Maintenance | Schedule Maintenance | Request Maintenance" />
+      <symbol value="Generate Review Report | Register Design Component | Approve Modification | Review Design | Submit Design" />
+      <symbol value="Get Payload Status | Send Real Time Command | Send Stored Command | Point Infrared Sensor | Send Command | Execute Hohmann Transfer | Generate Electricity" />
+      <symbol value="Handle System Fault | Handle False Alarm | Display Standby | Warn Environment | Perform Maintenance | Alert User | Inform Authority | Detect Fire | Shutdown System | Initialize System" />
+      <symbol value="Issue Ticket | Receive Payment | Make Payment | Choose Train | Show Available Seat | Show Alternative Train | Show Available Train | Choose Destination | Choose Origin | Access User Account" />
+      <symbol value="Manage Control Zone | Manage Clearance | Alert During Conflict | Prevent Conflict | Plan Mission" />
+      <symbol value="Pay Agent Fee | Make Payment | Book Tour | Deliver Airlineticket | Book Airline Ticket" />
+      <symbol value="Pay Bill | Serve Food | Cook Food | Order Food" />
+      <symbol value="Perform Anti Lock Braking | Drive Vehicle | Control Entertainment System | Control Vehicle Accessory | Control Climate System | Exit Vehicle | Open Door | Enter Vehicle" />
+      <symbol value="Perform System Backup | Manage Access Control Policy | Manage Logs | Manage Session | Manage User" />
+      <symbol value="Print Reciept | Adjust Hourly Rate | Adjust Daily Rate | Adjust Rate | Pay Parking Bill" />
+      <symbol value="Proivde Service | Update Balance | Withdraw Fund | Deposit Fund | Open Account" />
+      <symbol value="Provide Maintenance | Alert Refrigerant Leakage | Control Chiller Sequencing | Monitor Chilled Water Temperature | Provide Cooling Service" />
+      <symbol value="Publish Result | Verify Transcript | Generate Report | Edit Result | Verify Result | View Registration Data | View Result | Terminate Session | Access Account | Update Information | Enter Result | Register Candidate | Generate Transcript | Recieve Transcript | Authorize Result" />
+      <symbol value="Purchase Book | Update Loan | Return Book | Register User | Borrow Book" />
+      <symbol value="Receive Payment | Raise Request | Claim Insurance | Make Payment | Send Invoice | Deliver Car | Monitor Activity | Ship Part | Order Part | Perform Maintenance" />
+      <symbol value="Recommend New Product | Update Product Detail | Delete Product | Add Product | Report Technical Issue | Register User | Buy Product | Add To Cart | View Product | Access Account" />
+      <symbol value="Recommend Patient Discharge | Maintain Progress Report | Advise Medical Treatment | Assess Patient Status | Review Discharge Summary | Obtain Legal Authorization | Record Initial Complaint | Admit Patient" />
+      <symbol value="Register Contact Information | Book Appointment | Generate Service Report | Register Spare Part | Repair Vehicle | Inspect Vehicle | Book Service Appointment" />
+      <symbol value="Report Issue | Finalize Product | Verify Client Requirement | Validate Furniture Design | Approve Heating Design | Approve Structural Design" />
+      <symbol value="Resolve Technical Issue | Send Confirmation | Schedule Appointment | Receive Payment | Show Payment Method | Show Alternative Option | Display Available Slot | Make Call" />
+      <symbol value="Sanction Loan | Check Eligibility | Check Credit History | Assess Home Value | Process Mortgage Application | Process Loan Application" />
+      <symbol value="Set Up Course Configuration | Retrieve Coursework | Publlish Mark | Retrieve Mark | Submit Coursework" />
+      <symbol value="Setup Track | Initialize System | Terminate System | Perform Autonomous Monitoring | Perform Manual Monitoring | Monitor Environment | Handle Camera Fault" />
+      <symbol value="Trigger Sensor | Monitor | Deactivate System | Activate System" />
+      <symbol value="Update Account | Change Password | Edit Profile | Access Quiz | Access Study Material | Verify Account | View Contact Detail | View Faq | View Course List | Register User | Access Account" />
+      <symbol value="View Patient History | Print Report | Give Prescription | Record Visit Information | Schedule Appointment | Enter Patient Information" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Add Information | Declare Result | Prepare Report Card | Write Exam | Complete Enrolment | Fill Admission Form | Evaluate Exam Paper | Prepare Exam Paper | Mark Attendance | Edit Information">
+</qsym>
+<qsym name="Apply Upon Request Maintenance | Apply Scheduled Maintenance | Apply Maintenance Procedure | Run Shutdown Procdure | Run Setup Proedure | Acquire Input | Perform Computation | Store Result | Inform User">
+</qsym>
+<qsym name="Assign Gate | Handle Baggage | Enter Security Screening | Issue Boarding Pass | Validate Counter Checkin | Drop Baggage | Validate Individual Checkin | Validate Group Checkin">
+</qsym>
+<qsym name="Assign Seat | Give Ticket | Handover Luggage | Weigh Luggage | Handle Luggage">
+</qsym>
+<qsym name="Borrow Book | Return Book | Search Catalog">
+</qsym>
+<qsym name="Capture Deal | Display Price | Analyze Risk | Update Account | Set Limit">
+</qsym>
+<qsym name="Check Permission | Place Order | See Order | Segregate Order | Order Part | Check Part | Register Part">
+</qsym>
+<qsym name="Choose Location | Delete Booking | Show Driver Information | Confirm Booking | Show Payment Method | Book Cab | Show Available Cabs | Access Account">
+</qsym>
+<qsym name="Collect Cash | Manage Security | Manage User | Analyze Activity | Handle Return | Process Sale">
+</qsym>
+<qsym name="Cut Call | Place Conference Call | Monitor Signal Strength | Use Scheduler | Place Phone Call">
+</qsym>
+<qsym name="Disturb System | Stop Controller | Start Controller | Set Controller Gain | Set Amplifier Gain">
+</qsym>
+<qsym name="Drop Course | Enrol In College | Close Registration | Select Course | Register For Course">
+</qsym>
+<qsym name="Edit Booking | Cancel Booking | Manage Reservation | Check Availability | Assist Passenger | Resolve Technical Issue | Manage User Account | Manage Flight Schedule | Book Ticket | Search Flight">
+</qsym>
+<qsym name="Edit Leaderboard | Update Leaderboard | Fetch Leaderboard | Modify Setting | View Leaderboard | Play Game">
+</qsym>
+<qsym name="Enable Computer Control System | Pump Fluid | Allow Stunt Fluid | Ensure Sufficient Air | Ensure Coffin Quality | Maximize Excitement | Minimize Risk | Perform Stunt">
+</qsym>
+<qsym name="Engage Target | Trigger Test | Launch Missile | Execute Failed Launch Procedure">
+</qsym>
+<qsym name="Enter Safe Zone | Protect Sheep | Survey Safe Zone | Monitor System | Parameterize Mission | Plan Mission | Prepare Mission">
+</qsym>
+<qsym name="Evaluate Mission | Create Marker | Remove Coordinate | Capture Image | Allocate Uav | Feed Command | Assign Search Area | Send Command | Start Mission | Monitor Mission | Create Mission">
+</qsym>
+<qsym name="Fill Form | Prescribe Medication | Assess Patient | Prescribe Test | Give Result | Perform Test">
+</qsym>
+<qsym name="Find Bike | Handle Enquiry | Print Receipt | Handle Bike Return | Issue Bike | Maintain Customer List | Maintain Bike List">
+</qsym>
+<qsym name="Generate Energy Report | Register New Sensor | Perform Equipment Check | Analyze Energy Data | Monitor Turbine">
+</qsym>
+<qsym name="Generate Energy Report | Validate Energy Billing | Record Energy Usage | Allocate Power Supply | Check Transformer Load | Activate Backup Line | Monitor Power Flow | Select Distribution Area | Select Power Source | Authenticate Operator">
+</qsym>
+<qsym name="Generate Product Key | Define Trial Product | Define Full Product | Manage Customer | Manage Environment | Generate Branded Rus | Generate Runtime Installer | Generate Trial Product | Define Product | Define Feature">
+</qsym>
+<qsym name="Generate Report | Register New Equipment | Perform Maintenance | Schedule Maintenance | Request Maintenance">
+</qsym>
+<qsym name="Generate Review Report | Register Design Component | Approve Modification | Review Design | Submit Design">
+</qsym>
+<qsym name="Get Payload Status | Send Real Time Command | Send Stored Command | Point Infrared Sensor | Send Command | Execute Hohmann Transfer | Generate Electricity">
+</qsym>
+<qsym name="Handle System Fault | Handle False Alarm | Display Standby | Warn Environment | Perform Maintenance | Alert User | Inform Authority | Detect Fire | Shutdown System | Initialize System">
+</qsym>
+<qsym name="Issue Ticket | Receive Payment | Make Payment | Choose Train | Show Available Seat | Show Alternative Train | Show Available Train | Choose Destination | Choose Origin | Access User Account">
+</qsym>
+<qsym name="Manage Control Zone | Manage Clearance | Alert During Conflict | Prevent Conflict | Plan Mission">
+</qsym>
+<qsym name="Pay Agent Fee | Make Payment | Book Tour | Deliver Airlineticket | Book Airline Ticket">
+</qsym>
+<qsym name="Pay Bill | Serve Food | Cook Food | Order Food">
+</qsym>
+<qsym name="Perform Anti Lock Braking | Drive Vehicle | Control Entertainment System | Control Vehicle Accessory | Control Climate System | Exit Vehicle | Open Door | Enter Vehicle">
+</qsym>
+<qsym name="Perform System Backup | Manage Access Control Policy | Manage Logs | Manage Session | Manage User">
+</qsym>
+<qsym name="Print Reciept | Adjust Hourly Rate | Adjust Daily Rate | Adjust Rate | Pay Parking Bill">
+</qsym>
+<qsym name="Proivde Service | Update Balance | Withdraw Fund | Deposit Fund | Open Account">
+</qsym>
+<qsym name="Provide Maintenance | Alert Refrigerant Leakage | Control Chiller Sequencing | Monitor Chilled Water Temperature | Provide Cooling Service">
+</qsym>
+<qsym name="Publish Result | Verify Transcript | Generate Report | Edit Result | Verify Result | View Registration Data | View Result | Terminate Session | Access Account | Update Information | Enter Result | Register Candidate | Generate Transcript | Recieve Transcript | Authorize Result">
+</qsym>
+<qsym name="Purchase Book | Update Loan | Return Book | Register User | Borrow Book">
+</qsym>
+<qsym name="Receive Payment | Raise Request | Claim Insurance | Make Payment | Send Invoice | Deliver Car | Monitor Activity | Ship Part | Order Part | Perform Maintenance">
+</qsym>
+<qsym name="Recommend New Product | Update Product Detail | Delete Product | Add Product | Report Technical Issue | Register User | Buy Product | Add To Cart | View Product | Access Account">
+</qsym>
+<qsym name="Recommend Patient Discharge | Maintain Progress Report | Advise Medical Treatment | Assess Patient Status | Review Discharge Summary | Obtain Legal Authorization | Record Initial Complaint | Admit Patient">
+</qsym>
+<qsym name="Register Contact Information | Book Appointment | Generate Service Report | Register Spare Part | Repair Vehicle | Inspect Vehicle | Book Service Appointment">
+</qsym>
+<qsym name="Report Issue | Finalize Product | Verify Client Requirement | Validate Furniture Design | Approve Heating Design | Approve Structural Design">
+</qsym>
+<qsym name="Resolve Technical Issue | Send Confirmation | Schedule Appointment | Receive Payment | Show Payment Method | Show Alternative Option | Display Available Slot | Make Call">
+</qsym>
+<qsym name="Sanction Loan | Check Eligibility | Check Credit History | Assess Home Value | Process Mortgage Application | Process Loan Application">
+</qsym>
+<qsym name="Set Up Course Configuration | Retrieve Coursework | Publlish Mark | Retrieve Mark | Submit Coursework">
+</qsym>
+<qsym name="Setup Track | Initialize System | Terminate System | Perform Autonomous Monitoring | Perform Manual Monitoring | Monitor Environment | Handle Camera Fault">
+</qsym>
+<qsym name="Trigger Sensor | Monitor | Deactivate System | Activate System">
+</qsym>
+<qsym name="Update Account | Change Password | Edit Profile | Access Quiz | Access Study Material | Verify Account | View Contact Detail | View Faq | View Course List | Register User | Access Account">
+</qsym>
+<qsym name="View Patient History | Print Report | Give Prescription | Record Visit Information | Schedule Appointment | Enter Patient Information">
+</qsym>
+<qsym name="_others_">
+</qsym>
+<qsym name="_undefined_">
+</qsym>
+<qsym name="_unknown_">
+</qsym>
+</fct>
+    </desc>
+    <desc name="RelationshipTypes" type="Symbol" mult="false" >
+      <symbol value="association" />
+      <symbol value="association | extend" />
+      <symbol value="association | extend | generalization | include" />
+      <symbol value="association | extend | include" />
+      <symbol value="association | generalization" />
+      <symbol value="association | generalization | include" />
+      <symbol value="association | include" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="_others_">
+</qsym>
+<qsym name="_undefined_">
+</qsym>
+<qsym name="_unknown_">
+</qsym>
+<qsym name="association">
+</qsym>
+<qsym name="association | extend">
+</qsym>
+<qsym name="association | extend | generalization | include">
+</qsym>
+<qsym name="association | extend | include">
+</qsym>
+<qsym name="association | generalization">
+</qsym>
+<qsym name="association | generalization | include">
+</qsym>
+<qsym name="association | include">
+</qsym>
+</fct>
+    </desc>
+    <desc name="DomainList" type="Symbol" mult="false" >
+      <symbol value="Aerospace Engineering | Design Review | Configuration Management | Systems Engineering | Project Management" />
+      <symbol value="Air Traffic Control | Airport Operations | Conflict Management | Mission Planning | Safety and Security" />
+      <symbol value="Airline Boarding | Luggage Handling | Passenger Services | Ticket Management | Travel Logistics" />
+      <symbol value="Airline Operations | Airport Security | Baggage Handling | Passenger Check-in | Gate Management" />
+      <symbol value="Airline Reservation | Travel Management | Customer Service | Flight Operations | User Account Management" />
+      <symbol value="Airline Ticketing | Tour Booking | Payment Processing | Travel Agency Services | Customer Service" />
+      <symbol value="Appointment Scheduling | Service Management | Payment Processing | Customer Support | Communication" />
+      <symbol value="Automotive Engineering | Vehicle Control Systems | Passenger Comfort Systems | Vehicle Safety Systems | Vehicle Access Control" />
+      <symbol value="Automotive Maintenance | Vehicle Repair Services | Parts Ordering and Logistics | Payment Processing | Insurance Claim Management" />
+      <symbol value="Automotive Service Management | Appointment Scheduling | Vehicle Maintenance | Customer Relationship Management | Spare Parts Inventory" />
+      <symbol value="Banking Operations | Financial Transactions | Account Management | Customer Service | Funds Management" />
+      <symbol value="Bike Rental Management | Inventory Management | Customer Relationship Management | Point of Sale | System Administration" />
+      <symbol value="Control Systems Engineering | Robotics | System Dynamics | Signal Processing | Mechanical Engineering" />
+      <symbol value="E-Learning | User Account Management | Course Catalog | Content Delivery | User Support" />
+      <symbol value="E-commerce | Product Management | User Account Management | Database Management | Customer Support" />
+      <symbol value="Education" />
+      <symbol value="Education Management | Student Information Systems | Examination Management | Academic Reporting | Attendance Tracking" />
+      <symbol value="Educational Administration | Course Management | Student Assessment | Learning Management Systems | Academic Record Keeping" />
+      <symbol value="Energy Distribution | Power Grid Management | Billing and Reporting | System Authentication | Power Supply Allocation" />
+      <symbol value="Equipment Maintenance | Preventive Maintenance Scheduling | Corrective Maintenance Management | Asset Management | Reporting and Analytics" />
+      <symbol value="Exam Result Management | Candidate Registration | Transcript Verification | User Account Management | Reporting and Analytics" />
+      <symbol value="Financial Trading | Risk Management | Account Management | Trade Execution | Financial Regulations" />
+      <symbol value="Fire Safety | Alarm Systems | Emergency Response | System Maintenance | Sensor Integration" />
+      <symbol value="Furniture Design | Structural Engineering | Heating, Ventilation, and Air Conditioning (HVAC) | Requirements Management | Product Lifecycle Management" />
+      <symbol value="Game Management | Leaderboard Administration | User Account Management | Game Settings Configuration | Player Engagement" />
+      <symbol value="HVAC Control Systems | Refrigerant Management | Chiller Plant Operations | Industrial Automation | Building Management Systems" />
+      <symbol value="Healthcare Administration | Laboratory Information Management | Patient Management | Medical Testing | Prescription Management" />
+      <symbol value="Healthcare Information Management | Patient Scheduling | Medical Records Management | Prescription Management | Clinical Reporting" />
+      <symbol value="Higher Education Administration | Student Information Systems | Course Management | Academic Registration | Educational Services" />
+      <symbol value="Library Management | Book Lending | User Account Management | Inventory Management | Transaction Processing" />
+      <symbol value="Missile Defense | Weapon Systems | Launch Operations | System Testing | Failure Management" />
+      <symbol value="Mortgage Lending | Loan Origination | Credit Risk Assessment | Financial Services | Home Finance" />
+      <symbol value="Parking Management | Payment Processing | Rate Management | Receipt Generation | User Authentication" />
+      <symbol value="Patient Admission and Discharge | Medical Treatment and Assessment | Patient Record Management | Legal and Regulatory Compliance | Healthcare Administration" />
+      <symbol value="Physical Security | Intrusion Detection | Security System Management | Access Control | Surveillance" />
+      <symbol value="Point of Sale Systems | Retail Management | Financial Transactions | User Account Management | Sales Analytics" />
+      <symbol value="Product Lifecycle Management | Entitlement Management | Software Distribution | Customer Relationship Management | Environment Configuration" />
+      <symbol value="Real-time Control Systems | System Maintenance Management | Data Acquisition and Processing | Supervisory Control | User Information Systems" />
+      <symbol value="Renewable Energy Management | Turbine Monitoring | Energy Data Analytics | Sensor Management | System Administration" />
+      <symbol value="Restaurant Management | Food Service | Point of Sale (POS) | Order Processing | Culinary Operations" />
+      <symbol value="Ride-Hailing Services | Transportation Logistics | Mobile Applications | Payment Processing | User Account Management" />
+      <symbol value="Satellite Command and Control | Payload Management | Orbital Mechanics | Power Systems Testing | Infrared Sensor Operation" />
+      <symbol value="Security Monitoring | System Administration | Environmental Monitoring | Fault Management | Operator Interface" />
+      <symbol value="Stunt Performance | Risk Management | Safety Systems | Coffin Manufacturing | Audience Engagement" />
+      <symbol value="Supply Chain Management | Inventory Control | Procurement | Order Processing | Warehouse Operations" />
+      <symbol value="System Administration | Access Control Management | User Management | Log Management | System Backup and Recovery" />
+      <symbol value="Telecommunications | Mobile Computing | Call Management | Wireless Communication | Personal Productivity" />
+      <symbol value="Train Travel Booking | Online Payment Processing | User Account Management | Train Schedule Management | Ticket Issuance" />
+      <symbol value="UAV Mission Management | Geospatial Data Processing | Command and Control Systems | Image Acquisition | Mission Planning" />
+      <symbol value="Wildlife Monitoring | Security Systems | Mission Planning | Environmental Monitoring | Geospatial Data Processing" />
+<fct name="default function" type="Symbol" mt="PARTNER_QUERY" r="REUSE" t="MAX" symm="true">
+<qsym name="Aerospace Engineering | Design Review | Configuration Management | Systems Engineering | Project Management">
+</qsym>
+<qsym name="Air Traffic Control | Airport Operations | Conflict Management | Mission Planning | Safety and Security">
+</qsym>
+<qsym name="Airline Boarding | Luggage Handling | Passenger Services | Ticket Management | Travel Logistics">
+</qsym>
+<qsym name="Airline Operations | Airport Security | Baggage Handling | Passenger Check-in | Gate Management">
+</qsym>
+<qsym name="Airline Reservation | Travel Management | Customer Service | Flight Operations | User Account Management">
+</qsym>
+<qsym name="Airline Ticketing | Tour Booking | Payment Processing | Travel Agency Services | Customer Service">
+</qsym>
+<qsym name="Appointment Scheduling | Service Management | Payment Processing | Customer Support | Communication">
+</qsym>
+<qsym name="Automotive Engineering | Vehicle Control Systems | Passenger Comfort Systems | Vehicle Safety Systems | Vehicle Access Control">
+</qsym>
+<qsym name="Automotive Maintenance | Vehicle Repair Services | Parts Ordering and Logistics | Payment Processing | Insurance Claim Management">
+</qsym>
+<qsym name="Automotive Service Management | Appointment Scheduling | Vehicle Maintenance | Customer Relationship Management | Spare Parts Inventory">
+</qsym>
+<qsym name="Banking Operations | Financial Transactions | Account Management | Customer Service | Funds Management">
+</qsym>
+<qsym name="Bike Rental Management | Inventory Management | Customer Relationship Management | Point of Sale | System Administration">
+</qsym>
+<qsym name="Control Systems Engineering | Robotics | System Dynamics | Signal Processing | Mechanical Engineering">
+</qsym>
+<qsym name="E-Learning | User Account Management | Course Catalog | Content Delivery | User Support">
+</qsym>
+<qsym name="E-commerce | Product Management | User Account Management | Database Management | Customer Support">
+</qsym>
+<qsym name="Education">
+</qsym>
+<qsym name="Education Management | Student Information Systems | Examination Management | Academic Reporting | Attendance Tracking">
+</qsym>
+<qsym name="Educational Administration | Course Management | Student Assessment | Learning Management Systems | Academic Record Keeping">
+</qsym>
+<qsym name="Energy Distribution | Power Grid Management | Billing and Reporting | System Authentication | Power Supply Allocation">
+</qsym>
+<qsym name="Equipment Maintenance | Preventive Maintenance Scheduling | Corrective Maintenance Management | Asset Management | Reporting and Analytics">
+</qsym>
+<qsym name="Exam Result Management | Candidate Registration | Transcript Verification | User Account Management | Reporting and Analytics">
+</qsym>
+<qsym name="Financial Trading | Risk Management | Account Management | Trade Execution | Financial Regulations">
+</qsym>
+<qsym name="Fire Safety | Alarm Systems | Emergency Response | System Maintenance | Sensor Integration">
+</qsym>
+<qsym name="Furniture Design | Structural Engineering | Heating, Ventilation, and Air Conditioning (HVAC) | Requirements Management | Product Lifecycle Management">
+</qsym>
+<qsym name="Game Management | Leaderboard Administration | User Account Management | Game Settings Configuration | Player Engagement">
+</qsym>
+<qsym name="HVAC Control Systems | Refrigerant Management | Chiller Plant Operations | Industrial Automation | Building Management Systems">
+</qsym>
+<qsym name="Healthcare Administration | Laboratory Information Management | Patient Management | Medical Testing | Prescription Management">
+</qsym>
+<qsym name="Healthcare Information Management | Patient Scheduling | Medical Records Management | Prescription Management | Clinical Reporting">
+</qsym>
+<qsym name="Higher Education Administration | Student Information Systems | Course Management | Academic Registration | Educational Services">
+</qsym>
+<qsym name="Library Management | Book Lending | User Account Management | Inventory Management | Transaction Processing">
+</qsym>
+<qsym name="Missile Defense | Weapon Systems | Launch Operations | System Testing | Failure Management">
+</qsym>
+<qsym name="Mortgage Lending | Loan Origination | Credit Risk Assessment | Financial Services | Home Finance">
+</qsym>
+<qsym name="Parking Management | Payment Processing | Rate Management | Receipt Generation | User Authentication">
+</qsym>
+<qsym name="Patient Admission and Discharge | Medical Treatment and Assessment | Patient Record Management | Legal and Regulatory Compliance | Healthcare Administration">
+</qsym>
+<qsym name="Physical Security | Intrusion Detection | Security System Management | Access Control | Surveillance">
+</qsym>
+<qsym name="Point of Sale Systems | Retail Management | Financial Transactions | User Account Management | Sales Analytics">
+</qsym>
+<qsym name="Product Lifecycle Management | Entitlement Management | Software Distribution | Customer Relationship Management | Environment Configuration">
+</qsym>
+<qsym name="Real-time Control Systems | System Maintenance Management | Data Acquisition and Processing | Supervisory Control | User Information Systems">
+</qsym>
+<qsym name="Renewable Energy Management | Turbine Monitoring | Energy Data Analytics | Sensor Management | System Administration">
+</qsym>
+<qsym name="Restaurant Management | Food Service | Point of Sale (POS) | Order Processing | Culinary Operations">
+</qsym>
+<qsym name="Ride-Hailing Services | Transportation Logistics | Mobile Applications | Payment Processing | User Account Management">
+</qsym>
+<qsym name="Satellite Command and Control | Payload Management | Orbital Mechanics | Power Systems Testing | Infrared Sensor Operation">
+</qsym>
+<qsym name="Security Monitoring | System Administration | Environmental Monitoring | Fault Management | Operator Interface">
+</qsym>
+<qsym name="Stunt Performance | Risk Management | Safety Systems | Coffin Manufacturing | Audience Engagement">
+</qsym>
+<qsym name="Supply Chain Management | Inventory Control | Procurement | Order Processing | Warehouse Operations">
+</qsym>
+<qsym name="System Administration | Access Control Management | User Management | Log Management | System Backup and Recovery">
+</qsym>
+<qsym name="Telecommunications | Mobile Computing | Call Management | Wireless Communication | Personal Productivity">
+</qsym>
+<qsym name="Train Travel Booking | Online Payment Processing | User Account Management | Train Schedule Management | Ticket Issuance">
+</qsym>
+<qsym name="UAV Mission Management | Geospatial Data Processing | Command and Control Systems | Image Acquisition | Mission Planning">
+</qsym>
+<qsym name="Wildlife Monitoring | Security Systems | Mission Planning | Environmental Monitoring | Geospatial Data Processing">
+</qsym>
+<qsym name="_others_">
+</qsym>
+<qsym name="_undefined_">
+</qsym>
+<qsym name="_unknown_">
+</qsym>
+</fct>
+    </desc>
+    <desc name="PrimaryActorCount" type="Float" min="0.0" max="5.0" mult="false" >
+      <fct name="strict_primary_actor_count" type="Float" ltype="CONSTANT" lparam="1.0" rtype="POLYNOMIAL_WITH" rparam="1.5" mode="DIFFERENCE" symm="false" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+      <fct name="loose_primary_actor_count" type="Float" ltype="CONSTANT" lparam="1.0" rtype="POLYNOMIAL_WITH" rparam="3.5" mode="DIFFERENCE" symm="false" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+      <fct name="default function" type="Float" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+    </desc>
+    <desc name="SecondaryActorCount" type="Float" min="0.0" max="3.0" mult="false" >
+      <fct name="strict_secondary_actor_count" type="Float" ltype="CONSTANT" lparam="1.0" rtype="POLYNOMIAL_WITH" rparam="1.5" mode="DIFFERENCE" symm="false" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+      <fct name="loose_secondary_actor_count" type="Float" ltype="CONSTANT" lparam="1.0" rtype="POLYNOMIAL_WITH" rparam="3.5" mode="DIFFERENCE" symm="false" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+      <fct name="default function" type="Float" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+    </desc>
+    <desc name="UseCaseCount" type="Float" min="0.0" max="15.0" mult="false" >
+      <fct name="strict_use_case_count" type="Float" ltype="CONSTANT" lparam="1.0" rtype="POLYNOMIAL_WITH" rparam="1.5" mode="DIFFERENCE" symm="false" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+      <fct name="loose_use_case_count" type="Float" ltype="CONSTANT" lparam="1.0" rtype="POLYNOMIAL_WITH" rparam="3.5" mode="DIFFERENCE" symm="false" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+      <fct name="default function" type="Float" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+    </desc>
+    <desc name="RelationshipCount" type="Float" min="0.0" max="18.0" mult="false" >
+      <fct name="strict_relationship_count" type="Float" ltype="CONSTANT" lparam="1.0" rtype="POLYNOMIAL_WITH" rparam="1.5" mode="DIFFERENCE" symm="false" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+      <fct name="loose_relationship_count" type="Float" ltype="CONSTANT" lparam="1.0" rtype="POLYNOMIAL_WITH" rparam="3.5" mode="DIFFERENCE" symm="false" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+      <fct name="default function" type="Float" ltype="CONSTANT" lparam="1.0" rtype="CONSTANT" rparam="1.0" mode="DIFFERENCE" symm="true" mt="PARTNER_QUERY" r="REUSE" t="MAX" maxForQuotient="10.0" />
+    </desc>
+    <amalgam name="balanced_similarity" type="WEIGHTED_SUM" active="true" >
+      <entry name="SystemName"        active="true" fct="ngram_system"        weight="2.0"/>
+      <entry name="Description"       active="true" fct="jarowinkler_desc"    weight="2.0"/>
+      <entry name="PrimaryDomain"     active="true" fct="default function"    weight="3.0"/>
+      <entry name="SystemKind"        active="true" fct="default function"    weight="2.0"/>
+      <entry name="ActorNames"        active="true" fct="default function"    weight="2.0"/>
+      <entry name="UseCaseNames"      active="true" fct="default function"    weight="3.0"/>
+      <entry name="RelationshipTypes" active="true" fct="default function"    weight="1.5"/>
+      <entry name="DomainList"        active="true" fct="default function"    weight="2.0"/>
+      <entry name="PrimaryActorCount"   active="true" fct="loose_primary_actor_count"   weight="2.0"/>
+      <entry name="SecondaryActorCount" active="true" fct="loose_secondary_actor_count" weight="1.5"/>
+      <entry name="UseCaseCount"        active="true" fct="loose_use_case_count"        weight="3.0"/>
+      <entry name="RelationshipCount"   active="true" fct="loose_relationship_count"    weight="1.5"/>
+      <entry name="HasInclude"        active="true" fct="default function"    weight="1.0"/>
+      <entry name="HasExtend"         active="true" fct="default function"    weight="1.0"/>
+      <entry name="HasGeneralization" active="true" fct="default function"    weight="1.0"/>
+      <entry name="CaseOrigin"        active="true" fct="default function"    weight="0.5"/>
+    </amalgam>
+    <amalgam name="structure_focused_similarity" type="WEIGHTED_SUM" active="false" >
+      <entry name="SystemName"          active="true" fct="ngram_system"             weight="2.5"/>
+      <entry name="Description"         active="true" fct="jarowinkler_desc"         weight="1.5"/>
+      <entry name="PrimaryDomain"       active="true" fct="default function"         weight="2.0"/>
+      <entry name="SystemKind"          active="true" fct="default function"         weight="2.0"/>
+      <entry name="RelationshipTypes"   active="true" fct="default function"         weight="2.0"/>
+      <entry name="UseCaseNames"        active="true" fct="default function"         weight="1.0"/>
+      <entry name="ActorNames"          active="true" fct="default function"         weight="0.5"/>
+      <entry name="DomainList"          active="true" fct="default function"         weight="1.0"/>
+      <entry name="PrimaryActorCount"   active="true" fct="strict_primary_actor_count"   weight="1.5"/>
+      <entry name="SecondaryActorCount" active="true" fct="strict_secondary_actor_count" weight="1.5"/>
+      <entry name="UseCaseCount"        active="true" fct="strict_use_case_count"        weight="3.0"/>
+      <entry name="RelationshipCount"   active="true" fct="strict_relationship_count"    weight="2.5"/>
+      <entry name="HasInclude"          active="true" fct="default function"         weight="1.0"/>
+      <entry name="HasExtend"           active="true" fct="default function"         weight="1.0"/>
+      <entry name="HasGeneralization"   active="true" fct="default function"         weight="1.5"/>
+    </amalgam>
+    <amalgam name="actor_focused_similarity" type="WEIGHTED_SUM" active="false" >
+      <entry name="SystemName"          active="true" fct="ngram_system"             weight="1.0"/>
+      <entry name="Description"         active="true" fct="jarowinkler_desc"         weight="0.5"/>
+      <entry name="PrimaryDomain"       active="true" fct="default function"         weight="1.5"/>
+      <entry name="SystemKind"          active="true" fct="default function"         weight="1.0"/>
+      <entry name="ActorNames"          active="true" fct="default function"         weight="3.5"/>
+      <entry name="UseCaseNames"        active="true" fct="default function"         weight="1.5"/>
+      <entry name="RelationshipTypes"   active="true" fct="default function"         weight="0.5"/>
+      <entry name="DomainList"          active="true" fct="default function"         weight="1.0"/>
+      <entry name="PrimaryActorCount"   active="true" fct="loose_primary_actor_count"   weight="3.0"/>
+      <entry name="SecondaryActorCount" active="true" fct="loose_secondary_actor_count" weight="2.5"/>
+      <entry name="UseCaseCount"        active="true" fct="loose_use_case_count"        weight="1.5"/>
+      <entry name="RelationshipCount"   active="true" fct="loose_relationship_count"    weight="1.0"/>
+      <entry name="HasGeneralization"   active="true" fct="default function"         weight="1.0"/>
+    </amalgam>
+  </concept>
+</model>
+<hierarchy>
+  <fct name="default function" type="Taxonomy" mt="PARTNER_QUERY" r="REUSE" t="MAX" qconfig="INNER_NODES_ANY" cconfig="INNER_NODES_ANY" top="inheritanceDesc" sim="0.0" symm="true" >
+    <node name="UCD_CBR_Cycle_ProjectCase" sim="1.0" parent="inheritanceDesc" />
+  </fct>
+</hierarchy>
+<cases no="50" cb="UCD_CBR_Cycle_ProjectCB"/>
+</Project>

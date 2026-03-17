@@ -1,0 +1,12 @@
+{
+  "files.exclude": {
+    "myVirtualEnvironment/": true,
+    "**/__pycache__/": true,
+    "**/*.pyc": true
+  },
+  "files.watcherExclude": {
+    "**/myVirtualEnvironment/**": true,
+    "**/__pycache__/**": true
+  },
+  "git.ignoreLimitWarning": true
+}
