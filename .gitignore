@@ -22,8 +22,10 @@ env/
 debug_llm.py
 debug_out.txt
 debug_test_mistral.txt
+test_output.txt
 test_extraction.py
 test_custom_extraction.py
+test_actor_validation.py
 test_tier2.py
 test_tier3.py
 test_out.txt
@@ -32,10 +34,22 @@ db_usecase_validation.py
 result.json
 result_tier2.json
 result_tier3.json
+tmp_ucd_gen_all.txt
+_try_extract.py
+
+# Old/superseded source files
+ucd_generation_old.py
 ucd_generation_old2.py
+helpers_old.py
+
+# Temporary output/verify scratch files
+verify_v1.png
+verify_v1.puml
+verify_v2.sysml
 
 # IDE
 .idea/
+.vscode/
 
 # OS
 .DS_Store
