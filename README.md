@@ -269,7 +269,7 @@ with connection.get_cursor(dictionary=True) as cursor:
    - `sim_domains` — max(Jaccard overlap, semantic per-domain average).
    - `sim_lexical` — Jaccard over tokenized text + synonyms.
 4. **Weighted ranking** — `embeddings.rank_cases()` applies `CBR_WEIGHTS` or `IR_WEIGHTS`.
-5. **Synonym expansion** — global synonym tables (`actor_synonyms`, `use_case_synonyms`) augment the lexical token set.
+5. **Synonym expansion (Python CBR only)** — `_fetch_global_synonyms()` and `_fetch_case_synonyms()` query the `actor_synonyms`, `use_case_synonyms`, and `system_synonyms` MySQL tables to expand the lexical token set before Jaccard scoring. **myCBR REST does not use these tables** — it receives the raw query dict and performs its own internal symbolic matching via the myCBR Workbench engine.
 
 **Key function:** `find_similar_cases(query, mode, threshold, limit)` → sorted list of case dicts with `relevance` in [0,1].
 
